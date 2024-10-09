@@ -14,6 +14,6 @@ ENV PAGE_HOME /page
 RUN mkdir -p $PAGE_HOME
 WORKDIR $PAGE_HOME
 
-COPY ./ $PAGE_HOME
+COPY ./Gemfile* $PAGE_HOME/
 RUN gem install bundler -v "2.3.13"
 RUN bundle install
