@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Adding references with Markdown</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.news.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.tutorials.xml">
+
+	
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico">	
+
+    <!-- Our style -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <!-- JQuery and Bootstrap JS (necessary for collapsing navbar) -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" type="text/css" href="/bootstrap/icons/bootstrap-icons.css">
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="/css/katex.css">
+    <script src="/js/katex.min.js"></script>
+
+</head>
+
+
+<body>
+	
+	<div id="header">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo_bw.svg" style="height:2em">Taming the BEAST
+    </a>
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link " aria-current="page" href="/news/">news</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/workshops/">workshops</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/tutorials/">tutorials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  active " href="/contribute/">contribute</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" type="application/rss+xml" href="/feed.news.xml">
+          <i class="bi bi-rss"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</div>
+
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/contribute/Jekyll-scholar/" class="off">Adding references with Markdown</a>
+					</div>
+					<p>
+					<div class="smallhead">
+					  
+                                          26 Oct 2016
+                                          
+						
+						by <a class="off" href="/team/louis-du-plessis/">Louis</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			<div class="post">
+				<p><a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-scholar</a> is a plugin that can be used to add Bibtex references to Markdown tutorials.</p>
+
+<h2 id="adding-references-to-a-tutorial-with-jekyll-scholar">Adding references to a tutorial with Jekyll-scholar</h2>
+
+<p>To add references add the bibtex library to the repository root. Add an empty yaml header to the bibtex file so Jekyll-scholar will know to parse the file. Do this by adding these two lines to the start of the file,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+---
+
+</code></pre></div></div>
+
+<p>To print the references in your tutorial, assuming your tutorial is called <code class="language-plaintext highlighter-rouge">My-Awesome-Tutorial</code> and your references are saved in a file called <code class="language-plaintext highlighter-rouge">master_refs.bib</code>, add the line,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% bibliography --cited --file My-Awesome-Tutorial/master_refs.bib  %}
+</code></pre></div></div>
+
+<p>to <code class="language-plaintext highlighter-rouge">README.md</code> at the location you want to print the bibliography. This will print all cited references. To cite a reference simply add,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% cite AwesomeBook --file My-Awesome-Tutorial/master_refs.bib  %}
+</code></pre></div></div>
+
+<p>This will add a citation to a reference saved as “AwesomeBook” in the file <code class="language-plaintext highlighter-rouge">master_refs.bib</code>. Note that you have to always enter the name of the bibtex file and enter the path <em>relative</em> to the parent directory of your GitHub repository.</p>
+
+<h2 id="common-issues-with-jekyll-scholar">Common issues with Jekyll-scholar</h2>
+<ul>
+  <li>For the moment Jekyll-scholar cannot parse items enclosed between double braces ({<code class="language-plaintext highlighter-rouge">{ and }</code>}), but interprets it as a liquid tag.</li>
+  <li>Jekyll-scholar can only parse your bibliography if it is encoded in UTF-8. This can easily be done in most text proper text editors (e.g. <a href="http://sublimetext.com/">Sublime</a>).</li>
+</ul>
+
+<h2 id="useful-links">Useful links</h2>
+<ul>
+  <li><a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-scholar</a></li>
+</ul>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+
+	<div class="footerspacer"></div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group list-group-horizontal">
+        <li class="footernav list-group-item"><a class="foot" href="/about/">about</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/contact/">contact</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/license/">license</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+	
+	<!--div id="footer"><span style="display:none">foo</span></div-->
+		
+</body>
+</html>
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Submitting a new tutorial for review</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.news.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.tutorials.xml">
+
+	
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico">	
+
+    <!-- Our style -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <!-- JQuery and Bootstrap JS (necessary for collapsing navbar) -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" type="text/css" href="/bootstrap/icons/bootstrap-icons.css">
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="/css/katex.css">
+    <script src="/js/katex.min.js"></script>
+
+</head>
+
+
+<body>
+	
+	<div id="header">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo_bw.svg" style="height:2em">Taming the BEAST
+    </a>
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link " aria-current="page" href="/news/">news</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/workshops/">workshops</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/tutorials/">tutorials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  active " href="/contribute/">contribute</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" type="application/rss+xml" href="/feed.news.xml">
+          <i class="bi bi-rss"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</div>
+
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/contribute/Submitting-a-new-tutorial-for-review/" class="off">Submitting a new tutorial for review</a>
+					</div>
+					<p>
+					<div class="smallhead">
+					  
+                                          31 Oct 2016
+                                          
+						
+						by <a class="off" href="/team/louis-du-plessis/">Louis</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			<div class="post">
+				<p>Before submitting the tutorial you need to go through a couple of final steps. This is mostly to ensure that everything is where it should be, so the submission process can proceed smoothly.</p>
+
+<h2 id="add-tutorial-metadata">Add tutorial metadata</h2>
+
+<p>Tutorial metadata are used to store the names of the authors and the level of the tutorial. 
+Metadata should be added to the yaml header of <code class="language-plaintext highlighter-rouge">README.md</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+author: Author One,Author Two,Author Three
+level: Intermediate
+---
+
+The rest of the file continues here...
+</code></pre></div></div>
+
+<p>If there are multiple authors they should be separated by commas (no spaces). At the moment there are only three levels available,</p>
+
+<ul>
+  <li>Beginner</li>
+  <li>Intermediate</li>
+  <li>Professional</li>
+</ul>
+
+<p>Note that if no level is given the tutorial will be labeled as “intermediate.”</p>
+
+<h2 id="add-licensing-information">Add licensing information</h2>
+
+<p>Add information about the license at the end of the tutorial. We require that all tutorials be licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 license</a>. This will ensure that you will get proper attribution if someone uses your tutorial, while still allowing other people to modify the tutorial.</p>
+
+<h2 id="testing">Testing</h2>
+
+<p>After writing the tutorial run through all the exercises using the latest version of BEAST2 and save all the XML files and output. Make sure that all data, scripts, XML and output files are stored in the correct directories in the GitHub repository <strong>before</strong> submitting the tutorial.</p>
+
+<h2 id="new-tutorial-checklist">New tutorial checklist</h2>
+<p>Please go through the <a href="/contribute/New-tutorial-checklist">checklist</a> to make sure that the tutorial is complete!</p>
+
+<h1 id="submit-the-tutorial">Submit the tutorial</h1>
+<p>If you feel that the tutorial is complete and ready to be submitted contact one of the website <a href="/team/">administrators</a> with a link to the tutorial. We will then fork the repository, evaluate it and make the necessary changes to the tutorial to bring it in line with out standards. Once that is done, we will <a href="https://help.github.com/articles/about-pull-requests/">open a pull request</a>. If the changes are acceptable to you, please accept the pull request.</p>
+
+<p>Once this is complete we can add the tutorial to the website. At this stage you can choose to either retain ownership of the tutorial or <a href="https://help.github.com/articles/about-repository-transfers/">transfer</a> ownership to the <a href="https://github.com/Taming-the-BEAST">taming-the-beast organization</a> on GitHub.</p>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+
+	<div class="footerspacer"></div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group list-group-horizontal">
+        <li class="footernav list-group-item"><a class="foot" href="/about/">about</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/contact/">contact</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/license/">license</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+	
+	<!--div id="footer"><span style="display:none">foo</span></div-->
+		
+</body>
+</html>
+

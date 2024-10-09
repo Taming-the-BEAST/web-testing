@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Taming the BEAST - Tutorials</title>
+		<description>BEAST2 tutorials for the community, by the community! - Recently modified tutorials</description>
+		<link>https://taming-the-beast.org//tutorials</link>
+		<atom:link href="https://taming-the-beast.org/feed.tutorials.xml" rel="self" type="application/rss+xml" />
+		<image>
+			<url>https://taming-the-beast.org//images/logo_bw.svg</url>
+			<title>Taming the BEAST</title>
+			<link>https://taming-the-beast.org//tutorials</link>
+		</image>
+				
+			<item>
+				<title>Skyline plots</title>
+				<description>
+					Inference of past population dynamics using Bayesian Coalescent Skyline and Birth-Death Skyline plots.
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Nicola F. Müller
+							
+					
+						
+								
+									and Louis du Plessis
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Skyline-plots/commit/88760582fc27518227916e3115b57fd7cd2bff9c'
+					&gt;
+						11 Jun 2024
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						''
+					&gt;
+						Unknown
+					&lt;/a&gt;
+					: Corrected typo.
+					&lt;br&gt;&lt;br&gt;
+					Level: Beginner
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Tue, 11 Jun 2024 08:22:24 +0000</pubDate>
+				<category>Beginner</category>
+				<link>https://taming-the-beast.org//tutorials/Skyline-plots/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Skyline-plots/</guid>
+			</item>
+				
+			<item>
+				<title>Time stamped data</title>
+				<description>
+					Time-stamped data
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Remco Bouckaert
+							
+					
+						
+								,  Walter Xie
+						
+					
+						
+								,  Fábio K. Mendes
+						
+					
+						
+								
+									and  and Alexei Drummond
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/walterxie/MEP-tutorial/commit/ed17f5b1c7cadd109b2cd8af9ae17e83e6f5112a'
+					&gt;
+						9 Jun 2024
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/walterxie'
+					&gt;
+						walterxie
+					&lt;/a&gt;
+					: update ccd0 tree
+					&lt;br&gt;&lt;br&gt;
+					Level: Beginner
+					
+						&lt;br&gt;
+						Requires: BEAST v2.6.4
+					
+				</description>
+				<pubDate>Sun, 09 Jun 2024 23:59:36 +0000</pubDate>
+				<category>Beginner</category>
+				<link>https://taming-the-beast.org//tutorials/MEP-tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/MEP-tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Species Trees and Species Delimitation with SNAPPER</title>
+				<description>
+					Analyzing SNP or AFLP data
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Adam Leaché
+							
+					
+						
+								
+									and  Remco Bouckaert
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/bjoelle/BFD_snapper_tutorial/commit/33095946a9ef9cc1f57f7f8441c15460dd3fab3b'
+					&gt;
+						15 Apr 2024
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/bjoelle'
+					&gt;
+						bjoelle
+					&lt;/a&gt;
+					: added converged run
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Mon, 15 Apr 2024 09:35:04 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/BFD_snapper_tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/BFD_snapper_tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>The ClaDS package</title>
+				<description>
+					Inferring progressive changes in birth and death rates
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Joëlle Barido-Sottani
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/bjoelle/ClaDS-tutorial/commit/34a6d9d6adc89744aee243002d61cf32fae40eaa'
+					&gt;
+						18 Dec 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						''
+					&gt;
+						Unknown
+					&lt;/a&gt;
+					: updated XML
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Mon, 18 Dec 2023 09:23:52 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/ClaDS-tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/ClaDS-tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>StarBEAST2 v1.0.0 tutorial</title>
+				<description>
+					Estimating species trees using StarBEAST2
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Huw A. Ogilvie
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/genomescale/starbeast2-tutorial/commit/21af15493a5cf564d064686526b03c54712bbd50'
+					&gt;
+						15 Aug 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						''
+					&gt;
+						Unknown
+					&lt;/a&gt;
+					: Merge pull request #1 from laduplessis/master
+
+Update to BEAST 2.7
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Tue, 15 Aug 2023 17:40:53 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/starbeast2-tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/starbeast2-tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Divergence Time Estimation</title>
+				<description>
+					Dating Species Divergences with the Fossilized Birth-Death Process
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Tracy A. Heath
+							
+					
+						
+								, Rachel Warnock
+						
+					
+						
+								
+									and Bethany J. Allen
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/FBD-tutorial/commit/bbde865fc2eaa606eb85df932ec8b5a8789c27a3'
+					&gt;
+						11 Aug 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/laduplessis'
+					&gt;
+						laduplessis
+					&lt;/a&gt;
+					: Update figures (drop shadows, no backgrounds) and figure widths
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.4
+					
+				</description>
+				<pubDate>Fri, 11 Aug 2023 13:54:17 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/FBD-tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/FBD-tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Prior selection</title>
+				<description>
+					Prior selection and clock calibration using Influenza A data.
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Veronika Bošková
+							
+					
+						
+								, Venelin Mitov
+						
+					
+						
+								
+									and Louis du Plessis
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Prior-selection/commit/5934f31124dd8be5cff72005d1dd9f35b9727816'
+					&gt;
+						9 Aug 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/laduplessis'
+					&gt;
+						laduplessis
+					&lt;/a&gt;
+					: Update figures and figure widths
+					&lt;br&gt;&lt;br&gt;
+					Level: Beginner
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Wed, 09 Aug 2023 11:40:07 +0000</pubDate>
+				<category>Beginner</category>
+				<link>https://taming-the-beast.org//tutorials/Prior-selection/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Prior-selection/</guid>
+			</item>
+				
+			<item>
+				<title>Troubleshooting convergence issues</title>
+				<description>
+					Post-processing and improving performance
+					&lt;br&gt;
+					By 
+					
+					
+						
+								David A. Rasmussen
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Troubleshooting-convergence-issues/commit/f9f59809f0a13226d360ee096e728fb940f14ff7'
+					&gt;
+						9 Aug 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/laduplessis'
+					&gt;
+						laduplessis
+					&lt;/a&gt;
+					: Update title too
+					&lt;br&gt;&lt;br&gt;
+					Level: Beginner
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Wed, 09 Aug 2023 09:55:26 +0000</pubDate>
+				<category>Beginner</category>
+				<link>https://taming-the-beast.org//tutorials/Troubleshooting-convergence-issues/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Troubleshooting-convergence-issues/</guid>
+			</item>
+				
+			<item>
+				<title>Introduction to BEAST2</title>
+				<description>
+					This is a simple introductory tutorial to help you get started with using BEAST2 and its accomplices.
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Jūlija Pečerska
+							
+					
+						
+								, Veronika Bošková
+						
+					
+						
+								
+									and Louis du Plessis
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Introduction-to-BEAST2/commit/740027bdadad3782da86e53f257163c6abca137c'
+					&gt;
+						9 Aug 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/laduplessis'
+					&gt;
+						laduplessis
+					&lt;/a&gt;
+					: Update LaTeX tutorial
+					&lt;br&gt;&lt;br&gt;
+					Level: Beginner
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Wed, 09 Aug 2023 09:36:43 +0000</pubDate>
+				<category>Beginner</category>
+				<link>https://taming-the-beast.org//tutorials/Introduction-to-BEAST2/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Introduction-to-BEAST2/</guid>
+			</item>
+				
+			<item>
+				<title>Substitution model averaging</title>
+				<description>
+					A tutorial using bModelTest
+					&lt;br&gt;
+					By 
+					
+					
+						
+								David A. Rasmussen
+							
+					
+						
+								, Carsten Magnus
+						
+					
+						
+								
+									and Remco Bouckaert
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Substitution-model-averaging/commit/5d2f29beb56fbefd9483bbaca46c4fbc3eefd4cf'
+					&gt;
+						24 Jul 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/laduplessis'
+					&gt;
+						laduplessis
+					&lt;/a&gt;
+					: Merge pull request #1 from bjoelle/master
+
+updated for 2.7
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Mon, 24 Jul 2023 12:37:34 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/Substitution-model-averaging/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Substitution-model-averaging/</guid>
+			</item>
+				
+			<item>
+				<title>The MSBD package</title>
+				<description>
+					Inferring lineage-dependent birth and death rates
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Joëlle Barido-Sottani
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/bjoelle/MSBD-tutorial/commit/5b122c76ba22c019d5e79c688edfcfc73c5f7d12'
+					&gt;
+						20 Jul 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/bjoelle'
+					&gt;
+						bjoelle
+					&lt;/a&gt;
+					: renamed data file to avoid confusion
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Thu, 20 Jul 2023 17:05:44 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/MSBD-tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/MSBD-tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Troubleshooting initialization issues</title>
+				<description>
+					Getting BEAST2 to start
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Joëlle Barido-Sottani
+							
+					
+						
+								
+									and Louis du Plessis
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Troubleshooting-initialization-issues/commit/85f899d198c99b7069e0670ae9887958af99112a'
+					&gt;
+						20 Jul 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/laduplessis'
+					&gt;
+						laduplessis
+					&lt;/a&gt;
+					: Merge pull request #2 from Taming-the-BEAST/louis-edits
+
+Updates based on comments (thanks Bethany)
+					&lt;br&gt;&lt;br&gt;
+					Level: Beginner
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Thu, 20 Jul 2023 14:23:53 +0000</pubDate>
+				<category>Beginner</category>
+				<link>https://taming-the-beast.org//tutorials/Troubleshooting-initialization-issues/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Troubleshooting-initialization-issues/</guid>
+			</item>
+				
+			<item>
+				<title>MASCOT v3.0.0 Tutorial</title>
+				<description>
+					Parameter and State inference using the approximate structured coalescent
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Nicola F. Müller
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Mascot-Tutorial/commit/f2064d454a621ad213507ec2344e7e6cc15a9da8'
+					&gt;
+						9 Jun 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						''
+					&gt;
+						Unknown
+					&lt;/a&gt;
+					: Escaped some characters.
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Fri, 09 Jun 2023 15:20:03 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/Mascot-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Mascot-Tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Structured birth death model</title>
+				<description>
+					Population structure using the multi-type birth-death model
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Denise Kühnert
+							
+					
+						
+								
+									and  Jūlija Pečerska
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Structured-birth-death-model/commit/a45898e69d5c274792e8962db07bb1851b32cf3b'
+					&gt;
+						8 Jun 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						''
+					&gt;
+						Unknown
+					&lt;/a&gt;
+					: Merge pull request #4 from EtthelWindels/master
+
+Update figures and precooked runs for BEAST2.7 compatibility
+					&lt;br&gt;&lt;br&gt;
+					Level: Professional
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.4
+					
+				</description>
+				<pubDate>Thu, 08 Jun 2023 12:14:57 +0000</pubDate>
+				<category>Professional</category>
+				<link>https://taming-the-beast.org//tutorials/Structured-birth-death-model/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Structured-birth-death-model/</guid>
+			</item>
+				
+			<item>
+				<title>Skyline analyses for macroevolution</title>
+				<description>
+					Estimating evolutionary parameters from species phylogenies
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Bethany J. Allen
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/bethany-j-allen/Skyline-analyses-for-macroevolution/commit/86ce23519b976d2a0df401ea83cd206062e42b80'
+					&gt;
+						15 Mar 2023
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/bethany-j-allen'
+					&gt;
+						bethany-j-allen
+					&lt;/a&gt;
+					: Remove citation section
+					&lt;br&gt;&lt;br&gt;
+					Level: Professional
+					
+						&lt;br&gt;
+						Requires: BEAST v2.6.6
+					
+				</description>
+				<pubDate>Wed, 15 Mar 2023 11:17:43 +0000</pubDate>
+				<category>Professional</category>
+				<link>https://taming-the-beast.org//tutorials/Skyline-analyses-for-macroevolution/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Skyline-analyses-for-macroevolution/</guid>
+			</item>
+				
+			<item>
+				<title>Estimating Reassortment Networks with CoalRe</title>
+				<description>
+					Estimating Reassortment Networks with CoalRe
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Nicola F. Müller
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/nicfel/Reassortment-Tutorial/commit/7ce8ebceea31bdbd9c379b062cd200405fa87527'
+					&gt;
+						1 Apr 2022
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						''
+					&gt;
+						Unknown
+					&lt;/a&gt;
+					: Merge pull request #2 from tgvaughan/patch
+
+Removed non-matching HA and NA sequences (both from Helsinki)
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.6.0
+					
+				</description>
+				<pubDate>Fri, 01 Apr 2022 12:50:24 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/Reassortment-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Reassortment-Tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>PIQMEE Tutorial</title>
+				<description>
+					How to efficiently analyze large data sets containing duplicates
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Veronika Bošková
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/boskovav/PIQMEE-Tutorial/commit/b6051e191da19b952fd9eba445a4d895d5d499c5'
+					&gt;
+						28 Feb 2022
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/boskovav'
+					&gt;
+						boskovav
+					&lt;/a&gt;
+					: Merge pull request #1 from tgvaughan/patch-1
+
+Removed references to tutorial template bib file.
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.6.3
+					
+				</description>
+				<pubDate>Mon, 28 Feb 2022 14:15:49 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/PIQMEE-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/PIQMEE-Tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>AIM in StarBeast2 v0.15.2 Tutorial</title>
+				<description>
+					Inferring species trees and gene flow from multiple loci
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Nicola F. Müller
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/nicfel/AIM-Tutorial/commit/f8c88590e02d789143541f4c1b5fcd54e9bcc425'
+					&gt;
+						14 Sep 2020
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/nicfel'
+					&gt;
+						nicfel
+					&lt;/a&gt;
+					: switch to bf
+					&lt;br&gt;&lt;br&gt;
+					Level: Professional
+					
+						&lt;br&gt;
+						Requires: BEAST v2.5.2
+					
+				</description>
+				<pubDate>Mon, 14 Sep 2020 17:51:32 +0000</pubDate>
+				<category>Professional</category>
+				<link>https://taming-the-beast.org//tutorials/AIM-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/AIM-Tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Bayesian Skyline with adaptive parallel Tempering with CoupledMCMC Tutorial</title>
+				<description>
+					Adaptive parallel Tempering
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Nicola F. Müller
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/nicfel/CoupledMCMC-Tutorial/commit/63a0145c1ada7717aa2117b0b1da91bb0248dac3'
+					&gt;
+						6 Dec 2019
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/nicfel'
+					&gt;
+						nicfel
+					&lt;/a&gt;
+					: adds app description
+					&lt;br&gt;&lt;br&gt;
+					Level: Easy
+					
+						&lt;br&gt;
+						Requires: BEAST v2.6.0
+					
+				</description>
+				<pubDate>Fri, 06 Dec 2019 01:03:14 +0000</pubDate>
+				<category>Easy</category>
+				<link>https://taming-the-beast.org//tutorials/CoupledMCMC-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/CoupledMCMC-Tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Language Phylogenies</title>
+				<description>
+					Using Babel to analyse linguistic data
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Simon J. Greenhill
+							
+					
+						
+								
+									and  Konstantin Hoffmann
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/KonstantinHoffmann/LanguagePhylogenies/commit/04c6a4a164e03bd24886625f33191e334ed9207e'
+					&gt;
+						29 Jul 2019
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/KonstantinHoffmann'
+					&gt;
+						KonstantinHoffmann
+					&lt;/a&gt;
+					: Densitree paragraph
+					&lt;br&gt;&lt;br&gt;
+					Level: Beginner
+					
+						&lt;br&gt;
+						Requires: BEAST v2.5.2
+					
+				</description>
+				<pubDate>Mon, 29 Jul 2019 08:20:13 +0000</pubDate>
+				<category>Beginner</category>
+				<link>https://taming-the-beast.org//tutorials/LanguagePhylogenies/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/LanguagePhylogenies/</guid>
+			</item>
+				
+			<item>
+				<title>Model selection</title>
+				<description>
+					Model selection with nested sampling
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Remco Bouckaert
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/rbouckaert/NS-tutorial/commit/fe86ed9962d589af316e897bdf6d8b3122a4dd00'
+					&gt;
+						24 Mar 2019
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/rbouckaert'
+					&gt;
+						rbouckaert
+					&lt;/a&gt;
+					: update tutorial to use MCMC2NS utility
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.5.2
+					
+				</description>
+				<pubDate>Sun, 24 Mar 2019 22:45:59 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/NS-tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/NS-tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>CladeAge Tutorial</title>
+				<description>
+					Fossil-based divergence-time estimation with CladeAge
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Michael Matschiner
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/mmatschiner/CladeAge-Tutorial/commit/64dee2c3e902340cec82edfbfc6c77cf794e4335'
+					&gt;
+						21 Feb 2019
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/mmatschiner'
+					&gt;
+						mmatschiner
+					&lt;/a&gt;
+					: Merge branch 'master' of https://github.com/mmatschiner/CladeAge-Tutorial
+Added local update describing species-tree specification with BEAUti.
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.5.0
+					
+				</description>
+				<pubDate>Thu, 21 Feb 2019 22:43:45 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/CladeAge-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/CladeAge-Tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Molecular dating using heterochronous data and substitution model averaging</title>
+				<description>
+					Estimating the time of origin of the 2009 H1N1 pandemic in North America
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Sebastian Duchene
+							
+					
+						
+								,  Tim Vaughan
+						
+					
+						
+								
+									and  Veronika Boskova
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Molecular-Dating-Tutorial/commit/7962c1fb07bed1e415bc732ecf75c1df0e3acf54'
+					&gt;
+						5 Nov 2018
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						''
+					&gt;
+						Unknown
+					&lt;/a&gt;
+					: Fixed broken figure link.
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.5
+					
+				</description>
+				<pubDate>Mon, 05 Nov 2018 15:43:08 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/Molecular-Dating-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Molecular-Dating-Tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Bacter Tutorial</title>
+				<description>
+					Inferring ARGs from bacterial sequence data.
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Tim Vaughan
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Bacter-Tutorial/commit/ac12bf7ade609ef59c60a426035ae5021aceaf39'
+					&gt;
+						21 Jun 2018
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						''
+					&gt;
+						Unknown
+					&lt;/a&gt;
+					: Removed tex file, updated tutorial text.
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.5.0
+					
+				</description>
+				<pubDate>Thu, 21 Jun 2018 21:09:40 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/Bacter-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Bacter-Tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>SCOTTI Tutorial</title>
+				<description>
+					Transmission tree reconstruction with the structured coalescent
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Louis du Plessis
+							
+					
+						
+								
+									and Nicola de Maio
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/SCOTTI-Tutorial/commit/12254bfaf2ca38f8db7d8673b8eab744031b77d1'
+					&gt;
+						24 Jul 2017
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/laduplessis'
+					&gt;
+						laduplessis
+					&lt;/a&gt;
+					: Update LaTeX tutorial
+					&lt;br&gt;&lt;br&gt;
+					Level: Professional
+					
+						&lt;br&gt;
+						Requires: BEAST v2.4.7
+					
+				</description>
+				<pubDate>Mon, 24 Jul 2017 14:10:26 +0000</pubDate>
+				<category>Professional</category>
+				<link>https://taming-the-beast.org//tutorials/SCOTTI-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/SCOTTI-Tutorial/</guid>
+			</item>
+		
+	</channel>
+</rss>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Writing a new tutorial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.news.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.tutorials.xml">
+
+	
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico">	
+
+    <!-- Our style -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <!-- JQuery and Bootstrap JS (necessary for collapsing navbar) -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" type="text/css" href="/bootstrap/icons/bootstrap-icons.css">
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="/css/katex.css">
+    <script src="/js/katex.min.js"></script>
+
+</head>
+
+
+<body>
+	
+	<div id="header">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo_bw.svg" style="height:2em">Taming the BEAST
+    </a>
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link " aria-current="page" href="/news/">news</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/workshops/">workshops</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/tutorials/">tutorials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  active " href="/contribute/">contribute</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" type="application/rss+xml" href="/feed.news.xml">
+          <i class="bi bi-rss"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</div>
+
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/contribute/Writing-a-new-tutorial/" class="off">Writing a new tutorial</a>
+					</div>
+					<p>
+					<div class="smallhead">
+					  
+                                          01 Nov 2016
+                                          
+						
+						by <a class="off" href="/team/louis-du-plessis/">Louis</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			<div class="post">
+				<p>There are three different types of tutorials that can be contributed to the website:</p>
+
+<ol>
+  <li>Write a new tutorial in Markdown <em>(preferred option)</em></li>
+  <li>Contribute an existing PDF tutorial (with or without the source code)</li>
+  <li>Contribute an existing Wiki tutorial (e.g. a tutorial on GitHub or GitLab)</li>
+</ol>
+
+<p>They are described in more detail below.</p>
+
+<h2 id="writing-a-new-tutorial-in-markdown">Writing a new tutorial in Markdown</h2>
+
+<p>Markdown is our preferred format, because it is the most flexible.
+Markdown is a lightweight, readable markup language that can be easily converted to many different formats. Tutorials written in Markdown can be displayed in html in a web browser or easily converted to printable PDF documents. Because Markdown is very readable, it also makes it easier to maintain and update tutorials.</p>
+
+<p>Tutorials written in Markdown should be saved into the file <code class="language-plaintext highlighter-rouge">README.md</code>. If you write the tutorial in Markdown you do not need to include any PDF files with the tutorial. 
+In the <a href="https://github.com/Taming-the-BEAST/Tutorial-Template">tutorial template repository</a> there is an example tutorial written in Markdown. More Markdown syntax is given in the <a href="/contribute/Style">Markdown style guide</a>.</p>
+
+<p>References can be added to a Markdown tutorial using <a href="/contribute/Jekyll-scholar">Jekyll-scholar</a>. An example is given in the <a href="https://github.com/Taming-the-BEAST/Tutorial-Template">tutorial template repository</a>.</p>
+
+<p>Although you should be able to preview the tutorial by looking at the repository on GitHub, some objects will not be in the correct format, because the website uses a custom stylesheet with a few extra extensions. The best way to preview what the tutorial will look like on the website is to <a href="/contribute/Building-a-local-copy-of-the-site/">build a local copy of the site</a>. Then simply add a link to your tutorial to <code class="language-plaintext highlighter-rouge">config.yml</code> and recompile the website to preview it. (The website will compile faster if you remove all other tutorials from <code class="language-plaintext highlighter-rouge">config.yml</code>).</p>
+
+<h2 id="contributing-an-existing-pdf-tutorial">Contributing an existing PDF tutorial</h2>
+
+<p>Sometimes it may be the case that you already have an existing tutorial for BEAST2 that would be difficult to convert to Markdown. As long as you have a PDF file for the tutorial we can still use it! In this case just add the PDF file to the root of the GitHub project, and write a small description of the tutorial in <code class="language-plaintext highlighter-rouge">README.md</code> and you’re done!</p>
+
+<h2 id="contribute-an-existing-wiki-tutorial">Contribute an existing Wiki tutorial</h2>
+
+<p>If a tutorial is already on a GitHub or GitLab Wiki it should already be written in Markdown and could be ported very easily for Taming the BEAST. Keep in mind that the Taming the BEAST website allows more flexibility for the tutorial style and allows references and figure captions. In addition, the tutorial would be available in a central location with other BEAST2 tutorials, bundled with all the data and XML files needed to run it.</p>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+
+	<div class="footerspacer"></div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group list-group-horizontal">
+        <li class="footernav list-group-item"><a class="foot" href="/about/">about</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/contact/">contact</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/license/">license</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+	
+	<!--div id="footer"><span style="display:none">foo</span></div-->
+		
+</body>
+</html>
+
