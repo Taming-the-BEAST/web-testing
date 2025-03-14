@@ -22,7 +22,8 @@ If you are ready to publish the public version of the website, repeat the same s
 
 #### Using a container
 
-You will have to authenticate to GitHub container registry using your personal access token (YOUR_PA):
+You will have to authenticate to GitHub container registry using your personal access token (YOUR_PA). 
+You need to have repo and read/write packages permissions for the token.
 ```
 export CR_PAT=YOUR_PA
 echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
@@ -33,13 +34,13 @@ docker pull ghcr.io/taming-the-beast/ttb-web-build-env:latest
 ```
 Using this image you can start a new container. To complete all steps successfully you may need to use the run options:
 ```
---env  GITHUB_TOKEN=YOUR_PA -p 4000:4000
+docker run -it --env  GITHUB_TOKEN=YOUR_PA -p 4000:4000 ghcr.io/taming-the-beast/ttb-web-build-env sh
 ```
 
 The first option is required to avoid API request limits and the second one allows you to view the built site on your local machine (the port 4000 on the container is exposed to port 4000 on your local machine).
 
 Withing the container you can build as you would on your local machine (see below), but you should skip step 2 as all required dependencies are installed.
-At step 4 you may need supply the option `--host=0.0.0.0` to be able to view the site.
+At step 4 you may need to supply the option `--host=0.0.0.0` to be able to view the site.
 
 #### Build directly on locally machine
 
@@ -56,7 +57,7 @@ git clone https://github.com/Taming-the-BEAST/blotter.git
 bundle exec jekyll build
 ```
 
-4. To view the site, run `bundle exec jekyll serve` and point a browser to `http://localhost:4000/`.  More information on Jekyll can be found [here](http://jekyllrb.com/).
+4. To view the site, run `bundle exec jekyll serve --host=0.0.0.0` and point a browser to `http://localhost:4000/`. Option `--host=0.0.0.0` may not be needed, depending on your setup.  More information on Jekyll can be found [here](http://jekyllrb.com/).
 
 5. To include the tutorials, preprocessing scripts are necessary to clone tutorial repos and update Jekyll metadata. This can be accomplished with:
 
