@@ -28,17 +28,17 @@
 					&lt;br&gt;&lt;br&gt;
 					Updated on 
 					&lt;a class=&apos;off&apos; href=
-						'https://github.com/Taming-the-BEAST/Troubleshooting-convergence-issues/commit/feb7aad9ed6aa84e28204c6e030b89f5ff8d9af7'
+						'https://github.com/Taming-the-BEAST/Troubleshooting-convergence-issues/commit/a621ed29724bd638b6e3b8b12778e8f6cc291162'
 					&gt;
-						9 Apr 2025
+						14 Apr 2025
 					&lt;/a&gt;
 					by
 					&lt;a class=&apos;off&apos; href=
-						''
+						'https://github.com/bjoelle'
 					&gt;
-						Unknown
+						bjoelle
 					&lt;/a&gt;
-					: added starting tree section
+					: added figures and files for starting tree section
 					&lt;br&gt;&lt;br&gt;
 					Level: Beginner
 					
@@ -46,7 +46,7 @@
 						Requires: BEAST v2.7.x
 					
 				</description>
-				<pubDate>Wed, 09 Apr 2025 14:59:33 +0000</pubDate>
+				<pubDate>Mon, 14 Apr 2025 11:27:22 +0000</pubDate>
 				<category>Beginner</category>
 				<link>https://taming-the-beast.org//tutorials/Troubleshooting-convergence-issues/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Troubleshooting-convergence-issues/</guid>
