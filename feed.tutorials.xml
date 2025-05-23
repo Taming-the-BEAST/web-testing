@@ -12,6 +12,96 @@
 		</image>
 				
 			<item>
+				<title>Visualizing BEAST2 results in R</title>
+				<description>
+					Tutorial on visualising results from BEAST2 analyses.
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Cecilia Valenzuela Agüí
+							
+					
+						
+								
+									and  Ugnė Stolz
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Visualizing-BEAST2-results/commit/cd24ed430e6e6663a32ea49288bee98ed7052c83'
+					&gt;
+						23 May 2025
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/jugne'
+					&gt;
+						jugne
+					&lt;/a&gt;
+					: Update master-refs.bib
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Fri, 23 May 2025 15:59:22 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/Visualizing-BEAST2-results/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Visualizing-BEAST2-results/</guid>
+			</item>
+				
+			<item>
+				<title>Structured birth death model</title>
+				<description>
+					Population structure using the multi-type birth-death model
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Denise Kühnert
+							
+					
+						
+								
+									and  Jūlija Pečerska
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/Structured-birth-death-model/commit/beb0bf8648bc83ed7d4fa97c22f486315ad107a1'
+					&gt;
+						23 May 2025
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/jugne'
+					&gt;
+						jugne
+					&lt;/a&gt;
+					: Fix figure links
+					&lt;br&gt;&lt;br&gt;
+					Level: Professional
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.4
+					
+				</description>
+				<pubDate>Fri, 23 May 2025 15:24:36 +0000</pubDate>
+				<category>Professional</category>
+				<link>https://taming-the-beast.org//tutorials/Structured-birth-death-model/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Structured-birth-death-model/</guid>
+			</item>
+				
+			<item>
 				<title>Introduction to BEAST2</title>
 				<description>
 					This is a simple introductory tutorial to help you get started with using BEAST2 and its accomplices.
@@ -154,53 +244,6 @@ Small summary tree update
 				<category>Beginner</category>
 				<link>https://taming-the-beast.org//tutorials/Prior-selection/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Prior-selection/</guid>
-			</item>
-				
-			<item>
-				<title>Structured birth death model</title>
-				<description>
-					Population structure using the multi-type birth-death model
-					&lt;br&gt;
-					By 
-					
-					
-						
-								Denise Kühnert
-							
-					
-						
-								
-									and  Jūlija Pečerska
-								
-							
-					
-					&lt;br&gt;&lt;br&gt;
-					Updated on 
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/Taming-the-BEAST/Structured-birth-death-model/commit/cd68dfb271359ce2c495644863621d56f701c84a'
-					&gt;
-						22 May 2025
-					&lt;/a&gt;
-					by
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/jugne'
-					&gt;
-						jugne
-					&lt;/a&gt;
-					: Merge pull request #5 from jugne/master
-
-Adding CCD summary tree
-					&lt;br&gt;&lt;br&gt;
-					Level: Professional
-					
-						&lt;br&gt;
-						Requires: BEAST v2.7.4
-					
-				</description>
-				<pubDate>Thu, 22 May 2025 14:21:01 +0000</pubDate>
-				<category>Professional</category>
-				<link>https://taming-the-beast.org//tutorials/Structured-birth-death-model/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Structured-birth-death-model/</guid>
 			</item>
 				
 			<item>
@@ -1084,51 +1127,6 @@ Added local update describing species-tree specification with BEAUti.
 				<category>Intermediate</category>
 				<link>https://taming-the-beast.org//tutorials/Bacter-Tutorial/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Bacter-Tutorial/</guid>
-			</item>
-				
-			<item>
-				<title>SCOTTI Tutorial</title>
-				<description>
-					Transmission tree reconstruction with the structured coalescent
-					&lt;br&gt;
-					By 
-					
-					
-						
-								Louis du Plessis
-							
-					
-						
-								
-									and Nicola de Maio
-								
-							
-					
-					&lt;br&gt;&lt;br&gt;
-					Updated on 
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/Taming-the-BEAST/SCOTTI-Tutorial/commit/12254bfaf2ca38f8db7d8673b8eab744031b77d1'
-					&gt;
-						24 Jul 2017
-					&lt;/a&gt;
-					by
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/laduplessis'
-					&gt;
-						laduplessis
-					&lt;/a&gt;
-					: Update LaTeX tutorial
-					&lt;br&gt;&lt;br&gt;
-					Level: Professional
-					
-						&lt;br&gt;
-						Requires: BEAST v2.4.7
-					
-				</description>
-				<pubDate>Mon, 24 Jul 2017 14:10:26 +0000</pubDate>
-				<category>Professional</category>
-				<link>https://taming-the-beast.org//tutorials/SCOTTI-Tutorial/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/SCOTTI-Tutorial/</guid>
 			</item>
 		
 	</channel>
