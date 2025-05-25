@@ -14,9 +14,9 @@ If you would like to build the website for testing purposes:
   - select `Publish TTB website` action
   - click `Run workflow` and wait for it to finish.
 
-Hopefully, you can see your changes now on the [taming-the-beast.org/web-testing/web-testing/](taming-the-beast.org/web-testing/web-testing/)     
+Hopefully, you can see your changes now on the [taming-the-beast.org/web-testing/](taming-the-beast.org/web-testing/)     
 
-If you are ready to publish the public version of the website, repeat the same steps as above but from the https://github.com/Taming-the-BEAST/Taming-the-BEAST.github.io repository. You should see the changes on the https://taming-the-beast.org/web-testing website.
+If you are ready to publish the public version of the website, repeat the same steps as above but from the https://github.com/Taming-the-BEAST/Taming-the-BEAST.github.io repository. You should see the changes on the https://taming-the-beast.org website.
 
 ### Build site locally
 
