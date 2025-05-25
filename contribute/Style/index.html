@@ -7,26 +7,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- RSS feed -->
-	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/web-testing//feed.news.xml">
-	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/web-testing//feed.tutorials.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/feed.news.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/feed.tutorials.xml">
 
 	
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/images/favicon.ico">	
+    <link rel="shortcut icon" href="/web-testing/images/favicon.ico">	
 
     <!-- Our style -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/web-testing/css/style.css">
 
     <!-- JQuery and Bootstrap JS (necessary for collapsing navbar) -->
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/web-testing/js/jquery-3.6.0.min.js"></script>
+    <script src="/web-testing/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" type="text/css" href="/bootstrap/icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="/web-testing/bootstrap/icons/bootstrap-icons.css">
 
     <!-- KaTeX -->
-    <link rel="stylesheet" href="/css/katex.css">
-    <script src="/js/katex.min.js"></script>
+    <link rel="stylesheet" href="/web-testing/css/katex.css">
+    <script src="/web-testing/js/katex.min.js"></script>
 
 </head>
 
@@ -37,8 +37,8 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     
-    <a class="navbar-brand" href="/">
-      <img src="/images/logo_bw.svg" style="height:2em">Taming the BEAST
+    <a class="navbar-brand" href="/web-testing/">
+      <img src="/web-testing/images/logo_bw.svg" style="height:2em">Taming the BEAST
     </a>
     
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,19 +47,19 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link " aria-current="page" href="/news/">news</a>
+        <a class="nav-link " aria-current="page" href="/web-testing/news/">news</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="/workshops/">workshops</a>
+        <a class="nav-link " href="/web-testing/workshops/">workshops</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="/tutorials/">tutorials</a>
+        <a class="nav-link " href="/web-testing/tutorials/">tutorials</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link  active " href="/contribute/">contribute</a>
+        <a class="nav-link  active " href="/web-testing/contribute/">contribute</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" type="application/rss+xml" href="/feed.news.xml">
+        <a class="nav-link" type="application/rss+xml" href="/web-testing/feed.news.xml">
           <i class="bi bi-rss"></i>
         </a>
       </li>
@@ -81,7 +81,7 @@
 			<div class="media">
 				<div class="media-body">
 					<div class="title media-heading">
-						<a href="/contribute/Style/" class="off">Style</a>
+						<a href="/web-testing/contribute/Style/" class="off">Style</a>
 					</div>
 					<p>
 					<div class="smallhead">
@@ -89,7 +89,7 @@
                                           28 Aug 2016
                                           
 						
-						by <a class="off" href="/team/louis-du-plessis/">Louis</a>
+						by <a class="off" href="/web-testing/team/louis-du-plessis/">Louis</a>
 								
 					</div>
 				</div>
@@ -199,22 +199,22 @@ Superscript contiguous text with carrots like x^2y, surround with parentheses fo
 
 <p>Can always drop in HTML, so sizing adjustments can be done with:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img style="width:50px;" src="/images/logo_bw.svg"/&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img style="width:50px;" src="/web-testing/images/logo_bw.svg"/&gt;
 </code></pre></div></div>
 
-<p><img style="width:50px;" src="/images/logo_bw.svg" /></p>
+<p><img style="width:50px;" src="/web-testing/images/logo_bw.svg" /></p>
 
 <p>To add a caption to an image use the figure tag, like so:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;figure&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/logo_bw.svg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/web-testing/images/logo_bw.svg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"beastie"</span><span class="nt">/&gt;&lt;/a&gt;</span>
   <span class="nt">&lt;figcaption&gt;</span>A rat in a cage.<span class="nt">&lt;/figcaption&gt;</span>
 <span class="nt">&lt;/figure&gt;</span>
 </code></pre></div></div>
 
 <figure>
-  <img src="/images/logo_bw.svg" alt="" />
+  <img src="/web-testing/images/logo_bw.svg" alt="" />
   <figcaption>A rat in a cage.</figcaption>
   <a id="fig:beastie" />&lt;/a&gt;
 </figure>
@@ -374,14 +374,14 @@ Except remove the ` from between { and %.
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[This is an external link to Google](http://www.google.com/)
 
-[This is a relative link to elsewhere in the site](/projects/)
+[This is a relative link to elsewhere in the site](/web-testing/projects/)
 
 [This is a link to a figure on the same page](#fig:beastie)
 </code></pre></div></div>
 
 <p><a href="http://www.google.com/">This is an external link to Google</a></p>
 
-<p><a href="/tutorials/">This is a relative link to elsewhere in the site</a></p>
+<p><a href="/web-testing/tutorials/">This is a relative link to elsewhere in the site</a></p>
 
 <p><a href="#fig:beastie">This is a link to a figure on the same page</a></p>
 
