@@ -24,6 +24,12 @@ jobs:
           repository: Taming-the-BEAST/blotter
           token: ${{secrets.GITHUB_TOKEN}}
           path: blotter
+      - name: Replace in files
+        uses: richardrigutins/replace-in-files@v2.1.11
+        with:
+          files: 'blotter/_config.yml'
+          search-text: 'taming-the-beast.org'
+          replacement-text: 'taming-the-beast.org/web-testing'
       - name: Check out the web repo
         uses: actions/checkout@v3
         with:
@@ -44,12 +50,6 @@ jobs:
           then
             exit 1
           fi
-      - name: Replace in files
-        uses: richardrigutins/replace-in-files@v2.1.11
-        with:
-          files: 'blotter/_site/**/**.*'
-          search-text: 'taming-the-beast.org'
-          replacement-text: 'taming-the-beast.org/web-testing'
       - name: Push changes to site
         run: |
           cp -RT blotter/_site/ website/
