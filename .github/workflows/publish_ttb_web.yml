@@ -44,6 +44,12 @@ jobs:
           then
             exit 1
           fi
+      - name: Replace in files
+        uses: richardrigutins/replace-in-files@v2.1.11
+        with:
+          files: '**'
+          search-text: 'taming-the-beast.org'
+          replacement-text: 'taming-the-beast.org/web-testing'
       - name: Push changes to site
         run: |
           cp -RT blotter/_site/ website/
