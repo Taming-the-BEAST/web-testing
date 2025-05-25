@@ -47,7 +47,7 @@ jobs:
       - name: Replace in files
         uses: richardrigutins/replace-in-files@v2.1.11
         with:
-          files: 'blotter/_site/**.*'
+          files: 'blotter/_site/**/**.*'
           search-text: 'taming-the-beast.org'
           replacement-text: 'taming-the-beast.org/web-testing'
       - name: Push changes to site
