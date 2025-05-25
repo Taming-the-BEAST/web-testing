@@ -21,15 +21,9 @@ jobs:
       - name: Check out the blotter repo
         uses: actions/checkout@v3
         with:
-          repository: Taming-the-BEAST/blotter
+          repository: Taming-the-BEAST/blotter_test
           token: ${{secrets.GITHUB_TOKEN}}
           path: blotter
-      - name: Replace in files
-        uses: richardrigutins/replace-in-files@v2.1.11
-        with:
-          files: 'blotter/_config.yml'
-          search-text: 'taming-the-beast.org'
-          replacement-text: 'taming-the-beast.org/web-testing'
       - name: Check out the web repo
         uses: actions/checkout@v3
         with:
