@@ -3,42 +3,42 @@
 	<channel>
 		<title>Taming the BEAST - News</title>
 		<description>BEAST2 tutorials for the community, by the community!</description>
-		<link>https://taming-the-beast.org</link>
-		<atom:link href="https://taming-the-beast.orgfeed.news.xml" rel="self" type="application/rss+xml" />
+		<link>https://taming-the-beast.org/</link>
+		<atom:link href="https://taming-the-beast.org/feed.news.xml" rel="self" type="application/rss+xml" />
 		<image>
-			<url>https://taming-the-beast.org/images/logo_bw.svg</url>
+			<url>https://taming-the-beast.org//images/logo_bw.svg</url>
 			<title>Taming the BEAST</title>
-			<link>https://taming-the-beast.org/tutorials</link>
+			<link>https://taming-the-beast.org//tutorials</link>
 		</image>
 		
 			<item>
 				<title>Application deadline extended for Taming the BEAST in Beijing!</title>
 				<description>&lt;p&gt;We have extended the application deadline for this year’s Taming the BEAST, taking place at the &lt;a href=&quot;http://www.ivpp.ac.cn/&quot;&gt;IVPP&lt;/a&gt; in &lt;strong&gt;Beijing&lt;/strong&gt; from &lt;strong&gt;July 14 to 18, 2025&lt;/strong&gt;.
-We will be accepting &lt;a href=&quot;/web-testing/forms/Taming-the-BEAST-Beijing/&quot;&gt;applications&lt;/a&gt; until &lt;strong&gt;April 25th, 2025&lt;/strong&gt;! We have also uploaded a &lt;a href=&quot;/web-testing/workshops/Taming-the-BEAST-Beijing&quot;&gt;preliminary programme&lt;/a&gt; for the workshop.&lt;/p&gt;
+We will be accepting &lt;a href=&quot;/forms/Taming-the-BEAST-Beijing/&quot;&gt;applications&lt;/a&gt; until &lt;strong&gt;April 25th, 2025&lt;/strong&gt;! We have also uploaded a &lt;a href=&quot;/workshops/Taming-the-BEAST-Beijing&quot;&gt;preliminary programme&lt;/a&gt; for the workshop.&lt;/p&gt;
 
 &lt;p&gt;Applicants will receive feedback by &lt;strong&gt;May 6th, 2025&lt;/strong&gt; and those with successful applications will then be invited to register for the workshop. 
-For further information visit the &lt;a href=&quot;/web-testing/workshops/Taming-the-BEAST-Beijing&quot;&gt;Taming the BEAST Beijing homepage&lt;/a&gt; or contact the organizing committee at &lt;a href=&quot;mailto:ttb.beijing@ivpp.ac.cn&quot;&gt;ttb.beijing@ivpp.ac.cn&lt;/a&gt;.&lt;/p&gt;
+For further information visit the &lt;a href=&quot;/workshops/Taming-the-BEAST-Beijing&quot;&gt;Taming the BEAST Beijing homepage&lt;/a&gt; or contact the organizing committee at &lt;a href=&quot;mailto:ttb.beijing@ivpp.ac.cn&quot;&gt;ttb.beijing@ivpp.ac.cn&lt;/a&gt;.&lt;/p&gt;
 
 </description>
 				<pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Deadline-extended/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Deadline-extended/</guid>
+				<link>https://taming-the-beast.org//news/Deadline-extended/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Deadline-extended/</guid>
 			</item>
 		
 			<item>
 				<title>Applications Open for Taming the BEAST in Beijing, 2025!</title>
 				<description>&lt;p&gt;We are very happy to announce that applications for the next Taming
 the BEAST workshop, to be held at the &lt;a href=&quot;http://www.ivpp.ac.cn/&quot;&gt;IVPP&lt;/a&gt; in &lt;strong&gt;Bejing, China&lt;/strong&gt; are
-&lt;a href=&quot;/web-testing/forms/Taming-the-BEAST-Beijing/&quot;&gt;now open&lt;/a&gt;!&lt;/p&gt;
+&lt;a href=&quot;/forms/Taming-the-BEAST-Beijing/&quot;&gt;now open&lt;/a&gt;!&lt;/p&gt;
 
 &lt;p&gt;The workshop will take place from &lt;strong&gt;July 14 to 18, 2025&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;For further information visit the &lt;a href=&quot;/web-testing/workshops/Taming-the-BEAST-Beijing&quot;&gt;Taming the BEAST Beijing homepage&lt;/a&gt; or contact the organizing committee at &lt;a href=&quot;mailto:ttb.beijing@ivpp.ac.cn&quot;&gt;ttb.beijing@ivpp.ac.cn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For further information visit the &lt;a href=&quot;/workshops/Taming-the-BEAST-Beijing&quot;&gt;Taming the BEAST Beijing homepage&lt;/a&gt; or contact the organizing committee at &lt;a href=&quot;mailto:ttb.beijing@ivpp.ac.cn&quot;&gt;ttb.beijing@ivpp.ac.cn&lt;/a&gt;.&lt;/p&gt;
 
 </description>
 				<pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Beijing-applications-open/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Beijing-applications-open/</guid>
+				<link>https://taming-the-beast.org//news/Beijing-applications-open/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Beijing-applications-open/</guid>
 			</item>
 		
 			<item>
@@ -51,14 +51,14 @@ The registration fee is set to &lt;strong&gt;1500 CNY&lt;/strong&gt; (approx 200
 &lt;p&gt;For any further questions, please contact the organizing committee at &lt;a href=&quot;mailto:ttb.beijing@ivpp.ac.cn&quot;&gt;ttb.beijing@ivpp.ac.cn&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-Beijing-Flyer.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-Beijing-Flyer.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 </description>
 				<pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-Beijing/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-Beijing/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-Beijing/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-Beijing/</guid>
 			</item>
 		
 			<item>
@@ -68,8 +68,8 @@ The registration fee is set to &lt;strong&gt;1500 CNY&lt;/strong&gt; (approx 200
 &lt;p&gt;The workshop will take place from &lt;strong&gt;August 14 to 18, 2023.&lt;/strong&gt; For information on the venue, please visit the &lt;a href=&quot;https://ttbcanada.ca&quot;&gt;Squamish BEAST Tamers website&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/SBT-programme/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/SBT-programme/</guid>
+				<link>https://taming-the-beast.org//news/SBT-programme/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/SBT-programme/</guid>
 			</item>
 		
 			<item>
@@ -81,8 +81,8 @@ The registration fee is set to &lt;strong&gt;1500 CNY&lt;/strong&gt; (approx 200
 &lt;p&gt;For more information on the course and to register, visit the &lt;a href=&quot;https://www.transmittingscience.com/courses/evolution/bayesian-phylogenetic-inference-with-beast2/&quot;&gt;Transmitting Science website&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Transmitting_Science/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Transmitting_Science/</guid>
+				<link>https://taming-the-beast.org//news/Transmitting_Science/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Transmitting_Science/</guid>
 			</item>
 		
 			<item>
@@ -96,19 +96,19 @@ which will again be held in Squamish, BC.&lt;/p&gt;
 
 &lt;p&gt;Details on the programme will be posted here as soon as they are available, so check back often for updates!&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-SBT-Flyer.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-SBT-Flyer.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-SBT/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-SBT/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-SBT/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-SBT/</guid>
 			</item>
 		
 			<item>
 				<title>Taming the BEAST Online 2021 wrap up</title>
 				<description>&lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-Online.png&quot; alt=&quot;&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-Online.png&quot; alt=&quot;&quot; /&gt;
 	&lt;figcaption&gt;Teachers and participants of Taming the BEAST 2021 Online.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -120,8 +120,8 @@ challenges of the online format.  This was a very unique, enjoyable
 and productive event!&lt;/p&gt;
 </description>
 				<pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Online-wrap-up/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Online-wrap-up/</guid>
+				<link>https://taming-the-beast.org//news/Online-wrap-up/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Online-wrap-up/</guid>
 			</item>
 		
 			<item>
@@ -130,8 +130,8 @@ and productive event!&lt;/p&gt;
 available on the &lt;a href=&quot;/workshops/Taming-the-BEAST-Online/&quot;&gt;TTB Online workshop page&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Online-programme/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Online-programme/</guid>
+				<link>https://taming-the-beast.org//news/Online-programme/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Online-programme/</guid>
 			</item>
 		
 			<item>
@@ -148,8 +148,8 @@ the Taming the BEAST Online
 registration page&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/TTB-Online-Fee-Exemptions/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/TTB-Online-Fee-Exemptions/</guid>
+				<link>https://taming-the-beast.org//news/TTB-Online-Fee-Exemptions/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/TTB-Online-Fee-Exemptions/</guid>
 			</item>
 		
 			<item>
@@ -161,13 +161,13 @@ registration page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For further information, including registration fees and information on how to apply, visit the &lt;a href=&quot;https://bsse.ethz.ch/cevo/taming-the-beast/overview-2021.html&quot;&gt;cEvo Taming the BEAST Online homepage&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-Online-Flyer.jpg&quot; alt=&quot;Flyer&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-Online-Flyer.jpg&quot; alt=&quot;Flyer&quot; /&gt;
 &lt;/figure&gt;
 
 </description>
 				<pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-Online/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-Online/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-Online/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-Online/</guid>
 			</item>
 		
 			<item>
@@ -178,8 +178,8 @@ interest in the workshop, and will announce plans for the next
 workshop in 2021 as they become available.&lt;/p&gt;
 </description>
 				<pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-2020-cancelled/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-2020-cancelled/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-2020-cancelled/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-2020-cancelled/</guid>
 			</item>
 		
 			<item>
@@ -190,8 +190,8 @@ everyone for the widespread interest in this workshop, and will
 announce a revised schedule for the workshop as soon as possible.&lt;/p&gt;
 </description>
 				<pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-2020-postponed/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-2020-postponed/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-2020-postponed/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-2020-postponed/</guid>
 			</item>
 		
 			<item>
@@ -201,8 +201,8 @@ announce a revised schedule for the workshop as soon as possible.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Reminder:&lt;/strong&gt; Registration closes on March 1, so if you haven’t registered already you’ll need to get in quickly!  Registration is via &lt;a href=&quot;https://bsse.ethz.ch/cevo/taming-the-beast/overview-2020/registration.html&quot;&gt;this web page&lt;/a&gt;.  (Registration does not require payment, you will only be invoiced when your application is approved.)&lt;/p&gt;
 </description>
 				<pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-2020-programme/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-2020-programme/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-2020-programme/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-2020-programme/</guid>
 			</item>
 		
 			<item>
@@ -218,13 +218,13 @@ Computational Evolution Group, &lt;a href=&quot;https://www.bsse.ethz.ch/cevo&qu
 &lt;p&gt;For further information visit the &lt;a href=&quot;https://www.bsse.ethz.ch/cevo/taming-the-beast/overview-2020.html&quot;&gt;cEvo Taming the BEAST 2020 homepage&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-2020-Flyer.jpg&quot; alt=&quot;TTB Flyer with background showing beautiful Oberaegeri and giving the link to the registration site.&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-2020-Flyer.jpg&quot; alt=&quot;TTB Flyer with background showing beautiful Oberaegeri and giving the link to the registration site.&quot; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-2020-reg-open/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-2020-reg-open/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-2020-reg-open/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-2020-reg-open/</guid>
 			</item>
 		
 			<item>
@@ -243,14 +243,14 @@ Computational Evolution Group, &lt;a href=&quot;https://www.bsse.ethz.ch/cevo&qu
 &lt;p&gt;Check back often for updates!&lt;/p&gt;
 </description>
 				<pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-2020/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-2020/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-2020/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-2020/</guid>
 			</item>
 		
 			<item>
 				<title>Squamish wrap up eh!</title>
 				<description>&lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-Eh-GroupPhoto.jpg&quot; alt=&quot;Group Photo&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-Eh-GroupPhoto.jpg&quot; alt=&quot;Group Photo&quot; /&gt;
 	&lt;figcaption&gt;The workshop organisers and participants of Taming the
     BEAST Eh at Quest University in Squamish, British Columbia.&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -259,11 +259,11 @@ Computational Evolution Group, &lt;a href=&quot;https://www.bsse.ethz.ch/cevo&qu
 &lt;p&gt;The sixth Taming the BEAST workshop was held last week at Quest University in Squamish, British Columbia. Thanks to all of the invited speakers, instructors and participants for making it a very enjoyable experience! I hope all of the participants enjoyed it as much as we did! A huge thank you also to Francois Cholette and Jeffrey Joy for organising a fantastic workshop in a stunning location!&lt;/p&gt;
 
 &lt;p&gt;The lecture slides and tutorials used during the workshop are available online from the
-links displayed on the &lt;a href=&quot;/web-testing/workshops/Taming-the-BEAST-Squamish/&quot;&gt;workshop programme&lt;/a&gt;.&lt;/p&gt;
+links displayed on the &lt;a href=&quot;/workshops/Taming-the-BEAST-Squamish/&quot;&gt;workshop programme&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Squamish-wrap-up-Eh/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Squamish-wrap-up-Eh/</guid>
+				<link>https://taming-the-beast.org//news/Squamish-wrap-up-Eh/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Squamish-wrap-up-Eh/</guid>
 			</item>
 		
 			<item>
@@ -272,27 +272,27 @@ links displayed on the &lt;a href=&quot;/web-testing/workshops/Taming-the-BEAST-
 now available on the &lt;a href=&quot;/workshops/Taming-the-BEAST-Squamish/&quot;&gt;TTB Eh! workshop page&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/TTB-Canada-Programme/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/TTB-Canada-Programme/</guid>
+				<link>https://taming-the-beast.org//news/TTB-Canada-Programme/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/TTB-Canada-Programme/</guid>
 			</item>
 		
 			<item>
 				<title>Taming the BEAST Canada webpage launched!</title>
 				<description>&lt;p&gt;The official webpage for the upcoming Taming the BEAST workshop in Squamish this
 year is &lt;a href=&quot;https://ttbcanada.ca/&quot;&gt;now live&lt;/a&gt;!  You can also access this link directly
-from the &lt;a href=&quot;/web-testing/workshops&quot;&gt;workshops page&lt;/a&gt;.&lt;/p&gt;
+from the &lt;a href=&quot;/workshops&quot;&gt;workshops page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/TTB-Canada-Website/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/TTB-Canada-Website/</guid>
+				<link>https://taming-the-beast.org//news/TTB-Canada-Website/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/TTB-Canada-Website/</guid>
 			</item>
 		
 			<item>
 				<title>TTB Down Under wrap up</title>
 				<description>&lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-Down-Under-GroupPhoto.jpg&quot; alt=&quot;Group Photo&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-Down-Under-GroupPhoto.jpg&quot; alt=&quot;Group Photo&quot; /&gt;
 	&lt;figcaption&gt;The workshop organisers and participants in the Charles Perkins Centre at the University of Sydney.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -302,11 +302,11 @@ An enormous thank you goes to all of the speakers and participants for making th
 such an enjoyable and productive event!&lt;/p&gt;
 
 &lt;p&gt;All of the lecture slides and tutorials used during the workshop are available online from the
-links displayed on the &lt;a href=&quot;/web-testing/workshops/Taming-the-BEAST-Down-Under/&quot;&gt;workshop programme&lt;/a&gt;.&lt;/p&gt;
+links displayed on the &lt;a href=&quot;/workshops/Taming-the-BEAST-Down-Under/&quot;&gt;workshop programme&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-Down-Under-wrap-up/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-Down-Under-wrap-up/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-Down-Under-wrap-up/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-Down-Under-wrap-up/</guid>
 			</item>
 		
 			<item>
@@ -321,13 +321,13 @@ Centre.&lt;/p&gt;
 &lt;p&gt;Check back often for updates!&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-Squamish-Flyer.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-Squamish-Flyer.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Sun, 17 Feb 2019 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/TTB-Canada/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/TTB-Canada/</guid>
+				<link>https://taming-the-beast.org//news/TTB-Canada/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/TTB-Canada/</guid>
 			</item>
 		
 			<item>
@@ -336,8 +336,8 @@ Centre.&lt;/p&gt;
 available on the &lt;a href=&quot;/workshops/Taming-the-BEAST-Down-Under/&quot;&gt;TTB Down Under workshop page&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/TTBDU_Programme_Final/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/TTBDU_Programme_Final/</guid>
+				<link>https://taming-the-beast.org//news/TTBDU_Programme_Final/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/TTBDU_Programme_Final/</guid>
 			</item>
 		
 			<item>
@@ -346,8 +346,8 @@ available on the &lt;a href=&quot;/workshops/Taming-the-BEAST-Down-Under/&quot;&
 available on the &lt;a href=&quot;/workshops/Taming-the-BEAST-Down-Under/&quot;&gt;TTB Down Under workshop page&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-Down-Under-programme/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-Down-Under-programme/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-Down-Under-programme/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-Down-Under-programme/</guid>
 			</item>
 		
 			<item>
@@ -367,19 +367,19 @@ or refer to the flyer below.&lt;/p&gt;
 &lt;p&gt;Check back often for updates!&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-Down-Under-Flyer.jpg&quot; alt=&quot;Flyer&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-Down-Under-Flyer.jpg&quot; alt=&quot;Flyer&quot; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Taming-the-BEAST-Down-Under/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Taming-the-BEAST-Down-Under/</guid>
+				<link>https://taming-the-beast.org//news/Taming-the-BEAST-Down-Under/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Taming-the-BEAST-Down-Under/</guid>
 			</item>
 		
 			<item>
 				<title>TTB Oberägeri wrap up</title>
 				<description>&lt;figure&gt;
-	&lt;img src=&quot;/web-testing/images/workshops/Taming-the-BEAST-Oberageri_GroupPhoto.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;img src=&quot;/images/workshops/Taming-the-BEAST-Oberageri_GroupPhoto.jpg&quot; alt=&quot;&quot; /&gt;
 	&lt;figcaption&gt;The workshop organisers and participants of Taming the
     BEAST 2018 in Oberägeri, Switzerland.&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -390,8 +390,8 @@ Switzerland.  An enormous thank you goes to all of the speakers and
 participants for making this such an enjoyable and productive event!&lt;/p&gt;
 </description>
 				<pubDate>Sun, 24 Jun 2018 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Oberaegeri-wrap-up/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Oberaegeri-wrap-up/</guid>
+				<link>https://taming-the-beast.org//news/Oberaegeri-wrap-up/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Oberaegeri-wrap-up/</guid>
 			</item>
 		
 			<item>
@@ -400,8 +400,8 @@ participants for making this such an enjoyable and productive event!&lt;/p&gt;
 available on the &lt;a href=&quot;/workshops/Taming-the-BEAST-2018/&quot;&gt;Oberägeri workshop page&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Tue, 08 May 2018 00:00:00 +0000</pubDate>
-				<link>https://taming-the-beast.org/news/Oberaegeri-programme/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org/news/Oberaegeri-programme/</guid>
+				<link>https://taming-the-beast.org//news/Oberaegeri-programme/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//news/Oberaegeri-programme/</guid>
 			</item>
 		
 	</channel>
