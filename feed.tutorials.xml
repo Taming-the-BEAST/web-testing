@@ -28,7 +28,7 @@
 					&lt;br&gt;&lt;br&gt;
 					Updated on 
 					&lt;a class=&apos;off&apos; href=
-						'https://github.com/Taming-the-BEAST/Mascot-Tutorial/commit/fdf70c24adb5d1d9fa2c88447843643e9fe7dc90'
+						'https://github.com/Taming-the-BEAST/Mascot-Tutorial/commit/9d477c650c14be25ae9ac0d5db961cf32379a54f'
 					&gt;
 						2 Jun 2025
 					&lt;/a&gt;
@@ -38,9 +38,7 @@
 					&gt;
 						jugne
 					&lt;/a&gt;
-					: Merge pull request #3 from sgtRoberty/master
-
-Update MASCOT tutorial
+					: Update README.md
 					&lt;br&gt;&lt;br&gt;
 					Level: Intermediate
 					
@@ -48,7 +46,7 @@ Update MASCOT tutorial
 						Requires: BEAST v2.7.x
 					
 				</description>
-				<pubDate>Mon, 02 Jun 2025 14:21:23 +0000</pubDate>
+				<pubDate>Mon, 02 Jun 2025 14:36:36 +0000</pubDate>
 				<category>Intermediate</category>
 				<link>https://taming-the-beast.org/tutorials/Mascot-Tutorial/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org/tutorials/Mascot-Tutorial/</guid>
