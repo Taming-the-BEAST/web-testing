@@ -246,6 +246,16 @@
 				
 			<div class="smallspacer"></div>				
 			<div>
+				<a class="off" href="https://github.com/jugne">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/26361891?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;">
+    				jugne
+    			</div>
+ 				</a>
+ 			</div>			
+ 				
+			<div class="smallspacer"></div>				
+			<div>
 				<a class="off" href="https://github.com/laduplessis">
     			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/8872277?v=4&s=50">
     			<div class="handlebox" style="padding-left:5px;">
@@ -260,16 +270,6 @@
     			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/512538?v=4&s=50">
     			<div class="handlebox" style="padding-left:5px;">
     				tgvaughan
-    			</div>
- 				</a>
- 			</div>			
- 				
-			<div class="smallspacer"></div>				
-			<div>
-				<a class="off" href="https://github.com/jugne">
-    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/26361891?v=4&s=50">
-    			<div class="handlebox" style="padding-left:5px;">
-    				jugne
     			</div>
  				</a>
  			</div>			
@@ -305,6 +305,14 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-check-square"></i>
+					<a class="off" href="https://github.com/Taming-the-BEAST/Mascot-Tutorial/commit/6d5b9b8e19ee78fcacc3f3632903672d759523cd">
+					02 Jun 2025 - <span class="text-gray">Revert bullet points</span>
+					</a> 
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
 					<a class="off" href="https://github.com/Taming-the-BEAST/Mascot-Tutorial/commit/9d477c650c14be25ae9ac0d5db961cf32379a54f">
 					02 Jun 2025 - <span class="text-gray">Update README.md</span>
 					</a> 
@@ -333,16 +341,6 @@ Update MASCOT tutorial</span>
 					<i class="bi bi-check-square"></i>
 					<a class="off" href="https://github.com/Taming-the-BEAST/Mascot-Tutorial/commit/8239c32f6a5465ecaaa1eb9916f25e6f00e35799">
 					02 Jun 2025 - <span class="text-gray">Update README.md, fix output file names, add new MCMC results and screenshots</span>
-					</a> 
-				</li>
-			
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-check-square"></i>
-					<a class="off" href="https://github.com/Taming-the-BEAST/Mascot-Tutorial/commit/a009dcbebb0eb3a3f73a454e7d2eb8a363b59ede">
-					23 May 2025 - <span class="text-gray">Merge pull request #2 from jugne/master
-
-Adding CCD0 summary trees</span>
 					</a> 
 				</li>
 			
@@ -677,26 +675,10 @@ Adding CCD0 summary trees</span>
 <p>This error can have different origins and a likely incomplete list is the following:</p>
 
 <ul>
-  <li>The prior on <strong>migration rates</strong> puts too much weight on really <strong>high</strong> rates.
-    <ul>
-      <li>To fix this, reconsider your prior on the migration rates. Particularly, check if the prior on the migration rates makes sense in comparison to the height of the tree. If, for example, the tree has a height of 1000 years, but the prior on the migration rate is exponential with mean 1, then the prior assumption is that between any two states, we expect approximately 1000 migration events.</li>
-    </ul>
-  </li>
-  <li>The prior on the <strong>effective population sizes</strong> is too <strong>low</strong>.
-    <ul>
-      <li>This means that the prior on the coalescent rate (1 over the effective population size) is too high. This can occur when the prior on the effective population size was chosen to be 1/X. To fix, reconsider your prior on the effective population size.</li>
-    </ul>
-  </li>
-  <li>There are substantial changes of effective population sizes and/or migration rates over time that are not modelled.
-    <ul>
-      <li>In that case, changes in the effective population sizes or migration rates have to be explained by population structure, which can again lead to some very low effective population sizes and very high migration rates. There is unfortunately not much that can be done here since MASCOT is not an appropriate model for the dataset.</li>
-    </ul>
-  </li>
-  <li>There is strong sub-population structure within the populations we assgined.
-    <ul>
-      <li>In that case, reconsider if the individual populations used are reasonable.</li>
-    </ul>
-  </li>
+  <li>The prior on <strong>migration rates</strong> puts too much weight on really <strong>high</strong> rates. To fix this, reconsider your prior on the migration rates. Particularly, check if the prior on the migration rates makes sense in comparison to the height of the tree. If, for example, the tree has a height of 1000 years, but the prior on the migration rate is exponential with mean 1, then the prior assumption is that between any two states, we expect approximately 1000 migration events.</li>
+  <li>The prior on the <strong>effective population sizes</strong> is too <strong>low</strong>. This means that the prior on the coalescent rate (1 over the effective population size) is too high. This can occur when the prior on the effective population size was chosen to be 1/X. To fix, reconsider your prior on the effective population size.</li>
+  <li>There are substantial changes of effective population sizes and/or migration rates over time that are not modelled. In that case, changes in the effective population sizes or migration rates have to be explained by population structure, which can again lead to some very low effective population sizes and very high migration rates. There is unfortunately not much that can be done here since MASCOT is not an appropriate model for the dataset.</li>
+  <li>There is strong sub-population structure within the populations we assgined. In that case, reconsider if the individual populations used are reasonable.</li>
 </ul>
 
 <hr />
