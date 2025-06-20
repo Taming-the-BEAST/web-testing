@@ -9566,6 +9566,8 @@ table td.padding {
 }
 
 /** Base **/
+/** These two break bullet/list padding **/
+/**
 *,
 ::before,
 ::after {
@@ -9578,6 +9580,7 @@ table td.padding {
   padding: 0;
 }
 
+**/
 body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--font-family-body);
