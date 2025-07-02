@@ -280,6 +280,14 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-check-square"></i>
+					<a class="off" href="https://github.com/bethany-j-allen/Total-Evidence-Tutorial/commit/77cda43284e960b1c83ecefbee2d28f15fc523ee">
+					02 Jul 2025 - <span class="text-gray">typo hunting and splitting instruction boxes</span>
+					</a> 
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
 					<a class="off" href="https://github.com/bethany-j-allen/Total-Evidence-Tutorial/commit/4f8aa6ec5f79110e5095e3ad14f5b621a43f2579">
 					30 Jun 2025 - <span class="text-gray">Add precooked runs</span>
 					</a> 
@@ -306,14 +314,6 @@
 					<i class="bi bi-check-square"></i>
 					<a class="off" href="https://github.com/bethany-j-allen/Total-Evidence-Tutorial/commit/efdbe6851039c8d51e5514937dcd8238cf48a510">
 					28 Jun 2025 - <span class="text-gray">Draft BEAUti figures and XMLs</span>
-					</a> 
-				</li>
-			
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-check-square"></i>
-					<a class="off" href="https://github.com/bethany-j-allen/Total-Evidence-Tutorial/commit/26e98163e35d6556264903d6b07eb6c23ff29d1c">
-					27 Jun 2025 - <span class="text-gray">Add Joëlle as author</span>
 					</a> 
 				</li>
 			
@@ -352,7 +352,7 @@
 
 <p><a href="http://beast.community/tracer">Tracer</a> is used to summarise the posterior estimates of the various parameters sampled by the Markov Chain. This program can be used for visual inspection and to assess convergence. It helps to quickly view median estimates and 95% highest posterior density intervals of the parameters, and calculates the effective sample sizes (ESS) of parameters. It can also be used to investigate potential parameter correlations. We will be using Tracer v1.7.x.</p>
 
-<p>###TreeAnnotator</p>
+<h3 id="treeannotator">TreeAnnotator</h3>
 
 <p>TreeAnnotator is used to summarise the posterior sample of trees to produce a maximum clade credibility tree and summarize the posterior estimates of other parameters that can be easily visualized on the tree (e.g. node height). This program is also useful for comparing a specific tree topology and branching times to the set of trees sampled in the MCMC analysis.</p>
 
@@ -370,7 +370,7 @@
 <ul>
   <li>Learn how to read morphological data into BEAST2;</li>
   <li>Understand the differences between how BEAST2 treats morphological and genetic data;</li>
-  <li>Practise visualising total-evidence phylogenies.</li>
+  <li>Practice visualising total-evidence phylogenies.</li>
 </ul>
 
 <h2 id="the-data">The data</h2>
@@ -442,7 +442,8 @@
 <p>First, we will load in our genetic data. This should be familiar to you if you have completed any of the other tutorials.</p>
 
 <blockquote>
-  <p>Navigate to <strong>File &gt; Import Alignment</strong>. Select <code class="language-plaintext highlighter-rouge">Osmundaceae_dna.nex</code> and select <strong>Open</strong>.</p>
+  <p>Navigate to <strong>File &gt; Import Alignment</strong>. 
+Select <code class="language-plaintext highlighter-rouge">Osmundaceae_dna.nex</code> and select <strong>Open</strong>.</p>
 </blockquote>
 
 <p>We can now see this dataset listed in our <strong>Partitions</strong> tab. We can see that the dataset contains 33 <strong>Taxa</strong> and 8628 <strong>Sites</strong>, and has the <strong>Data Type</strong> “nucleotide”: this corresponds to the information we saw in the <code class="language-plaintext highlighter-rouge">nexus</code> header, so it seems the data have been read in correctly.</p>
@@ -456,7 +457,8 @@
 <p>Next, we will read in our morphological data.</p>
 
 <blockquote>
-  <p>Navigate to <strong>File &gt; Add Morphological Data</strong>. Select <code class="language-plaintext highlighter-rouge">Osmundaceae_morph.nex</code> and select <strong>Open</strong>.</p>
+  <p>Navigate to <strong>File &gt; Add Morphological Data</strong>. 
+Select <code class="language-plaintext highlighter-rouge">Osmundaceae_morph.nex</code> and select <strong>Open</strong>.</p>
 </blockquote>
 
 <p>We now see a window asking whether we would like to “condition on recording variable characters only (Mkv)”. This choice determines how the model treats the data with respect to <strong>invariant sites</strong>.</p>
@@ -492,7 +494,9 @@
 <p>The following column defines the tree settings. We want to infer a single tree which is informed by both the genetic and morphological data, so we will link all three trees.</p>
 
 <blockquote>
-  <p>In the <strong>Tree</strong> column, click on the name <strong>Osmundaceae_dna</strong>. Type in <strong>tree</strong> and hit enter. Using the drop-down menus, change the tree to <strong>tree</strong> for both of the morphological partitions.</p>
+  <p>In the <strong>Tree</strong> column, click on the name <strong>Osmundaceae_dna</strong>. 
+Type in <strong>tree</strong> and hit enter. 
+Using the drop-down menus, change the tree to <strong>tree</strong> for both of the morphological partitions.</p>
 </blockquote>
 
 <figure>
@@ -522,9 +526,13 @@
 <p>While it is possible to enter these age values manually, it is easier to specify them within our <code class="language-plaintext highlighter-rouge">nexus</code> file, which is what we have done here. Each tip label ends with an underscore followed by a number, and this number is the age, in millions of years, which we would like for the initial age of that tip. We will read these into the table.</p>
 
 <blockquote>
-  <p>Ensure that the switch at the top for <strong>Dates specified</strong> is set to <strong>numerically as… year</strong>. Change the second drop-down menu from <strong>Since some time in the past</strong> to <strong>Before the present</strong>. Then select <strong>Auto-configure</strong>.</p>
+  <p>Ensure that the switch at the top for <strong>Dates specified</strong> is set to <strong>numerically as… year</strong>. 
+Change the second drop-down menu from <strong>Since some time in the past</strong> to <strong>Before the present</strong>. 
+Then select <strong>Auto-configure</strong>.</p>
 
-  <p>Ensure that the switch is set to <strong>use everything</strong>. Change the drop-down to <strong>after last</strong>, and ensure that the text box contains a single underscore, <code class="language-plaintext highlighter-rouge">_</code>. Select <strong>OK</strong>.</p>
+  <p>Ensure that the switch is set to <strong>use everything</strong>. 
+Change the drop-down to <strong>after last</strong>, and ensure that the text box contains a single underscore, <code class="language-plaintext highlighter-rouge">_</code>. 
+Select <strong>OK</strong>.</p>
 </blockquote>
 
 <figure>
@@ -552,7 +560,9 @@
 <p>We can see that our three partitions are listed in the table on the left, with the genetic data listed first. Here we will keep this model simple, but we recommend dipping into the other tutorials for more advice on how to set up site models for genetic sequence data.</p>
 
 <blockquote>
-  <p>Set the <strong>Gamma Category Count</strong> to <strong>4</strong>, leaving the settings for the shape of the gamma distribution to the defaults. Change the substitution model to <strong>HKY</strong>, leaving the initial <strong>Kappa</strong> value at <strong>2.0</strong> but <strong>estimated</strong>, as well as the <strong>Frequencies</strong>.</p>
+  <p>Set the <strong>Gamma Category Count</strong> to <strong>4</strong>, leaving the settings for the shape of the gamma distribution to the defaults. 
+Change the substitution model to <strong>HKY</strong>, leaving the initial <strong>Kappa</strong> value at <strong>2.0</strong>.
+Set the <strong>Kappa</strong> and the <strong>Frequencies</strong> parameters to <strong>estimated</strong>.</p>
 </blockquote>
 
 <figure>
@@ -575,7 +585,7 @@
 
 <p>In brief, what is the Lewis Mk model? It is the **Markov <em>k</em>-states model described by <a class="citation" href="#Lewis2001">(Lewis, 2001)</a>. For those who are familiar with genetic substitution models, it is the morphological equivalent of the Jukes-Cantor 69 model. The model assumes that all character state transitions are just as likely as each other. For genetic sequences, this means that an A base is equally likely to transition to a G, C, or T.</p>
 
-<p>In morphological evolution, this means several important things. Our Lewis MK model assumes that the transition from 0 to 1 is just as likely as the transition from 1 to 0 <a class="citation" href="#Lewis2001">(Lewis, 2001)</a>. If a character represents whether a complex evolutionary feature is present or not, our transitions therefore represent acquisition and loss. We might think it is much harder to lose such a character than to gain it: that would be a violation of this model. Further, the model assumes that, for example, the transition from 0 to 1 is just as likely as the transition from 0 to 2. This means that we assume character states have been coded as independent entities, but if these states are actually ordered (0 must transition to 1, then 1 must transition to 2), this is also a violation of the model. Understanding how the morphological characters have been coded, and whether any violations exist between these thought processes and the way in which the site model operates, is therefore fundamental to determining how well the site model will perform, and potentially how accurate our inferred phylogeny is <a class="citation" href="#Goloboff2019">(Goloboff et al., 2019)</a><a class="citation" href="#Mulvey2025b">(Mulvey et al., 2025)</a>.</p>
+<p>In morphological evolution, this means several important things. Our Lewis MK model assumes that the transition from 0 to 1 is just as likely as the transition from 1 to 0 <a class="citation" href="#Lewis2001">(Lewis, 2001)</a>. If a character represents whether a complex evolutionary feature is present or not, our transitions therefore represent acquisition and loss. We might think it is much harder to lose such a character than to gain it: that would be a violation of this model. Further, the model assumes that, for example, the transition from 0 to 1 is just as likely as the transition from 0 to 2. This means that we assume character states have been coded as independent entities, but if these states are actually ordered (0 must transition to 1, then 1 must transition to 2), this is also a violation of the model. Understanding how the morphological characters have been coded, and whether any violations exist between these thought processes and the way in which the site model operates, is therefore fundamental to determining how well the site model will perform, and potentially how accurate our inferred phylogeny is <a class="citation" href="#Goloboff2019">(Goloboff et al., 2019; Mulvey et al., 2025)</a>.</p>
 
 <p>Now we can return to our earlier question: why was the morphological data split into two partitions? Under the Lewis Mk model, we know that for each morphological character, our transition matrix is dependent on the number of states, <em>k</em>, which that character can take. As a result, <code class="language-plaintext highlighter-rouge">Osmundaceae_morph2</code> contains all characters with two possible states, and <code class="language-plaintext highlighter-rouge">Osmundaceae_morph3</code> contains all characters with three possible states. In order to determine these partitions, BEAST2 automatically uses the number of character states present in the dataset for each character. This means that if a character is only represented by 0 or 1 in the dataset, BEAST2 assumes that there is no “secret” state 2.</p>
 
@@ -632,7 +642,8 @@
 <p>The next two priors describe the clock rate parameters for the molecular and morphological data. We expect these values to be fairly low, so we will change both to exponential priors with a mean of 1.0.</p>
 
 <blockquote>
-  <p>In the drop-down box next to <strong>clockRate.c:Osmundaceae_dna</strong>, select an <strong>Exponential</strong> distribution. By default, this should have a mean of 1.0; you can check this using the triangle on the left to see the extended options. Repeat this for <strong>clockRate.c:Osmundaceae_morph</strong>.</p>
+  <p>In the drop-down box next to <strong>clockRate.c:Osmundaceae_dna</strong>, select an <strong>Exponential</strong> distribution. By default, this should have a mean of 1.0; you can check this using the triangle on the left to see the extended options. 
+Repeat this for <strong>clockRate.c:Osmundaceae_morph</strong>.</p>
 </blockquote>
 
 <figure>
@@ -654,7 +665,8 @@
 <p>It is important for us to choose a more meaningful prior here, to ensure that the timescale of our phylogeny fits our prior knowledge. For example, we can check the <a href="https://paleobiodb.org/#/">Paleobiology Database</a>, a large open-access database of fossil occurrences. A search for the family <strong>Osmundaceae</strong> tells us that the oldest fossils in the database are from the <a href="https://paleobiodb.org/classic/basicTaxonInfo?taxon_no=54780">Carboniferous</a>, which corresponds to an age of around 360 to 300 million years ago. This is substantially older than the oldest fossil in our phylogeny. It is also older than the root age inferred in the original paper by <a class="citation" href="#Grimm2015">(Grimm et al., 2015)</a>, which corresponds to the Permian-Triassic boundary, 250 million years ago. To permit all of these options but exclude more extreme values, we will change the limits on our <strong>uniform distribution</strong> to correspond to the start of the Carboniferous, and the middle of the Triassic.</p>
 
 <blockquote>
-  <p>Change the <strong>Upper</strong> limit of the uniform distribution to <strong>360</strong>, and the <strong>Lower</strong> limit to <strong>230</strong>. Click the <strong>initial = ** button to view the starting values, and change the **Value</strong> to <strong>250</strong>, before clicking <strong>Ok</strong>.</p>
+  <p>Change the <strong>Upper</strong> limit of the uniform distribution to <strong>360</strong>, and the <strong>Lower</strong> limit to <strong>230</strong>. 
+Click the <strong>initial =</strong> button to view the starting values, and change the <strong>Value</strong> to <strong>250</strong>, then click <strong>OK</strong>.</p>
 </blockquote>
 
 <figure>
@@ -666,7 +678,8 @@
 <p>Finally, we also have the three priors on our diversification and turnover rates, and fossil sampling proportion. We expect our diversification rate to be small, and our sampling proportion to be even smaller, so we will change these to exponential priors, while leaving the turnover parameter with the default uniform prior.</p>
 
 <blockquote>
-  <p>In the drop-down box next to <strong>diversificationRateFBD</strong>, select an <strong>Exponential</strong> distribution. Check that this distribution has a <strong>mean</strong> of <strong>1.0</strong>.</p>
+  <p>In the drop-down box next to <strong>diversificationRateFBD</strong>, select an <strong>Exponential</strong> distribution. 
+Check that this distribution has a <strong>mean</strong> of <strong>1.0</strong>.</p>
 </blockquote>
 
 <figure>
@@ -676,7 +689,10 @@
 </figure>
 
 <blockquote>
-  <p>In the drop-down box next to <strong>samplingProportionFBD</strong>, select an <strong>Exponential</strong> distribution. Use the triangle on the left to open the extended options. Give the distribution a <strong>mean</strong> of <strong>0.1</strong>. Click the <strong>initial = ** button to view the starting values, and change the **Value</strong> to <strong>0.1</strong>, before clicking <strong>Ok</strong>.</p>
+  <p>In the drop-down box next to <strong>samplingProportionFBD</strong>, select an <strong>Exponential</strong> distribution. 
+Use the triangle on the left to open the extended options. 
+Give the distribution a <strong>mean</strong> of <strong>0.1</strong>. 
+Click the <strong>initial =</strong> button to view the starting values, and change the <strong>Value</strong> to <strong>0.1</strong>, then click <strong>Ok</strong>.</p>
 </blockquote>
 
 <figure>
@@ -690,7 +706,8 @@
 <p>As well as the priors which are already described in the <strong>Priors</strong> tab, we also need to set priors on the tip ages of our extinct OTUs. This will allow the ages of these tips to be sampled over the course of the MCMC. To do this, we need to give the model our uncertainty range for the age of each fossil tip. If you have previously completed the <strong>Divergence Time Estimation</strong> tutorial, this will be familiar to you, but we will walk this through with <em>Todea tidwellii</em> as an example, which we consider to be between 140 and 129 million years old.</p>
 
 <blockquote>
-  <p>Click the <strong>+ Add Prior</strong> button at the bottom of the <strong>Priors</strong> tab page. When asked about the type of prior, select the <strong>Sampled Ancestors MRCA Prior</strong>.</p>
+  <p>Click the <strong>+ Add Prior</strong> button at the bottom of the <strong>Priors</strong> tab page. 
+When asked about the type of prior, select the <strong>Sampled Ancestors MRCA Prior</strong>.</p>
 </blockquote>
 
 <figure>
@@ -700,7 +717,9 @@
 </figure>
 
 <blockquote>
-  <p>In the <strong>Taxon set label</strong> box, enter <strong>tidwellii</strong>. In the left-hand box, find <strong>Todea_tidwellii_135</strong>, select it, and click the <strong>»</strong> button to move it into the right-hand table. Click <strong>Ok</strong>.</p>
+  <p>In the <strong>Taxon set label</strong> box, enter <strong>tidwellii</strong>. 
+In the left-hand box, find <strong>Todea_tidwellii_135</strong>, select it, and click the <strong>»</strong> button to move it into the right-hand table. 
+Click <strong>Ok</strong>.</p>
 </blockquote>
 
 <figure>
@@ -710,7 +729,10 @@
 </figure>
 
 <blockquote>
-  <p>Using the drop-down box next to the newly-created prior, select a <strong>Uniform</strong> distribution. Click the left-hand triangle to view the additional options. Set the <strong>Lower</strong> value to <strong>129</strong> and the <strong>Upper</strong> value to <strong>140</strong>. Check the box at the bottom for <strong>Tipsonly</strong>.</p>
+  <p>Using the drop-down box next to the newly-created prior, select a <strong>Uniform</strong> distribution. 
+Click the left-hand triangle to view the additional options. 
+Set the <strong>Lower</strong> value to <strong>129</strong> and the <strong>Upper</strong> value to <strong>140</strong>. 
+Check the box at the bottom for <strong>Tipsonly</strong>.</p>
 </blockquote>
 
 <figure>
@@ -808,7 +830,9 @@
 <p>To investigate the differences between our prior and posterior distributions, we will compare the empirical chain to the one which we sampled from the prior.</p>
 
 <blockquote>
-  <p>Select both <code class="language-plaintext highlighter-rouge">Osmundaceae.log</code> and <code class="language-plaintext highlighter-rouge">Osmundaceae_sfp.log</code> in the top-left table, and toggle to the <strong>Marginal Density</strong> tab on the right to view the distributions from both chains on the same plot. The <strong>Legend</strong> drop-down at the bottom can be used to add a legend, indicating which distribution is from which chain.</p>
+  <p>Select both <code class="language-plaintext highlighter-rouge">Osmundaceae.log</code> and <code class="language-plaintext highlighter-rouge">Osmundaceae_sfp.log</code> in the top-left table
+Switch to the <strong>Marginal Density</strong> tab on the right to view the distributions from both chains on the same plot. 
+The <strong>Legend</strong> drop-down at the bottom can be used to add a legend, indicating which distribution is from which chain.</p>
 </blockquote>
 
 <p>Exploring the different parameters, we can see that for some, the prior and posterior are highly similar. For example, this is the case for most of the fossil tip heights given at the bottom of the table. This means that our prior is highly influential on the values we see in the posterior. However, for some other parameters, this is not the case, such as for parameters linked to the molecular data (e.g. <code class="language-plaintext highlighter-rouge">gammaShape</code>, <code class="language-plaintext highlighter-rouge">kappa</code>, <code class="language-plaintext highlighter-rouge">freqParameter</code>). This means that the shape of the posterior is being driven by the data rather than just the prior.</p>
@@ -888,11 +912,11 @@
 
 <p>The second step is to define a rate matrix for our ordered characters, which will have a value of <strong>1.0</strong> for <strong>possible</strong> transitions, and <strong>0.0</strong> for <strong>impossible</strong> transitions. Note that this matrix will also depend on the number of states for the character, but we show here an example for a character with 3 states.</p>
 
-<p>{<code class="language-plaintext highlighter-rouge">% eq \left( \begin{array}{ccc}
+<div style="text-align: center; margin-top: 0.5em; margin-bottom: 0.5em;"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mrow><mo fence="true">(</mo><mtable rowspacing="0.16em" columnalign="center center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>1.0</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1.0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1.0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>2.0</mn></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1.0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1.0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><mn>1.0</mn></mrow></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \left( \begin{array}{ccc}
       -1.0 &amp; 1.0 &amp; 0.0 \\
       1.0 &amp; -2.0 &amp; 1.0 \\
        0.0 &amp; 1.0 &amp; -1.0
-    \end{array} \right) %</code>}</p>
+    \end{array} \right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.6em;vertical-align:-1.55em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-2.25em;"><span class="pstrut" style="height:3.155em;"></span><span class="delimsizinginner delim-size4"><span>⎝</span></span></span><span style="top:-3.397em;"><span class="pstrut" style="height:3.155em;"></span><span style="height:0.016em;width:0.875em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.875em" height="0.016em" style="width:0.875em" viewBox="0 0 875 16" preserveAspectRatio="xMinYMin"><path d="M291 0 H417 V16 H291z M291 0 H417 V16 H291z" /></svg></span></span><span style="top:-4.05em;"><span class="pstrut" style="height:3.155em;"></span><span class="delimsizinginner delim-size4"><span>⎛</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1.0</span></span></span><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1.0</span></span></span><span style="top:-1.81em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0.0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1.0</span></span></span><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">2.0</span></span></span><span style="top:-1.81em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1.0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0.0</span></span></span><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1.0</span></span></span><span style="top:-1.81em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord">1.0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-2.25em;"><span class="pstrut" style="height:3.155em;"></span><span class="delimsizinginner delim-size4"><span>⎠</span></span></span><span style="top:-3.397em;"><span class="pstrut" style="height:3.155em;"></span><span style="height:0.016em;width:0.875em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.875em" height="0.016em" style="width:0.875em" viewBox="0 0 875 16" preserveAspectRatio="xMinYMin"><path d="M457 0 H583 V16 H457z M457 0 H583 V16 H457z" /></svg></span></span><span style="top:-4.05em;"><span class="pstrut" style="height:3.155em;"></span><span class="delimsizinginner delim-size4"><span>⎞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span></span></span></span></span></span></span></div>
 
 <p>We then need to convert this matrix into a BEAST2 object, by simply listing all elements in order (by row, left to right). Note that the diagonal elements are fully defined by the rest of the matrix (since all rows must equal to 0) and so do not need to be written. This results in the following XML code, which can be placed after the alignment (between the <code class="language-plaintext highlighter-rouge">&lt;/data&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;run&gt;</code> elements):</p>
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;parameter</span> <span class="na">id=</span><span class="s">"3ordered_ratematrix"</span> <span class="na">dimension=</span><span class="s">"6"</span> <span class="na">name=</span><span class="s">"rates"</span><span class="nt">&gt;</span>1.0 0.0 1.0 1.0 0.0 1.0 <span class="nt">&lt;/parameter&gt;</span>
