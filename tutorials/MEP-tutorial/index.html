@@ -389,6 +389,14 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-check-square"></i>
+					<a class="off" href="https://github.com/walterxie/MEP-tutorial/commit/e91e4763e48eb2db4a58a70240b18bcdedbd1e21">
+					03 Jul 2025 - <span class="text-gray">relative rates</span>
+					</a> 
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
 					<a class="off" href="https://github.com/walterxie/MEP-tutorial/commit/a196440ffedea9af468702cd2305ade8b1eeff88">
 					02 Jul 2025 - <span class="text-gray">sync relative rate word using</span>
 					</a> 
@@ -415,14 +423,6 @@
 					<i class="bi bi-check-square"></i>
 					<a class="off" href="https://github.com/walterxie/MEP-tutorial/commit/01a46db23dd14b1d3417ac1d4f75535c413464fb">
 					02 Jul 2025 - <span class="text-gray">update Java required and relative rates</span>
-					</a> 
-				</li>
-			
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-check-square"></i>
-					<a class="off" href="https://github.com/walterxie/MEP-tutorial/commit/bd4858abc5c7cab5b935eb12016378e3b2077e27">
-					30 Jun 2025 - <span class="text-gray">update figures</span>
 					</a> 
 				</li>
 			
@@ -660,6 +660,20 @@ Also remember to check the <code class="language-plaintext highlighter-rouge">es
 After three <a href="https://beast2-dev.github.io/hmc/hmc/SiteModel/mutationRate/">relative rates</a> 
 are all set to estimate, 
 it will eventually trigger to check the <code class="language-plaintext highlighter-rouge">Fix mean substitution rate</code> box.</p>
+
+<p><strong>Note on terminology:</strong> In <code class="language-plaintext highlighter-rouge">Site Model</code> panel, the <code class="language-plaintext highlighter-rouge">Substitution Rate</code> can be confusing 
+compared to common usage in the literature. 
+It should really be called a relative rate (or partition relative rate).
+In the broader context, terms like mutation rate, substitution rate, 
+and molecular clock rate are often used interchangeably, 
+though they can differ in nuance: mutation rate is usually applied to population-level processes, 
+while substitution rate is preferred for deeper timescales involving fixation events 
+and assuming a single sequence for each species. 
+Under neutral theory, these rates are expected to be equal, but in practice, 
+they often differ because selection prevents many mutations from fixing. 
+To avoid making strong assumptions about neutrality, it is often clearer to refer simply to molecular clock rates. 
+Keep in mind that this BEAUti’s terminology is out of sync, 
+and future versions may adopt more standard naming conventions and explicitly distinguish relative rates to reduce confusion.</p>
 
 <figure>
 	<img style="max-width:80.0%;" src="figures/BEAUti_Site_Model.png" alt="BEAUti_Site_Model" />
