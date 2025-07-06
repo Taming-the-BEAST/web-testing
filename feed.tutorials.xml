@@ -12,7 +12,7 @@
 		</image>
 				
 			<item>
-				<title>StarBeast3</title>
+				<title>StarBeast3 Tutorial</title>
 				<description>
 					Estimating species trees using StarBeast3
 					&lt;br&gt;
@@ -28,7 +28,7 @@
 					&lt;br&gt;&lt;br&gt;
 					Updated on 
 					&lt;a class=&apos;off&apos; href=
-						'https://github.com/Taming-the-BEAST/StarBEAST3-Tutorial/commit/0e0b201d769256db1d48e97e314b77609c9399ef'
+						'https://github.com/Taming-the-BEAST/StarBEAST3-Tutorial/commit/465767cb4e9e0f6980506370dd49edc5a3cd21f7'
 					&gt;
 						6 Jul 2025
 					&lt;/a&gt;
@@ -46,7 +46,7 @@
 						Requires: BEAST v2.7.4
 					
 				</description>
-				<pubDate>Sun, 06 Jul 2025 00:50:55 +0000</pubDate>
+				<pubDate>Sun, 06 Jul 2025 00:57:36 +0000</pubDate>
 				<category>Intermediate</category>
 				<link>https://taming-the-beast.org//tutorials/StarBEAST3-Tutorial/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/StarBEAST3-Tutorial/</guid>
