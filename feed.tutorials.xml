@@ -12,6 +12,92 @@
 		</image>
 				
 			<item>
+				<title>StarBeast3</title>
+				<description>
+					Estimating species trees using StarBeast3
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Ugne Stolz
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/Taming-the-BEAST/StarBEAST3-Tutorial/commit/0e0b201d769256db1d48e97e314b77609c9399ef'
+					&gt;
+						6 Jul 2025
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/jugne'
+					&gt;
+						jugne
+					&lt;/a&gt;
+					: upd ref
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.4
+					
+				</description>
+				<pubDate>Sun, 06 Jul 2025 00:50:55 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/StarBEAST3-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/StarBEAST3-Tutorial/</guid>
+			</item>
+				
+			<item>
+				<title>Total Evidence Tutorial</title>
+				<description>
+					Inferring phylogenies using genetic sequences and morphological characters
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Bethany J. Allen
+							
+					
+						
+								
+									and Joëlle Barido-Sottani
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/bethany-j-allen/Total-Evidence-Tutorial/commit/4a5368f535b1299071dd74c2ad39943a49a0d5e7'
+					&gt;
+						4 Jul 2025
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/bethany-j-allen'
+					&gt;
+						bethany-j-allen
+					&lt;/a&gt;
+					: Fix table display issue
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.7
+					
+				</description>
+				<pubDate>Fri, 04 Jul 2025 12:43:30 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/Total-Evidence-Tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Total-Evidence-Tutorial/</guid>
+			</item>
+				
+			<item>
 				<title>Time stamped data</title>
 				<description>
 					Time-stamped data
@@ -62,51 +148,6 @@
 				<category>Beginner</category>
 				<link>https://taming-the-beast.org//tutorials/MEP-tutorial/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/MEP-tutorial/</guid>
-			</item>
-				
-			<item>
-				<title>Total Evidence Tutorial</title>
-				<description>
-					Inferring phylogenies using genetic sequences and morphological characters
-					&lt;br&gt;
-					By 
-					
-					
-						
-								Bethany J. Allen
-							
-					
-						
-								
-									and Joëlle Barido-Sottani
-								
-							
-					
-					&lt;br&gt;&lt;br&gt;
-					Updated on 
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/bethany-j-allen/Total-Evidence-Tutorial/commit/f3238cd5020c5994bc46980b5bc65f6df45eb8f8'
-					&gt;
-						2 Jul 2025
-					&lt;/a&gt;
-					by
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/bethany-j-allen'
-					&gt;
-						bethany-j-allen
-					&lt;/a&gt;
-					: Add post-processing screenshots and tree
-					&lt;br&gt;&lt;br&gt;
-					Level: Intermediate
-					
-						&lt;br&gt;
-						Requires: BEAST v2.7.7
-					
-				</description>
-				<pubDate>Wed, 02 Jul 2025 16:40:53 +0000</pubDate>
-				<category>Intermediate</category>
-				<link>https://taming-the-beast.org//tutorials/Total-Evidence-Tutorial/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Total-Evidence-Tutorial/</guid>
 			</item>
 				
 			<item>
@@ -1082,55 +1123,6 @@ Added local update describing species-tree specification with BEAUti.
 				<category>Intermediate</category>
 				<link>https://taming-the-beast.org//tutorials/CladeAge-Tutorial/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/CladeAge-Tutorial/</guid>
-			</item>
-				
-			<item>
-				<title>Molecular dating using heterochronous data and substitution model averaging</title>
-				<description>
-					Estimating the time of origin of the 2009 H1N1 pandemic in North America
-					&lt;br&gt;
-					By 
-					
-					
-						
-								Sebastian Duchene
-							
-					
-						
-								,  Tim Vaughan
-						
-					
-						
-								
-									and  Veronika Boskova
-								
-							
-					
-					&lt;br&gt;&lt;br&gt;
-					Updated on 
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/Taming-the-BEAST/Molecular-Dating-Tutorial/commit/7962c1fb07bed1e415bc732ecf75c1df0e3acf54'
-					&gt;
-						5 Nov 2018
-					&lt;/a&gt;
-					by
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/tgvaughan'
-					&gt;
-						tgvaughan
-					&lt;/a&gt;
-					: Fixed broken figure link.
-					&lt;br&gt;&lt;br&gt;
-					Level: Intermediate
-					
-						&lt;br&gt;
-						Requires: BEAST v2.5
-					
-				</description>
-				<pubDate>Mon, 05 Nov 2018 15:43:08 +0000</pubDate>
-				<category>Intermediate</category>
-				<link>https://taming-the-beast.org//tutorials/Molecular-Dating-Tutorial/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/Molecular-Dating-Tutorial/</guid>
 			</item>
 		
 	</channel>
