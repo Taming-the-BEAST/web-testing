@@ -12,6 +12,47 @@
 		</image>
 				
 			<item>
+				<title>Model selection</title>
+				<description>
+					Model selection with nested sampling
+					&lt;br&gt;
+					By 
+					
+					
+						
+								Remco Bouckaert
+							
+								
+							
+					
+					&lt;br&gt;&lt;br&gt;
+					Updated on 
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/sgtRoberty/NS-tutorial/commit/751f6e3d92200d330fadc212e90a135b6cd1f9d1'
+					&gt;
+						9 Jul 2025
+					&lt;/a&gt;
+					by
+					&lt;a class=&apos;off&apos; href=
+						'https://github.com/laduplessis'
+					&gt;
+						laduplessis
+					&lt;/a&gt;
+					: Wrong character
+					&lt;br&gt;&lt;br&gt;
+					Level: Intermediate
+					
+						&lt;br&gt;
+						Requires: BEAST v2.7.x
+					
+				</description>
+				<pubDate>Wed, 09 Jul 2025 11:24:17 +0000</pubDate>
+				<category>Intermediate</category>
+				<link>https://taming-the-beast.org//tutorials/NS-tutorial/</link>
+				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/NS-tutorial/</guid>
+			</item>
+				
+			<item>
 				<title>StarBeast3 Tutorial</title>
 				<description>
 					Estimating species trees using StarBeast3
@@ -28,7 +69,7 @@
 					&lt;br&gt;&lt;br&gt;
 					Updated on 
 					&lt;a class=&apos;off&apos; href=
-						'https://github.com/Taming-the-BEAST/StarBEAST3-Tutorial/commit/f61711b9c50fd34ca2d1faa1389aef1c95a1249c'
+						'https://github.com/Taming-the-BEAST/StarBEAST3-Tutorial/commit/54ae62e4892c20aef7722ec099da356c597ec193'
 					&gt;
 						8 Jul 2025
 					&lt;/a&gt;
@@ -38,7 +79,7 @@
 					&gt;
 						jugne
 					&lt;/a&gt;
-					: Update for Chi's comments
+					: Small typo fixes, increase figs
 					&lt;br&gt;&lt;br&gt;
 					Level: Intermediate
 					
@@ -46,7 +87,7 @@
 						Requires: BEAST v2.7.4
 					
 				</description>
-				<pubDate>Tue, 08 Jul 2025 14:44:10 +0000</pubDate>
+				<pubDate>Tue, 08 Jul 2025 16:47:46 +0000</pubDate>
 				<category>Intermediate</category>
 				<link>https://taming-the-beast.org//tutorials/StarBEAST3-Tutorial/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/StarBEAST3-Tutorial/</guid>
@@ -1038,47 +1079,6 @@ Removed references to tutorial template bib file.
 				<category>Beginner</category>
 				<link>https://taming-the-beast.org//tutorials/LanguagePhylogenies/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/LanguagePhylogenies/</guid>
-			</item>
-				
-			<item>
-				<title>Model selection</title>
-				<description>
-					Model selection with nested sampling
-					&lt;br&gt;
-					By 
-					
-					
-						
-								Remco Bouckaert
-							
-								
-							
-					
-					&lt;br&gt;&lt;br&gt;
-					Updated on 
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/rbouckaert/NS-tutorial/commit/fe86ed9962d589af316e897bdf6d8b3122a4dd00'
-					&gt;
-						24 Mar 2019
-					&lt;/a&gt;
-					by
-					&lt;a class=&apos;off&apos; href=
-						'https://github.com/rbouckaert'
-					&gt;
-						rbouckaert
-					&lt;/a&gt;
-					: update tutorial to use MCMC2NS utility
-					&lt;br&gt;&lt;br&gt;
-					Level: Intermediate
-					
-						&lt;br&gt;
-						Requires: BEAST v2.5.2
-					
-				</description>
-				<pubDate>Sun, 24 Mar 2019 22:45:59 +0000</pubDate>
-				<category>Intermediate</category>
-				<link>https://taming-the-beast.org//tutorials/NS-tutorial/</link>
-				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/NS-tutorial/</guid>
 			</item>
 				
 			<item>

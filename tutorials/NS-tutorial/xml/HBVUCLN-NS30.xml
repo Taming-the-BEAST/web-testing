@@ -43,7 +43,7 @@ name="alignment">
 
     <map name="OneOnX" >beast.base.inference.distribution.OneOnX</map>
 
-    <run id="NS" spec="nestedsampling.gss.NS" chainLength="1000000" particleCount="1" subChainLength="5000">
+    <run id="NS" spec="nestedsampling.gss.NS" chainLength="1000000" particleCount="30" subChainLength="5000">
         <state id="state" spec="State" storeEvery="5000">
             <tree id="Tree.t:HBV" spec="beast.base.evolution.tree.Tree" name="stateNode">
                 <trait id="dateTrait.t:HBV" spec="beast.base.evolution.tree.TraitSet" traitname="date" value="AB033550_1988_33.3431887795_134.9307404236=1988,AB033554_1985_-2.3045941592_118.5275669247=1985,AB111946_1998_15.880672531_106.7863444469=1998,AB112066_1999_15.2357758333_97.1170427803=1999,AB112471_2002_10.826174473_100.0321841486=2002,AB117759_2004_11.8647366524_104.4581350327=2004,AB198076_2001_31.3068442593_109.4304560078=2001,AB205128_2000_67.7822238778_83.2782706988=2000,AB205190_2000_7.0869990345_-0.6788566207=2000,AB219428_2002_11.4823584448_122.5890168578=2002,AJ344117_1990_46.339250578_1.5156738165=1990,AY341335_2003_37.779236413_24.2931907174=2003,AY641558_2003_39.8942378947_126.8819515526=2003,AY721605_2004_39.1656946813_32.8656198791=2004,AY738147_1998_-4.6027905391_22.3356877351=1998,DQ060824_1983_-21.3700228571_19.1068796429=1983,DQ315776_2000_17.9831869307_84.5569572724=2000">
@@ -149,7 +149,7 @@ name="alignment">
         <operator id="CategoriesRandomWalk.c:HBV" spec="operator.IntRandomWalkOperator" parameter="@rateCategories.c:HBV" weight="10.0" windowSize="1"/>
         <operator id="CategoriesSwapOperator.c:HBV" spec="operator.SwapOperator" intparameter="@rateCategories.c:HBV" weight="10.0"/>
         <operator id="CategoriesUniform.c:HBV" spec="operator.UniformOperator" parameter="@rateCategories.c:HBV" weight="10.0"/>
-        <logger id="tracelog" spec="Logger" fileName="HBVUCLN-NS.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <logger id="tracelog" spec="Logger" fileName="HBVUCLN-NS30.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
             <log idref="posterior"/>
             <log idref="likelihood"/>
             <log idref="prior"/>
@@ -167,7 +167,7 @@ name="alignment">
             <log idref="likelihood"/>
             <log idref="prior"/>
         </logger>
-        <logger id="treelog.t:HBV" spec="Logger" fileName="HBVUCLN-$(tree)-NS.trees" logEvery="1000" mode="tree">
+        <logger id="treelog.t:HBV" spec="Logger" fileName="HBVUCLN-$(tree)-NS30.trees" logEvery="1000" mode="tree">
             <log id="TreeWithMetaDataLogger.t:HBV" spec="beast.base.evolution.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:HBV" tree="@Tree.t:HBV"/>
         </logger>
         <operatorschedule id="OperatorSchedule" spec="OperatorSchedule" autoOptimize="false"/>
