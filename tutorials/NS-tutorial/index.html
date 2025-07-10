@@ -340,6 +340,16 @@
     			</div>
  				</a>
  			</div>			
+ 				
+			<div class="smallspacer"></div>				
+			<div>
+				<a class="off" href="https://github.com/jugne">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/26361891?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;">
+    				jugne
+    			</div>
+ 				</a>
+ 			</div>			
  			
 		</div>
 		<div class="bigspacer"></div>
@@ -348,6 +358,14 @@
 		</div>		
 		<div class="pad-left smallnote">
 			<ul class="list-unstyled">
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
+					<a class="off" href="https://github.com/sgtRoberty/NS-tutorial/commit/a481162683bf0af2d39798d13780bee2808849b4">
+					10 Jul 2025 - <span class="text-gray">Fixed some typos</span>
+					</a> 
+				</li>
 			
 				<div class="smallspacer"></div>
 				<li> 
@@ -377,14 +395,6 @@
 				<li> 
 					<i class="bi bi-check-square"></i>
 					<a class="off" href="https://github.com/sgtRoberty/NS-tutorial/commit/0be76e72861405f188b1c1165133d3a34f3a675a">
-					09 Jul 2025 - <span class="text-gray">Start to fix math</span>
-					</a> 
-				</li>
-			
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-check-square"></i>
-					<a class="off" href="https://github.com/sgtRoberty/NS-tutorial/commit/d3c9d3c200c9020f93075a6a44c4b6ef183caabc">
 					09 Jul 2025 - <span class="text-gray">Start to fix math</span>
 					</a> 
 				</li>
@@ -426,7 +436,7 @@
   </li>
 </ul>
 
-<p>The main parameters of the NS algorithm are the number of particles (<code class="language-plaintext highlighter-rouge">N</code>) and the length of the MCMC chain to sample a replacement particle (<code class="language-plaintext highlighter-rouge">subChainLength</code>). To determine <code class="language-plaintext highlighter-rouge">N</code>, we first start the NS analysis with <code class="language-plaintext highlighter-rouge">N=1</code>. Based on the results of that analysis, we can determine a target standard deviation for marginal likelihood estimates and calculate the required <code class="language-plaintext highlighter-rouge">N</code> value using the estimated information measure <code class="language-plaintext highlighter-rouge">H</code> and a given formula (more details will follow later in the tutorail).</p>
+<p>The main parameters of the NS algorithm are the number of particles (<code class="language-plaintext highlighter-rouge">N</code>) and the length of the MCMC chain to sample a replacement particle (<code class="language-plaintext highlighter-rouge">subChainLength</code>). To determine <code class="language-plaintext highlighter-rouge">N</code>, we first start the NS analysis with <code class="language-plaintext highlighter-rouge">N=1</code>. Based on the results of that analysis, we can determine a target standard deviation for marginal likelihood estimates and calculate the required <code class="language-plaintext highlighter-rouge">N</code> value using the estimated information measure <code class="language-plaintext highlighter-rouge">H</code> and a given formula (more details will follow later in the tutorial).</p>
 
 <p>The <code class="language-plaintext highlighter-rouge">subChainLength</code> determines how independent the replacement point is from the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/x-tex">L_{min}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">min</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> point that was saved and is a parameter that needs to be determined by trial and error (see <a href="#nested-sampling-faq">FAQ</a> for details).</p>
 
@@ -584,7 +594,7 @@ We will select between two popular clock models, the strict clock and the uncorr
 
 <blockquote>
   <ul>
-    <li>Make a copy of the file <code class="language-plaintext highlighter-rouge">HBVStrict.xml</code>/<code class="language-plaintext highlighter-rouge">HBVUCLN.xml</code> as <code class="language-plaintext highlighter-rouge">HBVStric-NS.xml</code>/<code class="language-plaintext highlighter-rouge">HBVUCLN-NS.xml</code>.</li>
+    <li>Make a copy of the file <code class="language-plaintext highlighter-rouge">HBVStrict.xml</code>/<code class="language-plaintext highlighter-rouge">HBVUCLN.xml</code> as <code class="language-plaintext highlighter-rouge">HBVStrict-NS.xml</code>/<code class="language-plaintext highlighter-rouge">HBVUCLN-NS.xml</code>.</li>
     <li>Start a text editor and in both copied <code class="language-plaintext highlighter-rouge">*NS.xml</code> files, change</li>
   </ul>
 
@@ -736,7 +746,7 @@ Done!
 </code></pre></div></div>
 <p>This gives us an ML of -12417.9 with an SD of 2.04 for the uncorrelated log-normal relaxed clock model.</p>
 
-<p>Therefore, the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>B</mi><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">\log{BF}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">BF</span></span></span></span></span> of the relaxed clock <em>versus</em> the stric clock is  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>12417.9</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>12426.4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8.5</mn></mrow><annotation encoding="application/x-tex">-12417.9 - (-12426.4) = 8.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">12417.9</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">12426.4</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8.5</span></span></span></span>, which is more than twice the sum of the SDs (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.95</mn><mo>+</mo><mn>2.04</mn><mo>=</mo><mn>3.99</mn></mrow><annotation encoding="application/x-tex">1.95 + 2.04 = 3.99</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.95</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2.04</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3.99</span></span></span></span>), which can be considered as reliable evidence in favour of the log-normal relaxed clock model over the strict clock. Note that judging from <a href="#fig:bfs">Figure 1</a>, this amounts to overwhelming support for the relaxed clock.</p>
+<p>Therefore, the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>B</mi><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">\log{BF}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">BF</span></span></span></span></span> of the relaxed clock <em>versus</em> the strict clock is  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>12417.9</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>12426.4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8.5</mn></mrow><annotation encoding="application/x-tex">-12417.9 - (-12426.4) = 8.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">12417.9</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">12426.4</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8.5</span></span></span></span>, which is more than twice the sum of the SDs (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.95</mn><mo>+</mo><mn>2.04</mn><mo>=</mo><mn>3.99</mn></mrow><annotation encoding="application/x-tex">1.95 + 2.04 = 3.99</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.95</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2.04</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3.99</span></span></span></span>), which can be considered as reliable evidence in favour of the log-normal relaxed clock model over the strict clock. Note that judging from <a href="#fig:bfs">Figure 1</a>, this amounts to overwhelming support for the relaxed clock.</p>
 
 <!--
 ## Setting up the geographic model with strict and relaxed clock
