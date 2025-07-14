@@ -28,19 +28,17 @@
 					&lt;br&gt;&lt;br&gt;
 					Updated on 
 					&lt;a class=&apos;off&apos; href=
-						'https://github.com/seidels/TiDeTree-Tutorial/commit/523419e11376f7af6edee4c588ca3e6fe93a4c4c'
+						'https://github.com/laduplessis/TiDeTree-Tutorial/commit/d2832b6953e2aa935746c80179bde97143836c3c'
 					&gt;
 						14 Jul 2025
 					&lt;/a&gt;
 					by
 					&lt;a class=&apos;off&apos; href=
-						'https://github.com/seidels'
+						'https://github.com/laduplessis'
 					&gt;
-						seidels
+						laduplessis
 					&lt;/a&gt;
-					: Merge pull request #2 from laduplessis/main
-
-Updates before the workshop
+					: Forgot to add the new figure
 					&lt;br&gt;&lt;br&gt;
 					Level: Intermediate
 					
@@ -48,7 +46,7 @@ Updates before the workshop
 						Requires: BEAST v>= 2.7
 					
 				</description>
-				<pubDate>Mon, 14 Jul 2025 08:01:40 +0000</pubDate>
+				<pubDate>Mon, 14 Jul 2025 14:44:28 +0000</pubDate>
 				<category>Intermediate</category>
 				<link>https://taming-the-beast.org//tutorials/TiDeTree-Tutorial/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/TiDeTree-Tutorial/</guid>
