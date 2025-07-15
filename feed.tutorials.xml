@@ -28,9 +28,9 @@
 					&lt;br&gt;&lt;br&gt;
 					Updated on 
 					&lt;a class=&apos;off&apos; href=
-						'https://github.com/laduplessis/TiDeTree-Tutorial/commit/d2832b6953e2aa935746c80179bde97143836c3c'
+						'https://github.com/laduplessis/TiDeTree-Tutorial/commit/e141b2fb13bd1b67675487e5b87241e73820638c'
 					&gt;
-						14 Jul 2025
+						15 Jul 2025
 					&lt;/a&gt;
 					by
 					&lt;a class=&apos;off&apos; href=
@@ -38,7 +38,7 @@
 					&gt;
 						laduplessis
 					&lt;/a&gt;
-					: Forgot to add the new figure
+					: Update figure file names
 					&lt;br&gt;&lt;br&gt;
 					Level: Intermediate
 					
@@ -46,7 +46,7 @@
 						Requires: BEAST v>= 2.7
 					
 				</description>
-				<pubDate>Mon, 14 Jul 2025 14:44:28 +0000</pubDate>
+				<pubDate>Tue, 15 Jul 2025 12:58:09 +0000</pubDate>
 				<category>Intermediate</category>
 				<link>https://taming-the-beast.org//tutorials/TiDeTree-Tutorial/</link>
 				<guid isPermaLink="true">https://taming-the-beast.org//tutorials/TiDeTree-Tutorial/</guid>
