@@ -104,7 +104,7 @@ There are <strong>14</strong> questions, of which <strong>3</strong> are optiona
 <div class="bigspacer"></div>
 <hr />
 
-<form action="" class="fs-form" target="_top" method="POST">
+<form action="https://formspree.io/f/xkgzzwre" class="fs-form" target="_top" method="POST">
 
 <p class="fs-description" id="dpa-consent-description">
    	Fields marked with <sup>*</sup> are required.
@@ -152,26 +152,26 @@ There are <strong>14</strong> questions, of which <strong>3</strong> are optiona
 	    <div class="fs-radio-group">
 	    	<div class="fs-radio-field">
 	        <div class="fs-radio-wrapper">
-	          <input class="fs-radio" id="isNotEnough" name="programme-impression" required="" type="radio" value="notenough" />
+	          <input class="fs-radio" id="wasTooFull" name="programme-impression" required="" type="radio" value="toofull" />
 	        </div>
 	        <div>
-	          <label class="fs-label" for="isNotEnough">It was too full, I am exhausted!</label>
+	          <label class="fs-label" for="wasTooFull">It was too full, I am <b>still</b> exhausted!</label>
 	        </div>
 	      </div>
 	      <div class="fs-radio-field">
 	        <div class="fs-radio-wrapper">
-	          <input class="fs-radio" id="isTooMany" name="programme-impression" required="" type="radio" value="toomany" />
+	          <input class="fs-radio" id="wasTooEmpty" name="programme-impression" required="" type="radio" value="tooempty" />
 	        </div>
 	        <div>
-	          <label class="fs-label" for="isTooMany">It was too empty, I felt like I didn't have much to do...</label>
+	          <label class="fs-label" for="wasTooEmpty">It was too empty, I felt like I didn't have much to do...</label>
 	        </div>
 	      </div>
 	      <div class="fs-radio-field">
 	        <div class="fs-radio-wrapper">
-	          <input class="fs-radio" id="isBalanced" name="programme-impression" required="" type="radio" value="balanced" />
+	          <input class="fs-radio" id="wasBalancedProgramme" name="programme-impression" required="" type="radio" value="balanced" />
 	        </div>
 	        <div>
-	          <label class="fs-label" for="isBalanced">It was about right</label>
+	          <label class="fs-label" for="wasBalancedProgramme">It was about right</label>
 	        </div>
 	      </div>	
 	    </div>      
@@ -221,10 +221,10 @@ There are <strong>14</strong> questions, of which <strong>3</strong> are optiona
 	      </div>
 	      <div class="fs-radio-field">
 	        <div class="fs-radio-wrapper">
-	          <input class="fs-radio" id="wantMorelectures" name="research-ratio" required="" type="radio" value="morelectures" />
+	          <input class="fs-radio" id="wantMoreLectures" name="research-ratio" required="" type="radio" value="morelectures" />
 	        </div>
 	        <div>
-	          <label class="fs-label" for="wantMorelectures">More lectures</label>
+	          <label class="fs-label" for="wantMoreLectures">More lectures</label>
 	        </div>
 	      </div>
 	      <div class="fs-radio-field">
@@ -244,26 +244,26 @@ There are <strong>14</strong> questions, of which <strong>3</strong> are optiona
 	    <div class="fs-radio-group">
 	    	<div class="fs-radio-field">
 	        <div class="fs-radio-wrapper">
-	          <input class="fs-radio" id="wantMoreResearch" name="research-ratio" required="" type="radio" value="moreresearch" />
+	          <input class="fs-radio" id="wantMoreSocial" name="work-ratio" required="" type="radio" value="moresocial" />
 	        </div>
 	        <div>
-	          <label class="fs-label" for="wantMoreResearch">More social activities and opportunities for networking please!</label>
+	          <label class="fs-label" for="wantMoreSocial">More social activities and opportunities for networking please!</label>
 	        </div>
 	      </div>
 	      <div class="fs-radio-field">
 	        <div class="fs-radio-wrapper">
-	          <input class="fs-radio" id="wantMorelectures" name="research-ratio" required="" type="radio" value="morelectures" />
+	          <input class="fs-radio" id="wantMoreWork" name="work-ratio" required="" type="radio" value="morework" />
 	        </div>
 	        <div>
-	          <label class="fs-label" for="wantMorelectures">More lectures and tutorials please!</label>
+	          <label class="fs-label" for="wantMoreWork">More lectures and tutorials please!</label>
 	        </div>
 	      </div>
 	      <div class="fs-radio-field">
 	        <div class="fs-radio-wrapper">
-	          <input class="fs-radio" id="isBalancedResearch" name="research-ratio" required="" type="radio" value="balanced" />
+	          <input class="fs-radio" id="isBalancedWork" name="work-ratio" required="" type="radio" value="balanced" />
 	        </div>
 	        <div>
-	          <label class="fs-label" for="isBalancedResearch">The balance was about right</label>
+	          <label class="fs-label" for="isBalancedWork">The balance was about right</label>
 	        </div>
 	      </div>	
 	    </div>      
@@ -273,11 +273,11 @@ There are <strong>14</strong> questions, of which <strong>3</strong> are optiona
 		<!-- Pre-workshop communication satisfaction -->
 		<hr />
 		<div class="fs-field" style="margin-bottom: 2rem">
-			<label class="fs-label" for="speaker-satisfaction">
+			<label class="fs-label" for="preworkshop-communication">
 			  1.6. What was your level of satisfaction with communication <b>before</b> the workshop?<sup>*</sup> (0 &#x3D; Not
 			  at all satsified, 10 &#x3D; Completely satisfied)
 			</label>
-			<input class="fs-slider" id="speaker-satisfaction" max="10" min="0" name="speaker-satisfaction" required="" step="1" type="range" value="5" />
+			<input class="fs-slider" id="preworkshop-communication" max="10" min="0" name="preworkshop-communication" required="" step="1" type="range" value="5" />
 			<div class="slider-label-container">
 			  <span class="slider-label-text">0</span>
 			  <span class="slider-label-text">1</span>
@@ -295,11 +295,11 @@ There are <strong>14</strong> questions, of which <strong>3</strong> are optiona
 		<!-- During workshop communication satisfaction -->
 		<hr />
 		<div class="fs-field" style="margin-bottom: 2rem">
-			<label class="fs-label" for="speaker-satisfaction">
+			<label class="fs-label" for="workshop-communication">
 			  1.7. What was your level of satisfaction with communication <b>during</b> the workshop?<sup>*</sup> (0 &#x3D; Not
 			  at all satsified, 10 &#x3D; Completely satisfied)
 			</label>
-			<input class="fs-slider" id="speaker-satisfaction" max="10" min="0" name="speaker-satisfaction" required="" step="1" type="range" value="5" />
+			<input class="fs-slider" id="workshop-communication" max="10" min="0" name="workshop-communication" required="" step="1" type="range" value="5" />
 			<div class="slider-label-container">
 			  <span class="slider-label-text">0</span>
 			  <span class="slider-label-text">1</span>
@@ -362,10 +362,10 @@ There are <strong>14</strong> questions, of which <strong>3</strong> are optiona
 		</div>
 		<!-- Food satisfaction -->
 		<div class="fs-field" style="margin-bottom: 2rem">
-			<label class="fs-label" for="food-satisfaction">
+			<label class="fs-label" for="accessibility-satisfaction">
 			  2.3. What was your level of satisfaction with the accessibility of the venue (transport to and from IVPP)?<sup>*</sup> (0 &#x3D; Not at all satisfied, 10 &#x3D; Completely satisfied)
 			</label>
-			<input class="fs-slider" id="food-satisfaction" max="10" min="0" name="food-satisfaction" required="" step="1" type="range" value="5" />
+			<input class="fs-slider" id="accessibility-satisfaction" max="10" min="0" name="accessibility-satisfaction" required="" step="1" type="range" value="5" />
 			<div class="slider-label-container">
 			  <span class="slider-label-text">0</span>
 			  <span class="slider-label-text">1</span>
@@ -434,7 +434,7 @@ There are <strong>14</strong> questions, of which <strong>3</strong> are optiona
 	<fieldset class="fs-layout__2-column">
 	    <div class="fs-field">
 	      <label class="fs-label" for="beast">If you would like to discuss any of your answers with us please tell us who you are. <i>(Completely optional)</i></label>
-	      <input class="fs-input" id="beast" name="beast" required="" />
+	      <input class="fs-input" id="beast" name="beast" />
 	    </div> 
 	</fieldset>
 
