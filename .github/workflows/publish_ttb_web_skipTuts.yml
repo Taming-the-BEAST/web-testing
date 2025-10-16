@@ -28,12 +28,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: website
-      - name: Update and preprocess
-        run: |
-          cd blotter
-          ruby _scripts/update-and-preprocess.rb
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build the site
         run: |
           cd blotter
