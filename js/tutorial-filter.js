@@ -33,7 +33,11 @@
   async function initPagefind() {
     try {
       console.log('Loading Pagefind...');
-      pagefind = await import('/pagefind/pagefind.js');
+      // Get baseurl from data attribute (for subpath deployments like /web-testing/)
+      const baseurl = document.querySelector('.tutorial-index')?.dataset?.baseurl || '';
+      const pagefindPath = baseurl + '/pagefind/pagefind.js';
+      console.log('Pagefind path:', pagefindPath);
+      pagefind = await import(pagefindPath);
       console.log('Pagefind module loaded:', pagefind);
       await pagefind.init();
       console.log('Pagefind initialized');
