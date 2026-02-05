@@ -1,0 +1,129 @@
+/* Tutorial filtering and display styles */
+/* Custom styles that complement Bootstrap 5 */
+
+.tutorial-index {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tutorial grid - CSS Grid for responsive auto-fill layout */
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Tutorial card hover effects */
+.tutorial-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Muted Wes Anderson-inspired color palette */
+
+/* Tutorial card title - dark grey instead of bright red */
+.tutorial-card .card-title a {
+  color: #3d3d3d;
+}
+
+.tutorial-card .card-title a:hover {
+  color: #5a5a5a;
+}
+
+/* Workflow badge - dusty mauve */
+.bg-purple {
+  background-color: #9a8297;
+}
+
+/* Package badge - muted slate blue */
+.tutorial-card .badge.bg-primary {
+  background-color: #6b8a9a !important; /* slate blue */
+}
+
+/* Domain badge - muted teal */
+.bg-teal {
+  background-color: #5f9ea0; /* cadet blue / muted teal */
+}
+
+/* BEAST version badge */
+.tutorial-card .badge.bg-secondary {
+  background-color: #8b8b8b !important;
+}
+
+/* Prerequisites badge */
+.tutorial-card .badge.bg-light {
+  border: 1px solid #ddd;
+}
+
+/* Filter and sort button active state override */
+[data-filter].active,
+[data-sort].active {
+  background-color: #6b8a9a;
+  color: white;
+  border-color: #6b8a9a;
+}
+
+/* Search mode toggle */
+.btn-check:checked + .btn-outline-secondary {
+  background-color: #6b8a9a;
+  border-color: #6b8a9a;
+  color: white;
+}
+
+/* Keyword chips */
+.keyword-chip {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  transition: all 0.2s;
+}
+
+.keyword-chip:hover {
+  background-color: #6b8a9a;
+  border-color: #6b8a9a;
+  color: white;
+}
+
+/* Pagefind search customization */
+#pagefind-search {
+  min-height: 45px;
+}
+
+#pagefind-search .pagefind-ui__search-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Pagefind results styling */
+.pagefind-ui__result {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.pagefind-ui__result-link {
+  color: #3d3d3d;
+  font-weight: 600;
+}
+
+.pagefind-ui__result-link:hover {
+  color: #6b8a9a;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tutorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  [data-filter] {
+    width: 100%;
+  }
+}

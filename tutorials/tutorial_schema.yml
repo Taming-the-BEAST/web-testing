@@ -1,0 +1,135 @@
+# Tutorial Metadata Schema for Taming the BEAST
+# This file defines the valid values and structure for tutorial metadata
+
+# Valid workflows (what the tutorial helps you accomplish)
+workflows:
+  - Getting started        # Introduction and setup tutorials
+  - Basic workflow         # Standard analysis workflows
+  - Advanced analysis      # Complex or specialized analyses
+  - Troubleshooting        # Debugging and problem-solving
+  - Validation             # Result validation and verification
+
+# Valid status values
+status_values:
+  - current           # Active, up-to-date tutorial
+  - legacy            # Outdated but kept for reproducibility
+
+# Recommended keyword taxonomy (extensible)
+keyword_taxonomy:
+  models:
+    - coalescent
+    - birth-death
+    - structured coalescent
+    - multispecies coalescent
+    - fossilized birth-death
+    - skyline
+    - constant population
+    
+  features:
+    - molecular clock
+    - relaxed clock
+    - strict clock
+    - tip dating
+    - calibration
+    - substitution models
+    - site models
+    - phylogeography
+    - migration
+    - population structure
+    
+  methods:
+    - Bayesian inference
+    - MCMC
+    - model selection
+    - marginal likelihood
+    - path sampling
+    - parameter estimation
+
+  data_types:
+    - nucleotide
+    - amino acid
+    - morphological
+    - trait data
+    - ancient DNA
+
+# Known BEAST2 packages
+packages:
+  - BDSKY              # Birth-Death Skyline
+  - MASCOT             # Marginal Approximation of Structured Coalescent
+  - MultiTypeTree      # MTT - Structured coalescent
+  - StarBeast          # Multispecies coalescent (legacy)
+  - StarBeast2         # Multispecies coalescent (BEAST 2.6)
+  - StarBeast3         # Multispecies coalescent (BEAST 2.7+)
+  - SA                 # Sampled Ancestors
+  - SCOTTI             # Structured Coalescent Transmission Tree Inference
+  - Bacter             # Bacterial recombination
+  - BEAST-CLASSIC      # BEAST 1.x features in BEAST 2
+  - BEASTLabs          # Experimental features
+  - CoupledMCMC        # Parallel tempering
+  - feast              # Phylodynamic inference
+  - MODEL_SELECTION    # Model selection tools
+  - ORC                # Optimised Relaxed Clock
+  - substBMA           # Substitution model averaging
+  - bModelTest         # Bayesian model testing for substitution models
+  - SNAPP              # SNP and AFLP Phylogenies
+  - BASTA              # Bayesian Structured coalescent Approximation
+  - PhyDyn             # Phylodynamic inference
+  - BICEPS             # Bayesian Integrated Coalescent Epoch model for Population Studies
+  - TreeStat2          # Tree statistics
+  - SSM                # Standard Substitution Models
+  - morph-models       # Morphological models
+  - CladeAge           # Fossil calibration
+  - sampled-ancestors  # Sampled ancestor trees
+  - BADTRIP            # Transmission tree inference
+  - Babel              # Multi-language support
+  - BEASTvntr          # VNTR analysis
+  - GEO_SPHERE         # Spherical geometry for phylogeography
+
+# Application domains
+domains:
+  - virology
+  - epidemiology
+  - phylogeography
+  - palaeontology
+  - speciation
+  - population genetics
+  - language evolution
+  - macroevolution
+
+# Required fields
+required_fields:
+  - author
+  - title
+  - beastversion_tutorial    # BEAST2 version the tutorial was written/tested with
+  - workflow
+  - status
+
+# Recommended fields
+recommended_fields:
+  - subtitle
+  - keywords
+  - packages
+  - beastversion_package     # Most recent BEAST2 version supporting the package (auto-populated from CBAN)
+  - tracerversion
+  - figtreeversion
+  
+# Optional fields
+optional_fields:
+  - domains
+  - legacy_reason
+  - legacy_alternative
+  - related_tutorials
+  - prerequisites
+  - estimated_time
+
+# Validation rules
+validation_rules:
+  keywords:
+    min: 3              # min number of keywords
+    max: 10             # max number of keywords
+  packages:
+    min: 0
+    max: 5
+  legacy:
+    requires:           # If status is "legacy", these fields are required
+      - legacy_reason

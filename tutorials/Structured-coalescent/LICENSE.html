@@ -16,6 +16,7 @@
 
     <!-- Our style -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/tutorial-styles.css">
 
     <!-- JQuery and Bootstrap JS (necessary for collapsing navbar) -->
     <script src="/js/jquery-3.6.0.min.js"></script>
@@ -41,7 +42,7 @@
       <img src="/images/logo_bw.svg" style="height:2em">Taming the BEAST
     </a>
     
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
@@ -89,20 +90,50 @@
 			</ol>
 		</div>
 		<p>
+		<!-- Tutorial metadata badges -->
+		<div class="tutorial-badges" style="margin-bottom: 15px;">
+			
+			
+			
+			
+		</div>
+
+		<!-- Legacy warning -->
+		
+
 		<div class="head">
 			
 				
 			
 		</div>
 		
-	</div>				
+
+		<!-- Keywords -->
+		
+	</div>
 </div>
+
+<!-- Add CSS for badges -->
+<style>
+	.badge-beginner {
+		background: #28a745;
+		color: white;
+	}
+	.badge-intermediate {
+		background: #ffc107;
+		color: #333;
+	}
+	.badge-professional {
+		background: #dc3545;
+		color: white;
+	}
+</style>
 
 <div class="bigspacer"></div>
 
 <div class="row">
 	<div class="col-md-3">
-	<div id="sidebar">
+	<div id="sidebar" data-pagefind-ignore>
 		<div class="bigspacer"></div>
 		<div class="smallhead">
 			Tutorial
@@ -154,10 +185,22 @@
 	</div>
 	</div>
 
-	<div class="col-md-8">				
-		<div class="post">
+	<div class="col-md-8">
+		<div class="post" data-pagefind-body>
+			<!-- Pagefind meta and filter tags -->
+			<h1 data-pagefind-meta="title" style="display:none;">Structured-coalescent/</h1>
+			
+			
+			
+
 			<p>
-			<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                    GNU GENERAL PUBLIC LICENSE
+			<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                    GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. &lt;http://fsf.org/&gt;
@@ -832,6 +875,7 @@ the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 &lt;http://www.gnu.org/philosophy/why-not-lgpl.html&gt;.
 </code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
 
 
 			<hr>

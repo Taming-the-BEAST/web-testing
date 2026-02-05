@@ -16,6 +16,7 @@
 
     <!-- Our style -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/tutorial-styles.css">
 
     <!-- JQuery and Bootstrap JS (necessary for collapsing navbar) -->
     <script src="/js/jquery-3.6.0.min.js"></script>
@@ -41,7 +42,7 @@
       <img src="/images/logo_bw.svg" style="height:2em">Taming the BEAST
     </a>
     
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
@@ -89,6 +90,21 @@
 			</ol>
 		</div>
 		<p>
+		<!-- Tutorial metadata badges -->
+		<div class="tutorial-badges" style="margin-bottom: 15px;">
+			
+			
+			
+			
+			<span class="tag tag-package" style="background: #007bff; color: white; padding: 4px 8px; margin-right: 6px; border-radius: 4px; font-size: 11px;">
+				MultiTypeTree
+			</span>
+			
+		</div>
+
+		<!-- Legacy warning -->
+		
+
 		<div class="head">
 			
 				Population structure using MultiTypeTree
@@ -111,14 +127,58 @@
 			
 		</div>
 		
-	</div>				
+
+		<!-- Keywords -->
+		
+		<div class="smallnote" style="margin-top: 10px;">
+			<strong>Keywords:</strong>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				coalescent
+			</span>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				structured population
+			</span>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				migration
+			</span>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				MCMC
+			</span>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				Bayesian inference
+			</span>
+			
+		</div>
+		
+	</div>
 </div>
+
+<!-- Add CSS for badges -->
+<style>
+	.badge-beginner {
+		background: #28a745;
+		color: white;
+	}
+	.badge-intermediate {
+		background: #ffc107;
+		color: #333;
+	}
+	.badge-professional {
+		background: #dc3545;
+		color: white;
+	}
+</style>
 
 <div class="bigspacer"></div>
 
 <div class="row">
 	<div class="col-md-3">
-	<div id="sidebar">
+	<div id="sidebar" data-pagefind-ignore>
 		<div class="bigspacer"></div>
 		<div class="smallhead">
 			Tutorial
@@ -341,8 +401,24 @@ Updated TtB tutorial to work with BEAUti template upgrade</span>
 	</div>
 	</div>
 
-	<div class="col-md-8">				
-		<div class="post">
+	<div class="col-md-8">
+		<div class="post" data-pagefind-body>
+			<!-- Pagefind meta and filter tags -->
+			<h1 data-pagefind-meta="title" style="display:none;">Structured coalescent</h1>
+			
+			<span data-pagefind-filter="workflow" style="display:none;">Advanced analysis</span>
+			
+			
+			<span data-pagefind-filter="package" style="display:none;">MultiTypeTree</span>
+			
+			
+			<span data-pagefind-filter="domain" style="display:none;">virology</span>
+			
+			<span data-pagefind-filter="domain" style="display:none;">epidemiology</span>
+			
+			<span data-pagefind-filter="domain" style="display:none;">phylogeography</span>
+			
+
 			<p>
 			<h1 id="background">Background</h1>
 

@@ -69,9 +69,9 @@ You can choose to set up a build environment locally or use a container image. B
   ```
   bundle exec jekyll build
   ```
-  
+
   - If you wish to build with tutorials, preprocessing scripts are necessary to clone tutorial repos and update Jekyll metadata. To do this, execute the following before the build command:
-    
+
     ```
     ruby _scripts/update-and-preprocess.rb
     ```
@@ -79,8 +79,19 @@ You can choose to set up a build environment locally or use a container image. B
     ```
     export JEKYLL_ENV=skip_tuts
     ```
-  
-  4. To view the site, run `bundle exec jekyll serve --host=0.0.0.0` and point a browser to `http://localhost:4000/`. Option `--host=0.0.0.0` may not be needed, depending on your setup.  More information on Jekyll can be found [here](http://jekyllrb.com/).
+
+  **npm scripts available:**
+
+  | Command | Description |
+  |---------|-------------|
+  | `npm run build` | Full build: Jekyll + Pagefind search indexing |
+  | `npm run build:quick` | Quick build: Jekyll only (no search indexing) |
+  | `npm run serve` | Start Jekyll development server |
+  | `npm run serve:indexed` | Build with indexing, then serve (full-text search works) |
+  | `npm run serve:quick` | Quick build and serve (faster, no full-text search) |
+  | `npm run index` | Run Pagefind indexing on existing `_site` |
+
+  4. To view the site, run `bundle exec jekyll serve --host=0.0.0.0` or `npm run serve` and point a browser to `http://localhost:4000/`. Option `--host=0.0.0.0` may not be needed, depending on your setup.  More information on Jekyll can be found [here](http://jekyllrb.com/).
   
   See [Building a local copy of the site](https://taming-the-beast.github.io/contribute/Building-a-local-copy-of-the-site/) for more information.
 
