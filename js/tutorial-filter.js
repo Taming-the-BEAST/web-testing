@@ -196,11 +196,11 @@
             if (fulltextStatus) fulltextStatus.textContent = 'Full-text search is loading...';
             initPagefind().then((success) => {
               if (fulltextStatus) {
-                fulltextStatus.textContent = success ? 'Ready - enter search terms above' : 'Full-text search not available (run npm run build)';
+                fulltextStatus.textContent = success ? 'Enter search terms above' : 'Full-text search not available';
               }
             });
           } else {
-            if (fulltextStatus) fulltextStatus.textContent = 'Ready - enter search terms above';
+            if (fulltextStatus) fulltextStatus.textContent = 'Enter search terms above';
           }
           applyFilters();
         }
