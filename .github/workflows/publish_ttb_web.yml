@@ -40,6 +40,8 @@ jobs:
         run: |
           cd blotter
           npm run build
+        env:
+          BASEURL: /web-testing
           
       - name: Verify _site was created
         run: |
