@@ -19,31 +19,36 @@ jobs:
         - ${{ github.workspace }}:/app
     steps:
       - name: Check out the blotter repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: Taming-the-BEAST/blotter_test
           token: ${{secrets.GITHUB_TOKEN}}
           path: blotter
       - name: Check out the web repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: website
-      - name: Update and preprocess
+          
+      - name: Fetch tutorials
         run: |
           cd blotter
-          ruby _scripts/update-and-preprocess.rb
+          npm run fetch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build the site
+
+      - name: Build and index the site
         run: |
           cd blotter
-          bundle exec jekyll build
-      - name: Check if _site was created
+          npm run build
+          
+      - name: Verify _site was created
         run: |
-          if [[ ${{ hashFiles('_site/') == '' }} ]];
-          then
+          if [ ! -d "blotter/_site" ] || [ -z "$(ls -A blotter/_site)" ]; then
+            echo "ERROR: _site directory is missing or empty"
             exit 1
           fi
+          echo "Site built successfully"
+
       - name: Push changes to site
         run: |
           cp -RT blotter/_site/ website/
@@ -51,6 +56,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "updated for gh action"
           git push
           
