@@ -2,8 +2,8 @@
   "scripts": {
     "fetch": "ruby _scripts/update-and-preprocess.rb",
     "preprocess": "ruby _scripts/preprocess-tutorial-markdown.rb",
-    "build": "npm run preprocess && bundle exec jekyll build && npm run index",
-    "build:quick": "npm run preprocess && bundle exec jekyll build",
+    "build": "npm run preprocess && bundle exec jekyll build ${BASEURL:+--baseurl $BASEURL} && npm run index",
+    "build:quick": "npm run preprocess && bundle exec jekyll build ${BASEURL:+--baseurl $BASEURL}",
     "index": "/usr/local/bin/pagefind --site _site --glob \"tutorials/**/*.html\"",
     "serve": "bundle exec jekyll serve --host 0.0.0.0",
     "serve:indexed": "npm run build && bundle exec jekyll serve --host 0.0.0.0 --skip-initial-build",
