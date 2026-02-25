@@ -12,22 +12,22 @@
 
 	
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/web-testing/images/favicon.ico">	
+    <link rel="shortcut icon" href="/images/favicon.ico">	
 
     <!-- Our style -->
-    <link rel="stylesheet" type="text/css" href="/web-testing/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/web-testing/css/tutorial-styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/tutorial-styles.css">
 
     <!-- JQuery and Bootstrap JS (necessary for collapsing navbar) -->
-    <script src="/web-testing/js/jquery-3.6.0.min.js"></script>
-    <script src="/web-testing/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" type="text/css" href="/web-testing/bootstrap/icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/icons/bootstrap-icons.css">
 
     <!-- KaTeX -->
-    <link rel="stylesheet" href="/web-testing/css/katex.css">
-    <script src="/web-testing/js/katex.min.js"></script>
+    <link rel="stylesheet" href="/css/katex.css">
+    <script src="/js/katex.min.js"></script>
 
 </head>
 
@@ -38,8 +38,8 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     
-    <a class="navbar-brand" href="/web-testing/">
-      <img src="/web-testing/images/logo_bw.svg" style="height:2em">Taming the BEAST
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo_bw.svg" style="height:2em">Taming the BEAST
     </a>
     
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,19 +48,19 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link " aria-current="page" href="/web-testing/news/">news</a>
+        <a class="nav-link " aria-current="page" href="/news/">news</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="/web-testing/workshops/">workshops</a>
+        <a class="nav-link " href="/workshops/">workshops</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link  active " href="/web-testing/tutorials/">tutorials</a>
+        <a class="nav-link  active " href="/tutorials/">tutorials</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="/web-testing/contribute/">contribute</a>
+        <a class="nav-link " href="/contribute/">contribute</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" type="application/rss+xml" href="/web-testing/feed.news.xml">
+        <a class="nav-link" type="application/rss+xml" href="/feed.news.xml">
           <i class="bi bi-rss"></i>
         </a>
       </li>
@@ -77,80 +77,33 @@
 
 
 
-<div class="tutorial-index" data-baseurl="/web-testing">
+<div class="tutorial-index" data-baseurl="">
   <h1>BEAST2 Tutorials</h1>
 
-  <div class="text-center p-3 bg-light rounded mb-4 fs-5">
-    <span id="tutorial-count">5</span> tutorials available
-  </div>
-
   <!-- Filter Controls -->
-  <div class="bg-light p-4 rounded mb-4">
-    <h2>Filter & Search</h2>
-    <p class="text-muted small mb-3">Click multiple options to combine filters</p>
+  <div class="bg-light p-3 rounded mb-3">
 
     <!-- Search -->
-    <div class="mb-3">
-      <label for="tutorial-search" class="form-label fw-semibold">Search:</label>
-      <div class="d-flex gap-2 mb-2">
-        <div class="btn-group" role="group" aria-label="Search mode">
+    <div class="mb-2">
+      <label for="tutorial-search" class="form-label fw-semibold mb-1">Search:</label>
+      <div class="d-flex gap-2 mb-1">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Search mode">
           <input type="radio" class="btn-check" name="search-mode" id="search-mode-keyword" value="keyword" checked>
-          <label class="btn btn-outline-secondary" for="search-mode-keyword">Keyword Search</label>
+          <label class="btn btn-outline-secondary" for="search-mode-keyword">Keyword</label>
           <input type="radio" class="btn-check" name="search-mode" id="search-mode-fulltext" value="fulltext">
-          <label class="btn btn-outline-secondary" for="search-mode-fulltext">Full-Text Search</label>
+          <label class="btn btn-outline-secondary" for="search-mode-fulltext">Full-Text</label>
         </div>
       </div>
       <div id="keyword-search-container">
-        <input type="text" id="tutorial-search" class="form-control" placeholder="Search by title, author, keywords, packages..." list="keyword-suggestions" autocomplete="off">
+        <input type="text" id="tutorial-search" class="form-control form-control-sm" placeholder="Search by title, author, keywords, packages..." list="keyword-suggestions" autocomplete="off">
         <datalist id="keyword-suggestions">
           
           
           
-          <option value="Bayesian inference">
           
-          <option value="MCMC">
-          
-          <option value="birth-death">
-          
-          <option value="calibration">
-          
-          <option value="coalescent">
-          
-          <option value="migration">
-          
-          <option value="molecular clock">
-          
-          <option value="skyline">
-          
-          <option value="structured population">
-          
-          
-          <option value="BDSKY">
-          
-          <option value="MultiTypeTree">
-          
-          <option value="SA">
-          
-          <option value="StarBeast">
-          
-          <option value="StarBeast2">
-          
-          <option value="StarBeast3">
-          
-          
-          <option value="epidemiology">
-          
-          <option value="macroevolution">
-          
-          <option value="phylogeography">
-          
-          <option value="speciation">
-          
-          <option value="virology">
           
         </datalist>
-        <div class="mt-2">
-          <small class="text-muted">Popular keywords: </small>
+        <div class="mt-1">
           <span id="keyword-chips" class="d-inline-flex flex-wrap gap-1">
             
             
@@ -162,90 +115,53 @@
             
             <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill keyword-chip" data-keyword="molecular clock">molecular clock</button>
             
-            <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill keyword-chip" data-keyword="MCMC">MCMC</button>
-            
             <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill keyword-chip" data-keyword="phylogeography">phylogeography</button>
             
           </span>
         </div>
       </div>
       <div id="fulltext-search-container" style="display: none;">
-        <input type="text" id="fulltext-search" class="form-control" placeholder="Search tutorial content..." autocomplete="off">
-        <div id="fulltext-status" class="text-muted small mt-1"></div>
+        <input type="text" id="fulltext-search" class="form-control form-control-sm" placeholder="Search tutorial content..." autocomplete="off">
       </div>
     </div>
 
     <!-- Sort options -->
-    <div class="mb-3">
-      <label class="form-label fw-semibold">Sort by:</label>
-      <div class="d-flex flex-wrap gap-2">
-        <button class="btn btn-outline-secondary rounded-pill active" data-sort="date">Recently updated</button>
-        <button class="btn btn-outline-secondary rounded-pill" data-sort="title">Title (A-Z)</button>
+    <div class="mb-2">
+      <label class="form-label fw-semibold mb-1">Sort by:</label>
+      <div class="d-flex flex-wrap gap-1">
+        <button class="btn btn-sm btn-outline-secondary rounded-pill active" data-sort="date">Recently updated</button>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-sort="title">Title (A-Z)</button>
       </div>
     </div>
 
     <!-- Workflow filter -->
-    <div class="mb-3">
-      <label class="form-label fw-semibold">Workflow:</label>
-      <div class="d-flex flex-wrap gap-2">
-        <button class="btn btn-outline-secondary rounded-pill active" data-filter="workflow" data-value="all">All</button>
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Getting started">Getting started</button>
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Basic workflow">Basic workflow</button>
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Advanced analysis">Advanced analysis</button>
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Troubleshooting">Troubleshooting</button>
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Validation">Validation</button>
+    <div class="mb-2">
+      <label class="form-label fw-semibold mb-1">Workflow:</label>
+      <div class="d-flex flex-wrap gap-1">
+        <button class="btn btn-sm btn-outline-secondary rounded-pill active" data-filter="workflow" data-value="all">All</button>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Getting started">Getting started</button>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Basic workflow">Basic workflow</button>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Advanced analysis">Advanced analysis</button>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Troubleshooting">Troubleshooting</button>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="workflow" data-value="Validation">Validation</button>
       </div>
     </div>
 
     <!-- Package filter (dynamic) -->
     
-    <div class="mb-3">
-      <label class="form-label fw-semibold">Package:</label>
-      <div class="d-flex flex-wrap gap-2">
-        <button class="btn btn-outline-secondary rounded-pill active" data-filter="package" data-value="all">All</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="package" data-value="BDSKY">BDSKY</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="package" data-value="MultiTypeTree">MultiTypeTree</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="package" data-value="SA">SA</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="package" data-value="StarBeast">StarBeast</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="package" data-value="StarBeast2">StarBeast2</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="package" data-value="StarBeast3">StarBeast3</button>
-        
-      </div>
-    </div>
-    
 
     <!-- Domain filter (dynamic) -->
     
-    <div class="mb-3">
-      <label class="form-label fw-semibold">Application Domain:</label>
-      <div class="d-flex flex-wrap gap-2">
-        <button class="btn btn-outline-secondary rounded-pill active" data-filter="domain" data-value="all">All</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="domain" data-value="epidemiology">Epidemiology</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="domain" data-value="macroevolution">Macroevolution</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="domain" data-value="phylogeography">Phylogeography</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="domain" data-value="speciation">Speciation</button>
-        
-        <button class="btn btn-outline-secondary rounded-pill" data-filter="domain" data-value="virology">Virology</button>
-        
-      </div>
-    </div>
-    
 
-    <!-- Legacy toggle -->
-    <div class="mb-3 form-check">
+    <!-- Deprecated toggle -->
+    <div class="form-check mb-0">
       <input type="checkbox" class="form-check-input" id="show-legacy">
-      <label class="form-check-label" for="show-legacy">Show legacy tutorials</label>
+      <label class="form-check-label" for="show-legacy">Show deprecated tutorials</label>
     </div>
+  </div>
+
+  <div class="text-muted small mb-2">
+    <span id="tutorial-count">5</span> tutorials found
   </div>
 
   <!-- Tutorial Grid -->
@@ -253,14 +169,14 @@
     
     
     <div class="card tutorial-card "
-         data-workflow="Advanced analysis"
-         data-packages="MultiTypeTree"
-         data-domains="virology,epidemiology,phylogeography"
-         data-keywords="coalescent,structured population,migration,MCMC,Bayesian inference"
-         data-status="current"
+         data-workflow=""
+         data-packages=""
+         data-domains=""
+         data-keywords=""
+         data-status=""
          data-title="Structured coalescent"
          data-date="20250811"
-         data-search="structured coalescent population structure using multitypetree nicola f. müller,tim vaughan multitypetree coalescent structured population migration mcmc bayesian inference">
+         data-search="structured coalescent population structure using multitypetree nicola f. müller,tim vaughan  ">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -289,22 +205,12 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-          <span class="badge rounded-pill bg-purple">Advanced analysis</span>
-          
 
           
-          
-          <span class="badge rounded-pill bg-primary">MultiTypeTree</span>
           
           
 
           
-          
-          <span class="badge rounded-pill bg-teal">virology</span>
-          
-          <span class="badge rounded-pill bg-teal">epidemiology</span>
-          
-          <span class="badge rounded-pill bg-teal">phylogeography</span>
           
           
         </div>
@@ -312,20 +218,22 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow="Advanced analysis"
-         data-packages="StarBeast3,StarBeast2,SA"
-         data-domains="speciation,macroevolution"
-         data-keywords="coalescent,birth-death,molecular clock,calibration,Bayesian inference"
-         data-status="current"
+         data-workflow=""
+         data-packages=""
+         data-domains=""
+         data-keywords=""
+         data-status=""
          data-title="StarBeast3 Tutorial"
          data-date="20250716"
-         data-search="starbeast3 tutorial estimating species trees using starbeast3 ugne stolz, jordan douglas starbeast3 starbeast2 sa coalescent birth-death molecular clock calibration bayesian inference">
+         data-search="starbeast3 tutorial estimating species trees using starbeast3 ugne stolz, jordan douglas  ">
 
       <div class="card-body">
         <!-- Status and version badges -->
         <div class="mb-2">
           
 
+          
+          <span class="badge bg-secondary me-1">BEAST 2.7.8</span>
           
         </div>
 
@@ -346,24 +254,12 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-          <span class="badge rounded-pill bg-purple">Advanced analysis</span>
-          
 
           
-          
-          <span class="badge rounded-pill bg-primary">StarBeast3</span>
-          
-          <span class="badge rounded-pill bg-primary">StarBeast2</span>
-          
-          <span class="badge rounded-pill bg-primary">SA</span>
           
           
 
           
-          
-          <span class="badge rounded-pill bg-teal">speciation</span>
-          
-          <span class="badge rounded-pill bg-teal">macroevolution</span>
           
           
         </div>
@@ -371,14 +267,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow="Getting started"
+         data-workflow=""
          data-packages=""
-         data-domains="speciation"
-         data-keywords="molecular clock,calibration,skyline,MCMC,Bayesian inference"
-         data-status="current"
+         data-domains=""
+         data-keywords=""
+         data-status=""
          data-title="Introduction to BEAST2"
          data-date="20250708"
-         data-search="introduction to beast2 this is a simple introductory tutorial to help you get started with using beast2 and its accomplices. jūlija pečerska,veronika bošková,louis du plessis  molecular clock calibration skyline mcmc bayesian inference">
+         data-search="introduction to beast2 this is a simple introductory tutorial to help you get started with using beast2 and its accomplices. jūlija pečerska,veronika bošková,louis du plessis  ">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -407,16 +303,12 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-          <span class="badge rounded-pill bg-purple">Getting started</span>
-          
 
           
           
           
 
           
-          
-          <span class="badge rounded-pill bg-teal">speciation</span>
           
           
         </div>
@@ -424,14 +316,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow="Basic workflow"
-         data-packages="BDSKY"
-         data-domains="epidemiology,speciation"
-         data-keywords="coalescent,birth-death,calibration,structured population,skyline,Bayesian inference"
-         data-status="current"
+         data-workflow=""
+         data-packages=""
+         data-domains=""
+         data-keywords=""
+         data-status=""
          data-title="Skyline plots"
          data-date="20240611"
-         data-search="skyline plots inference of past population dynamics using bayesian coalescent skyline and birth-death skyline plots. nicola f. müller,louis du plessis bdsky coalescent birth-death calibration structured population skyline bayesian inference">
+         data-search="skyline plots inference of past population dynamics using bayesian coalescent skyline and birth-death skyline plots. nicola f. müller,louis du plessis  ">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -460,43 +352,35 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-          <span class="badge rounded-pill bg-purple">Basic workflow</span>
-          
 
           
-          
-          <span class="badge rounded-pill bg-primary">BDSKY</span>
           
           
 
           
-          
-          <span class="badge rounded-pill bg-teal">epidemiology</span>
-          
-          <span class="badge rounded-pill bg-teal">speciation</span>
           
           
         </div>
       </div>
     </div>
     
-    <div class="card tutorial-card border-warning border-start border-4"
-         data-workflow="Advanced analysis"
-         data-packages="StarBeast"
-         data-domains="speciation,macroevolution"
-         data-keywords="coalescent,birth-death,molecular clock,Bayesian inference,calibration"
-         data-status="legacy"
+    <div class="card tutorial-card "
+         data-workflow=""
+         data-packages=""
+         data-domains=""
+         data-keywords=""
+         data-status=""
          data-title="StarBeast Tutorial"
          data-date="20170202"
-         data-search="starbeast tutorial estimating species tree from multilocus sequence data joseph heled,remco bouckaert,walter xie,alexei j. drummond,chi zhang starbeast coalescent birth-death molecular clock bayesian inference calibration">
+         data-search="starbeast tutorial estimating species tree from multilocus sequence data joseph heled,remco bouckaert,walter xie,alexei j. drummond,chi zhang  ">
 
       <div class="card-body">
         <!-- Status and version badges -->
         <div class="mb-2">
           
-          <span class="badge bg-warning text-dark me-1">Legacy</span>
-          
 
+          
+          <span class="badge bg-secondary me-1">BEAST 2.4.x</span>
           
         </div>
 
@@ -517,20 +401,12 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-          <span class="badge rounded-pill bg-purple">Advanced analysis</span>
-          
 
           
-          
-          <span class="badge rounded-pill bg-primary">StarBeast</span>
           
           
 
           
-          
-          <span class="badge rounded-pill bg-teal">speciation</span>
-          
-          <span class="badge rounded-pill bg-teal">macroevolution</span>
           
           
         </div>
@@ -550,7 +426,7 @@ Joëlle Barido-Sottani, Veronika Bošková, Louis du Plessis, Denise Kühnert, C
 </p>
 
 <!-- Tutorial filter (uses Pagefind API for full-text search) -->
-<script type="module" src="/web-testing/js/tutorial-filter.js"></script>
+<script type="module" src="/js/tutorial-filter.js"></script>
 
 	
 	</div>
@@ -570,7 +446,7 @@ Joëlle Barido-Sottani, Veronika Bošková, Louis du Plessis, Denise Kühnert, C
       <div class="col-md-6">
         <div class="footer-logo">
           <a href="https://www.sib.swiss/services/open-software-and-databases">
-            <img src="/web-testing/images/sib_logo2023.png" width="130">
+            <img src="/images/sib_logo2023.png" width="130">
           </a>
         </div>
       </div>

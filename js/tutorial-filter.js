@@ -193,14 +193,11 @@
           if (keywordInput) keywordInput.value = '';
 
           if (!pagefind) {
-            if (fulltextStatus) fulltextStatus.textContent = 'Full-text search is loading...';
             initPagefind().then((success) => {
-              if (fulltextStatus) {
-                fulltextStatus.textContent = success ? 'Enter search terms above' : 'Full-text search not available';
+              if (fulltextStatus && !success) {
+                fulltextStatus.textContent = 'Full-text search not available';
               }
             });
-          } else {
-            if (fulltextStatus) fulltextStatus.textContent = 'Enter search terms above';
           }
           applyFilters();
         }
@@ -215,7 +212,7 @@
     if (!query) {
       filters.fulltextSearch = '';
       filters.fulltextMatches = null;
-      if (fulltextStatus) fulltextStatus.textContent = 'Ready - enter search terms above';
+      if (fulltextStatus) fulltextStatus.textContent = '';
       applyFilters();
       return;
     }
@@ -355,8 +352,8 @@
         }
       }
 
-      // Legacy filter
-      if (!filters.showLegacy && card.dataset.status === 'legacy') {
+      // Deprecated filter
+      if (!filters.showLegacy && card.dataset.status === 'deprecated') {
         show = false;
       }
 

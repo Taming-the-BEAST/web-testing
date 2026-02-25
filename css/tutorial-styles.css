@@ -11,8 +11,8 @@
 .tutorial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
+  gap: 20px;
+  margin-top: 10px;
 }
 
 /* Tutorial card hover effects */
@@ -115,6 +115,26 @@
 
 .pagefind-ui__result-link:hover {
   color: #6b8a9a;
+}
+
+/* Deprecated tutorial cards - greyed out */
+.tutorial-card--legacy {
+  opacity: 0.55;
+  border-left: 3px solid #aaa;
+}
+
+.tutorial-card--legacy:hover {
+  opacity: 0.75;
+}
+
+/* Compact filter controls */
+.bg-light .form-label {
+  font-size: 0.85rem;
+}
+
+.bg-light .btn-sm.rounded-pill {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
 }
 
 /* Responsive design */

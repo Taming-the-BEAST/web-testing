@@ -12,7 +12,7 @@ workflows:
 # Valid status values
 status_values:
   - current           # Active, up-to-date tutorial
-  - legacy            # Outdated but kept for reproducibility
+  - deprecated        # Outdated but kept for reproducibility
 
 # Recommended keyword taxonomy (extensible)
 keyword_taxonomy:
@@ -39,7 +39,6 @@ keyword_taxonomy:
     
   methods:
     - Bayesian inference
-    - MCMC
     - model selection
     - marginal likelihood
     - path sampling
@@ -91,7 +90,6 @@ domains:
   - epidemiology
   - phylogeography
   - palaeontology
-  - speciation
   - population genetics
   - language evolution
   - macroevolution
@@ -116,8 +114,8 @@ recommended_fields:
 # Optional fields
 optional_fields:
   - domains
-  - legacy_reason
-  - legacy_alternative
+  - deprecated_reason
+  - deprecated_alternative
   - related_tutorials
   - prerequisites
   - estimated_time
@@ -130,6 +128,6 @@ validation_rules:
   packages:
     min: 0
     max: 5
-  legacy:
-    requires:           # If status is "legacy", these fields are required
-      - legacy_reason
+  deprecated:
+    requires:           # If status is "deprecated", these fields are required
+      - deprecated_reason
