@@ -12259,8 +12259,8 @@ figcaption {
   position: fixed;
   bottom: 0%;
   width: 100%;
-  min-height: 75px;
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border: 1px solid transparent;
   border-color: #e7e7e7;
   background-color: #f8f8f8;
@@ -12268,9 +12268,11 @@ figcaption {
 
 .footer-acknowledgement {
   font-size: 0.65em;
-  padding-top: 10px;
-  line-height: 1.4;
+  line-height: 1.35;
   text-align: justify;
+}
+.footer-acknowledgement p {
+  margin-bottom: 0;
 }
 
 .footer-logo {
