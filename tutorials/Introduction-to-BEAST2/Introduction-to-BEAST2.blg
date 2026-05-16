@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Introduction-to-BEAST2.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Introduction-to-BEAST2-blx.bib
+Database file #2: master-refs.bib
+Biblatex version: 3.20
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 5 entries,
+            6402 wiz_defined-function locations,
+            1340 strings with 13730 characters,
+and the built_in function-call counts, 107797 in all, are:
+= -- 10300
+> -- 977
+< -- 250
++ -- 3682
+- -- 447
+* -- 8270
+:= -- 14187
+add.period$ -- 0
+call.type$ -- 5
+change.case$ -- 143
+chr.to.int$ -- 45
+cite$ -- 8
+duplicate$ -- 10332
+empty$ -- 8484
+format.name$ -- 673
+if$ -- 20896
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 0
+newline$ -- 369
+num.names$ -- 273
+pop$ -- 2136
+preamble$ -- 1
+purify$ -- 228
+quote$ -- 0
+skip$ -- 1299
+stack$ -- 0
+substring$ -- 21119
+swap$ -- 1273
+text.length$ -- 209
+text.prefix$ -- 4
+top$ -- 1
+type$ -- 158
+warning$ -- 0
+while$ -- 1651
+width$ -- 0
+write$ -- 365
