@@ -357,6 +357,16 @@
     			</div>
  				</a>
  			</div>			
+ 				
+			<div class="smallspacer"></div>				
+			<div>
+				<a class="off" href="https://github.com/pilarskj">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/92982760?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;">
+    				pilarskj
+    			</div>
+ 				</a>
+ 			</div>			
  			
 		</div>
 		<div class="bigspacer"></div>
@@ -365,6 +375,30 @@
 		</div>		
 		<div class="pad-left smallnote">
 			<ul class="list-unstyled">
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
+					<a class="off" href="https://github.com/tgvaughan/Structured-birth-death-BDMM-Prime/commit/451ac3bdd4fc4036db6dc3929a88f2e41a4a9db8">
+					18 May 2026 - <span class="text-gray">Merged in Julia's changes, updated figure.</span>
+					</a> 
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
+					<a class="off" href="https://github.com/tgvaughan/Structured-birth-death-BDMM-Prime/commit/727791ceb15ef822dd7a8e31c5e2b1914785e4db">
+					18 May 2026 - <span class="text-gray">some typos and minor changes from review</span>
+					</a> 
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
+					<a class="off" href="https://github.com/tgvaughan/Structured-birth-death-BDMM-Prime/commit/2e3e1f290bf982fe285d4062f9dec01e12077d7a">
+					17 May 2026 - <span class="text-gray">Syntax error fixed.</span>
+					</a> 
+				</li>
 			
 				<div class="smallspacer"></div>
 				<li> 
@@ -379,30 +413,6 @@
 					<i class="bi bi-check-square"></i>
 					<a class="off" href="https://github.com/tgvaughan/Structured-birth-death-BDMM-Prime/commit/c6b9527f8d29c69e613748ebb4a51be2ef685e50">
 					16 May 2026 - <span class="text-gray">Fixed some reference problems.</span>
-					</a> 
-				</li>
-			
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-check-square"></i>
-					<a class="off" href="https://github.com/tgvaughan/Structured-birth-death-BDMM-Prime/commit/4da994720714efb205fe3e4d0dd756b116940187">
-					16 May 2026 - <span class="text-gray">Changed to intermediate.</span>
-					</a> 
-				</li>
-			
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-check-square"></i>
-					<a class="off" href="https://github.com/tgvaughan/Structured-birth-death-BDMM-Prime/commit/de6434d6393035ae3ea9bbddcc5f072bb86c4d4f">
-					16 May 2026 - <span class="text-gray">Explanation of node colouring.</span>
-					</a> 
-				</li>
-			
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-check-square"></i>
-					<a class="off" href="https://github.com/tgvaughan/Structured-birth-death-BDMM-Prime/commit/d02b740f2ad07a0af002cd56258d1f3583a02a12">
-					16 May 2026 - <span class="text-gray">Added node colouring instructions, caveats on inference results.</span>
 					</a> 
 				</li>
 			
@@ -535,7 +545,7 @@ To set the working directory, select <code class="language-plaintext highlighter
 </figure>
 <p><br /></p>
 
-<p>To load the file, select <code class="language-plaintext highlighter-rouge">File &gt; Add Alignment</code>.</p>
+<p>To load the file, select <code class="language-plaintext highlighter-rouge">File &gt; Import Alignment</code>.</p>
 
 <p>This will open a file selection dialog box.  The example influenza sequence data
 file is named <code class="language-plaintext highlighter-rouge">h3n2_2deme.fna</code>.
@@ -765,7 +775,7 @@ allow this parameter to take type-dependent values.</p>
 <p>The next parameter is the “become uninfectious rate” parameter,
 representing the rate at which infected individuals become
 uninfectious. This parameter includes the rate at which individuals
-recovering on their own, together with the rate at which they are
+are recovering on their own, together with the rate at which they are
 removed from the population due to the sampling process.  Since it is
 dictated by disease progression, this parameter is sometimes assumed
 to be a function of the pathogen itself rather than location.  That
@@ -908,7 +918,7 @@ becomes uninfectious. An average infectious interval of one week (1/52 years)
 corresponds to an average become uninfectious rate of 1/(1/52)=52 in units
 of inverse years.</p>
 
-<p>For our analyisis we will therefor place a Log Normal prior on the become
+<p>For our analysis we will therefore place a Log Normal prior on the become
 uninfectious parameter with a mean of 52 and an S parameter to allow for
 some variation around this mean.</p>
 
@@ -947,7 +957,7 @@ samplingProportionEpi.t:h3n2_2deme.</p>
 
   <p>Select <strong>Log Normal</strong> from the drop-down list of distributions.</p>
 
-  <p>Set the <strong>M</strong> value to 0.001 and the <strong>S</strong> value to 0.5.</p>
+  <p>Set the <strong>M</strong> value to 0.001 and the <strong>S</strong> value to 1.25.</p>
 
   <p>Ensure the <strong>Mean in Real Space</strong> checkbox is checked.</p>
 
@@ -971,7 +981,7 @@ For the purpose of the tutorial, we will assume that a given infected individual
 <blockquote>
 
   <p>Expand the migration rate prior by clicking the arrow to the left of
-migrationRateEpi.t:h3n2_2deme</p>
+migrationRateEpi.t:h3n2_2deme.</p>
 
   <p>Select <strong>Exponential</strong> from the drop-down list of distributions.</p>
 
@@ -980,8 +990,8 @@ migrationRateEpi.t:h3n2_2deme</p>
 </blockquote>
 
 <p>Our use of an Exponential distribution rather than a Log Normal distribution here
-is a practical consideration to improve mixing of this tutorial analysis.  In a
-real analysis one should think carefully about how</p>
+is a practical consideration to improve mixing of this tutorial analysis. In a
+real analysis one should think carefully about how to set a prior for this parameter.</p>
 
 <figure>
 	<a id="fig:mig-rate-prior"></a>
@@ -990,7 +1000,7 @@ real analysis one should think carefully about how</p>
 </figure>
 <p><br /></p>
 
-<p>We will also set the prior for the clock rate to a distribution that is in accordance with what we know about RNA viruses, which is that in general their mean substitution rate is around <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≈</mo></mrow><annotation encoding="application/x-tex">\approx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4831em;"></span><span class="mrel">≈</span></span></span></span> 10^(-3).</p>
+<p>We will also set the prior for the clock rate to a distribution that is in accordance with what we know about seasonal influenza, i.e. it’s mean substitution rate is around $5\times 10^{-3}$ substitutions per site per year.</p>
 
 <blockquote>
 
@@ -1017,7 +1027,7 @@ real analysis one should think carefully about how</p>
 
 <blockquote>
 
-  <p>Save the configuration file as h3n2-bdmmprime.xml.  (Be sure to note
+  <p>Save the configuration file as h3n2-bdmmprime.xml. (Be sure to note
 where you have saved it!)</p>
 
 </blockquote>
@@ -1137,7 +1147,7 @@ IcyTree is a tree viewer that runs in your web browser.</p>
   <p>Open the IcyTree web page in your web browser.</p>
 
   <p>Select <code class="language-plaintext highlighter-rouge">Load from file</code> from the <code class="language-plaintext highlighter-rouge">File</code> menu, then select the
-<code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.trees</code> tree log file using the file
+<code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.typed.trees</code> tree log file using the file
 selection dialog. (Alternatively, you can simply drag the log file
 into your browser window.)</p>
 
@@ -1191,13 +1201,13 @@ distribution.</p>
 <h3 id="producing-an-mcc-summary-tree">Producing an MCC summary tree</h3>
 
 <blockquote>
-  <p>Start <strong>TreeAnnotator</strong></p>
+  <p>Start <strong>TreeAnnotator</strong>.</p>
 
   <p>Set the <strong>Burnin percentage</strong> to <strong>10%</strong> to discard the first 10% of trees in the log file.</p>
 
   <p>Set the <strong>Target tree type</strong> to the <strong>Maximum clade credibility tree</strong> and set <strong>Node heights</strong> to <strong>Mean heights</strong>.</p>
 
-  <p>Select the <code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.typed.node.trees</code> tree file as the input file and <code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.mcc_summary.tree</code> as the output file</p>
+  <p>Select the <code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.typed.node.trees</code> tree file as the input file and <code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.mcc_summary.tree</code> as the output file.</p>
 
   <p>Pressing the <strong>Run</strong> button will produce an annotated summary tree.</p>
 </blockquote>
@@ -1215,13 +1225,13 @@ distribution.</p>
 
 <p>To produce CCD0 summary tree, you will first need to install the CCD package.</p>
 <blockquote>
-  <p>Open BEAUTi</p>
+  <p>Open BEAUTi.</p>
 
-  <p>Select <strong>File</strong> » <strong>Manage packages</strong></p>
+  <p>Select <strong>File</strong> &gt; <strong>Manage packages</strong>.</p>
 
-  <p>Select <strong>CCD</strong> package in the list and select <strong>Install/Upgrade</strong></p>
+  <p>Select <strong>CCD</strong> package in the list and select <strong>Install/Upgrade</strong>.</p>
 
-  <p>Close BEAUTi</p>
+  <p>Close BEAUTi.</p>
 </blockquote>
 
 <figure>
@@ -1240,7 +1250,7 @@ distribution.</p>
 <blockquote>
   <p>Open IcyTree once more (maybe open it in a new browser tab).</p>
 
-  <p>Choose <code class="language-plaintext highlighter-rouge">File &gt; Load from file</code>, then use file selection dialog and select either select either <code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.mcc_summary.tree</code> or <code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.ccd0_summary.tree</code> to load MCC or CCD0 summary tree, respectivelly.</p>
+  <p>Choose <code class="language-plaintext highlighter-rouge">File &gt; Load from file</code>, then use file selection dialog and select either <code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.mcc_summary.tree</code> or <code class="language-plaintext highlighter-rouge">h3n2-bdmmprime.h3n2_2deme.ccd0_summary.tree</code> to load MCC or CCD0 summary tree, respectively.</p>
 
   <p>Select <code class="language-plaintext highlighter-rouge">Style &gt; Colour nodes by &gt; type</code> and display the legend and time axis as above.</p>
 
