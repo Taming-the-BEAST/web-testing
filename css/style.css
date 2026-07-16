@@ -12279,6 +12279,19 @@ figcaption {
   text-align: center;
 }
 
+.footer-acknowledgement {
+  font-size: 0.65em;
+  line-height: 1.35;
+  text-align: justify;
+}
+.footer-acknowledgement p {
+  margin-bottom: 0;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
 .footernav {
   text-align: center;
   margin-right: 2px;
