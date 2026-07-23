@@ -14,7 +14,7 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends  \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Pagefind binary directly (npm wrapper fails on ARM64)
-ARG PAGEFIND_VERSION=1.3.0
+ARG PAGEFIND_VERSION=1.5.2
 RUN ARCH=$(uname -m) && \
     if [ "$ARCH" = "aarch64" ] || [ "$ARCH" = "arm64" ]; then \
       PAGEFIND_ARCH="aarch64-unknown-linux-musl"; \

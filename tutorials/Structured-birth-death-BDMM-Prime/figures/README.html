@@ -91,6 +91,10 @@
 		</div>
 		<p>
 		<!-- Tutorial metadata badges -->
+		<!-- Read from `tutorial.*` (enriched _data/tutorials.yml, incl. the
+		     tutorials_metadata.yml fallback) rather than `page.*` (raw README
+		     frontmatter), so badges show even before a tutorial migrates its
+		     own frontmatter upstream. -->
 		<div class="tutorial-badges" style="margin-bottom: 15px;">
 			
 			
@@ -112,22 +116,6 @@
 		
 	</div>
 </div>
-
-<!-- Add CSS for badges -->
-<style>
-	.badge-beginner {
-		background: #28a745;
-		color: white;
-	}
-	.badge-intermediate {
-		background: #ffc107;
-		color: #333;
-	}
-	.badge-professional {
-		background: #dc3545;
-		color: white;
-	}
-</style>
 
 <div class="bigspacer"></div>
 
@@ -188,7 +176,15 @@
 	<div class="col-md-8">
 		<div class="post" data-pagefind-body>
 			<!-- Pagefind meta and filter tags -->
-			<h1 data-pagefind-meta="title" style="display:none;">Structured-birth-death-BDMM-Prime/figures/</h1>
+			<!-- Weighted so a title/keyword/subtitle hit outranks a body-text hit.
+			     Pagefind default weight is 1; headings inside <h1 id="figures">Figures</h1>
+<p>Add all figures used in the tutorial document here. This includes all screenshots as well as any output figures. Please try to keep the image files as small as possible.</p>
+ are
+			     auto-weighted by level (h1 highest), so only these need boosting. -->
+			<h1 data-pagefind-meta="title" data-pagefind-weight="10" style="display:none;">Structured-birth-death-BDMM-Prime/figures/</h1>
+			
+			
+			
 			
 			
 			

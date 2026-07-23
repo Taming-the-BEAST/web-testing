@@ -100,7 +100,175 @@
           
           
           
+          <option value="Bayesian inference">
           
+          <option value="MCMC">
+          
+          <option value="R">
+          
+          <option value="SNP data">
+          
+          <option value="birth-death">
+          
+          <option value="calibration">
+          
+          <option value="coalescent">
+          
+          <option value="cognate data">
+          
+          <option value="convergence">
+          
+          <option value="divergence time">
+          
+          <option value="diversification">
+          
+          <option value="duplicate sequences">
+          
+          <option value="fossilized birth-death">
+          
+          <option value="gene flow">
+          
+          <option value="initialization">
+          
+          <option value="lineage tracing">
+          
+          <option value="marginal likelihood">
+          
+          <option value="migration">
+          
+          <option value="model adequacy">
+          
+          <option value="model averaging">
+          
+          <option value="model selection">
+          
+          <option value="molecular clock">
+          
+          <option value="morphological">
+          
+          <option value="multispecies coalescent">
+          
+          <option value="nested sampling">
+          
+          <option value="nucleotide">
+          
+          <option value="parallel tempering">
+          
+          <option value="parameter estimation">
+          
+          <option value="phylodynamics">
+          
+          <option value="phylogeography">
+          
+          <option value="population dynamics">
+          
+          <option value="population structure">
+          
+          <option value="posterior prediction">
+          
+          <option value="priors">
+          
+          <option value="reassortment">
+          
+          <option value="recombination">
+          
+          <option value="relaxed clock">
+          
+          <option value="single-cell">
+          
+          <option value="site models">
+          
+          <option value="skyline">
+          
+          <option value="species delimitation">
+          
+          <option value="species tree">
+          
+          <option value="strict clock">
+          
+          <option value="structured coalescent">
+          
+          <option value="substitution models">
+          
+          <option value="tip dating">
+          
+          <option value="total evidence">
+          
+          <option value="transmission tree">
+          
+          <option value="tree visualization">
+          
+          <option value="visualization">
+          
+          
+          <option value="BDMM-Prime">
+          
+          <option value="BDSKY">
+          
+          <option value="BEAST_CLASSIC">
+          
+          <option value="Babel">
+          
+          <option value="CA">
+          
+          <option value="CCD">
+          
+          <option value="ClaDS">
+          
+          <option value="CoalRe">
+          
+          <option value="CoupledMCMC">
+          
+          <option value="MM">
+          
+          <option value="MSBD">
+          
+          <option value="Mascot">
+          
+          <option value="MultiTypeTree">
+          
+          <option value="NS">
+          
+          <option value="ORC">
+          
+          <option value="PIQMEE">
+          
+          <option value="SA">
+          
+          <option value="SCOTTI">
+          
+          <option value="StarBEAST2">
+          
+          <option value="TiDeTree">
+          
+          <option value="bModelTest">
+          
+          <option value="bacter">
+          
+          <option value="bdmm">
+          
+          <option value="feast">
+          
+          <option value="snapper">
+          
+          <option value="starbeast3">
+          
+          
+          <option value="epidemiology">
+          
+          <option value="language evolution">
+          
+          <option value="macroevolution">
+          
+          <option value="palaeontology">
+          
+          <option value="phylogeography">
+          
+          <option value="population genetics">
+          
+          <option value="single-cell">
+          
+          <option value="virology">
           
         </datalist>
         <div class="mt-1">
@@ -122,6 +290,7 @@
       </div>
       <div id="fulltext-search-container" style="display: none;">
         <input type="text" id="fulltext-search" class="form-control form-control-sm" placeholder="Search tutorial content..." autocomplete="off">
+        <div id="fulltext-status" class="text-muted small mt-1" aria-live="polite"></div>
       </div>
     </div>
 
@@ -149,8 +318,92 @@
 
     <!-- Package filter (dynamic) -->
     
+    <div class="mb-2">
+      <label class="form-label fw-semibold mb-1">Package:</label>
+      <div class="d-flex flex-wrap gap-1">
+        <button class="btn btn-sm btn-outline-secondary rounded-pill active" data-filter="package" data-value="all">All</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="BDMM-Prime">BDMM-Prime</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="BDSKY">BDSKY</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="BEAST_CLASSIC">BEAST_CLASSIC</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="Babel">Babel</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="CA">CA</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="CCD">CCD</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="ClaDS">ClaDS</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="CoalRe">CoalRe</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="CoupledMCMC">CoupledMCMC</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="MM">MM</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="MSBD">MSBD</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="Mascot">Mascot</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="MultiTypeTree">MultiTypeTree</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="NS">NS</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="ORC">ORC</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="PIQMEE">PIQMEE</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="SA">SA</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="SCOTTI">SCOTTI</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="StarBEAST2">StarBEAST2</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="TiDeTree">TiDeTree</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="bModelTest">bModelTest</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="bacter">bacter</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="bdmm">bdmm</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="feast">feast</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="snapper">snapper</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="starbeast3">starbeast3</button>
+        
+      </div>
+    </div>
+    
 
     <!-- Domain filter (dynamic) -->
+    
+    <div class="mb-2">
+      <label class="form-label fw-semibold mb-1">Application Domain:</label>
+      <div class="d-flex flex-wrap gap-1">
+        <button class="btn btn-sm btn-outline-secondary rounded-pill active" data-filter="domain" data-value="all">All</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="domain" data-value="epidemiology">Epidemiology</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="domain" data-value="language evolution">Language evolution</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="domain" data-value="macroevolution">Macroevolution</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="domain" data-value="palaeontology">Palaeontology</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="domain" data-value="phylogeography">Phylogeography</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="domain" data-value="population genetics">Population genetics</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="domain" data-value="single-cell">Single-cell</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="domain" data-value="virology">Virology</button>
+        
+      </div>
+    </div>
     
 
     <!-- Deprecated toggle -->
@@ -169,14 +422,14 @@
     
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
+         data-workflow="Troubleshooting"
+         data-packages="SA,ORC"
          data-domains=""
-         data-keywords=""
-         data-status=""
+         data-keywords="initialization,morphological,relaxed clock,calibration"
+         data-status="current"
          data-title="Troubleshooting initialization issues"
          data-date="20260603"
-         data-search="troubleshooting initialization issues getting beast2 to start joëlle barido-sottani,louis du plessis  ">
+         data-search="troubleshooting initialization issues getting beast2 to start joëlle barido-sottani,louis du plessis sa orc initialization morphological relaxed clock calibration">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -205,8 +458,14 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
+          <span class="badge rounded-pill badge-workflow">Troubleshooting</span>
+          
 
           
+          
+          <span class="badge rounded-pill badge-package">SA</span>
+          
+          <span class="badge rounded-pill badge-package">ORC</span>
           
           
 
@@ -218,14 +477,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
+         data-workflow="Troubleshooting"
          data-packages=""
          data-domains=""
-         data-keywords=""
-         data-status=""
+         data-keywords="convergence,MCMC,molecular clock,parameter estimation"
+         data-status="current"
          data-title="Troubleshooting-convergence-issues"
          data-date="20260601"
-         data-search="troubleshooting-convergence-issues post-processing and improving performance david a. rasmussen  ">
+         data-search="troubleshooting-convergence-issues post-processing and improving performance david a. rasmussen  convergence mcmc molecular clock parameter estimation">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -254,6 +513,8 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
+          <span class="badge rounded-pill badge-workflow">Troubleshooting</span>
+          
 
           
           
@@ -267,14 +528,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Basic workflow"
+         data-packages="BDSKY"
+         data-domains="virology"
+         data-keywords="priors,molecular clock,calibration,tip dating"
+         data-status="current"
          data-title="Prior-selection"
          data-date="20260601"
-         data-search="prior-selection prior selection and clock calibration using influenza a data. veronika bošková,venelin mitov,louis du plessis  ">
+         data-search="prior-selection prior selection and clock calibration using influenza a data. veronika bošková,venelin mitov,louis du plessis bdsky priors molecular clock calibration tip dating">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -303,12 +564,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">BDSKY</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">virology</span>
           
           
         </div>
@@ -316,14 +583,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="BDMM-Prime"
+         data-domains="phylogeography,virology"
+         data-keywords="birth-death,population structure,migration,phylogeography"
+         data-status="current"
          data-title="Structured birth-death model with BDMM-Prime"
          data-date="20260518"
-         data-search="structured birth-death model with bdmm-prime population structure using the multi-type birth-death model denise kühnert, jūlija pečerska, ugnė stolz, tim vaughan  ">
+         data-search="structured birth-death model with bdmm-prime population structure using the multi-type birth-death model denise kühnert, jūlija pečerska, ugnė stolz, tim vaughan bdmm-prime birth-death population structure migration phylogeography">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -352,12 +619,20 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">BDMM-Prime</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">phylogeography</span>
+          
+          <span class="badge rounded-pill badge-domain">virology</span>
           
           
         </div>
@@ -365,14 +640,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="snapper"
+         data-domains="population genetics"
+         data-keywords="multispecies coalescent,species delimitation,marginal likelihood,SNP data"
+         data-status="current"
          data-title="Species Trees and Species Delimitation with SNAPPER"
          data-date="20251106"
-         data-search="species trees and species delimitation with snapper analyzing snp or aflp data adam leaché, remco bouckaert  ">
+         data-search="species trees and species delimitation with snapper analyzing snp or aflp data adam leaché, remco bouckaert snapper multispecies coalescent species delimitation marginal likelihood snp data">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -401,12 +676,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">snapper</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">population genetics</span>
           
           
         </div>
@@ -414,14 +695,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="MM,SA"
+         data-domains="macroevolution,palaeontology"
+         data-keywords="fossilized birth-death,morphological,tip dating,calibration"
+         data-status="current"
          data-title="Total Evidence Tutorial"
          data-date="20250827"
-         data-search="total evidence tutorial inferring phylogenies using genetic sequences and morphological characters bethany j. allen,joëlle barido-sottani  ">
+         data-search="total evidence tutorial inferring phylogenies using genetic sequences and morphological characters bethany j. allen,joëlle barido-sottani mm sa fossilized birth-death morphological tip dating calibration">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -450,12 +731,22 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">MM</span>
+          
+          <span class="badge rounded-pill badge-package">SA</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">palaeontology</span>
           
           
         </div>
@@ -463,14 +754,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="MultiTypeTree"
+         data-domains="phylogeography"
+         data-keywords="structured coalescent,migration,population structure,phylogeography"
+         data-status="current"
          data-title="Structured coalescent"
          data-date="20250811"
-         data-search="structured coalescent population structure using multitypetree nicola f. müller,tim vaughan  ">
+         data-search="structured coalescent population structure using multitypetree nicola f. müller,tim vaughan multitypetree structured coalescent migration population structure phylogeography">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -499,12 +790,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">MultiTypeTree</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">phylogeography</span>
           
           
         </div>
@@ -512,14 +809,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="BDMM-Prime,MM,BEAST_CLASSIC"
+         data-domains="macroevolution,palaeontology"
+         data-keywords="fossilized birth-death,birth-death,population structure,tip dating"
+         data-status="current"
          data-title="BDMM-Prime for Macroevolution"
          data-date="20250717"
-         data-search="bdmm-prime for macroevolution the fossilized birth-death process and extensions rachel c. m. warnock,timothy g. vaughan,louis du plessis  ">
+         data-search="bdmm-prime for macroevolution the fossilized birth-death process and extensions rachel c. m. warnock,timothy g. vaughan,louis du plessis bdmm-prime mm beast_classic fossilized birth-death birth-death population structure tip dating">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -548,12 +845,24 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">BDMM-Prime</span>
+          
+          <span class="badge rounded-pill badge-package">MM</span>
+          
+          <span class="badge rounded-pill badge-package">BEAST_CLASSIC</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">palaeontology</span>
           
           
         </div>
@@ -561,14 +870,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="starbeast3,CCD"
+         data-domains="macroevolution,population genetics"
+         data-keywords="multispecies coalescent,species tree,morphological,total evidence,relaxed clock"
+         data-status="current"
          data-title="StarBeast3 Tutorial"
          data-date="20250716"
-         data-search="starbeast3 tutorial estimating species trees using starbeast3 ugne stolz, jordan douglas  ">
+         data-search="starbeast3 tutorial estimating species trees using starbeast3 ugne stolz, jordan douglas starbeast3 ccd multispecies coalescent species tree morphological total evidence relaxed clock">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -597,12 +906,22 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">starbeast3</span>
+          
+          <span class="badge rounded-pill badge-package">CCD</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">population genetics</span>
           
           
         </div>
@@ -610,14 +929,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="TiDeTree,CCD"
+         data-domains="single-cell"
+         data-keywords="birth-death,molecular clock,tip dating,lineage tracing,single-cell"
+         data-status="current"
          data-title="TiDeTree Tutorial"
          data-date="20250715"
-         data-search="tidetree tutorial reconstructing time-scaled single-cell phylogenies from genetic lineage tracing data sophie seidel  ">
+         data-search="tidetree tutorial reconstructing time-scaled single-cell phylogenies from genetic lineage tracing data sophie seidel tidetree ccd birth-death molecular clock tip dating lineage tracing single-cell">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -646,12 +965,20 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">TiDeTree</span>
+          
+          <span class="badge rounded-pill badge-package">CCD</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">single-cell</span>
           
           
         </div>
@@ -659,14 +986,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Basic workflow"
+         data-packages="SA,ORC"
+         data-domains="palaeontology,macroevolution"
+         data-keywords="fossilized birth-death,birth-death,calibration,relaxed clock,tip dating,morphological"
+         data-status="current"
          data-title="Divergence Time Estimation"
          data-date="20250713"
-         data-search="divergence time estimation dating species divergences with the fossilized birth-death process tracy a. heath,rachel warnock,bethany j. allen  ">
+         data-search="divergence time estimation dating species divergences with the fossilized birth-death process tracy a. heath,rachel warnock,bethany j. allen sa orc fossilized birth-death birth-death calibration relaxed clock tip dating morphological">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -695,12 +1022,22 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">SA</span>
+          
+          <span class="badge rounded-pill badge-package">ORC</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">palaeontology</span>
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
           
           
         </div>
@@ -708,14 +1045,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
+         data-workflow="Advanced analysis"
+         data-packages="bModelTest,CCD"
          data-domains=""
-         data-keywords=""
-         data-status=""
+         data-keywords="relaxed clock,molecular clock,substitution models,site models,calibration"
+         data-status="current"
          data-title="Molecular clock dating and modelling rate variation"
          data-date="20250711"
-         data-search="molecular clock dating and modelling rate variation accounting for evolutionary rate variation in passerine birds simon ho,jacqueline nguyen  ">
+         data-search="molecular clock dating and modelling rate variation accounting for evolutionary rate variation in passerine birds simon ho,jacqueline nguyen bmodeltest ccd relaxed clock molecular clock substitution models site models calibration">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -744,8 +1081,14 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
+          
 
           
+          
+          <span class="badge rounded-pill badge-package">bModelTest</span>
+          
+          <span class="badge rounded-pill badge-package">CCD</span>
           
           
 
@@ -757,14 +1100,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
+         data-workflow="Validation"
+         data-packages="NS"
          data-domains=""
-         data-keywords=""
-         data-status=""
+         data-keywords="model selection,marginal likelihood,nested sampling,molecular clock"
+         data-status="current"
          data-title="Model selection"
          data-date="20250710"
-         data-search="model selection model selection with nested sampling remco bouckaert  ">
+         data-search="model selection model selection with nested sampling remco bouckaert ns model selection marginal likelihood nested sampling molecular clock">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -793,8 +1136,12 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
+          <span class="badge rounded-pill badge-workflow">Validation</span>
+          
 
           
+          
+          <span class="badge rounded-pill badge-package">NS</span>
           
           
 
@@ -806,14 +1153,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
+         data-workflow="Getting started"
+         data-packages="CCD"
          data-domains=""
-         data-keywords=""
-         data-status=""
+         data-keywords="molecular clock,substitution models,site models,nucleotide,Bayesian inference"
+         data-status="current"
          data-title="Introduction to BEAST2"
          data-date="20250708"
-         data-search="introduction to beast2 this is a simple introductory tutorial to help you get started with using beast2 and its accomplices. jūlija pečerska,veronika bošková,louis du plessis  ">
+         data-search="introduction to beast2 this is a simple introductory tutorial to help you get started with using beast2 and its accomplices. jūlija pečerska,veronika bošková,louis du plessis ccd molecular clock substitution models site models nucleotide bayesian inference">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -842,8 +1189,12 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
+          <span class="badge rounded-pill badge-workflow">Getting started</span>
+          
 
           
+          
+          <span class="badge rounded-pill badge-package">CCD</span>
           
           
 
@@ -855,14 +1206,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Basic workflow"
+         data-packages="CCD"
+         data-domains="virology"
+         data-keywords="molecular clock,tip dating,coalescent,substitution models"
+         data-status="current"
          data-title="Time-stamped data"
          data-date="20250703"
-         data-search="time-stamped data time-stamped data remco bouckaert, walter xie, fábio k. mendes, eva li and alexei drummond  ">
+         data-search="time-stamped data time-stamped data remco bouckaert, walter xie, fábio k. mendes, eva li and alexei drummond ccd molecular clock tip dating coalescent substitution models">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -891,12 +1242,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">CCD</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">virology</span>
           
           
         </div>
@@ -904,14 +1261,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="ClaDS"
+         data-domains="macroevolution"
+         data-keywords="birth-death,diversification,relaxed clock"
+         data-status="current"
          data-title="The ClaDS package"
          data-date="20250619"
-         data-search="the clads package inferring progressive changes in birth and death rates joëlle barido-sottani  ">
+         data-search="the clads package inferring progressive changes in birth and death rates joëlle barido-sottani clads birth-death diversification relaxed clock">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -940,12 +1297,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">ClaDS</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
           
           
         </div>
@@ -953,14 +1316,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="MSBD"
+         data-domains="macroevolution"
+         data-keywords="birth-death,diversification"
+         data-status="current"
          data-title="The MSBD package"
          data-date="20250619"
-         data-search="the msbd package inferring lineage-dependent birth and death rates joëlle barido-sottani  ">
+         data-search="the msbd package inferring lineage-dependent birth and death rates joëlle barido-sottani msbd birth-death diversification">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -989,12 +1352,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">MSBD</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
           
           
         </div>
@@ -1002,14 +1371,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="bdmm"
+         data-domains="phylogeography,epidemiology"
+         data-keywords="birth-death,population structure,migration"
+         data-status="current"
          data-title="Structured birth-death model"
          data-date="20250604"
-         data-search="structured birth-death model population structure using the multi-type birth-death model denise kühnert, jūlija pečerska  ">
+         data-search="structured birth-death model population structure using the multi-type birth-death model denise kühnert, jūlija pečerska bdmm birth-death population structure migration">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1038,12 +1407,20 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">bdmm</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">phylogeography</span>
+          
+          <span class="badge rounded-pill badge-domain">epidemiology</span>
           
           
         </div>
@@ -1051,14 +1428,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="Mascot,CCD"
+         data-domains="phylogeography"
+         data-keywords="structured coalescent,migration,population structure,phylogeography"
+         data-status="current"
          data-title="MASCOT v3.0.0 Tutorial"
          data-date="20250602"
-         data-search="mascot v3.0.0 tutorial parameter and state inference using the approximate structured coalescent nicola f. müller  ">
+         data-search="mascot v3.0.0 tutorial parameter and state inference using the approximate structured coalescent nicola f. müller mascot ccd structured coalescent migration population structure phylogeography">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1087,12 +1464,20 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">Mascot</span>
+          
+          <span class="badge rounded-pill badge-package">CCD</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">phylogeography</span>
           
           
         </div>
@@ -1100,14 +1485,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
+         data-workflow="Basic workflow"
          data-packages=""
          data-domains=""
-         data-keywords=""
-         data-status=""
+         data-keywords="visualization,R,tree visualization,phylodynamics"
+         data-status="current"
          data-title="Visualizing BEAST2 results in R"
          data-date="20250523"
-         data-search="visualizing beast2 results in r tutorial on visualising results from beast2 analyses. cecilia valenzuela agüí, ugnė stolz  ">
+         data-search="visualizing beast2 results in r tutorial on visualising results from beast2 analyses. cecilia valenzuela agüí, ugnė stolz  visualization r tree visualization phylodynamics">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1136,6 +1521,8 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
+          
 
           
           
@@ -1149,14 +1536,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Basic workflow"
+         data-packages="BDSKY"
+         data-domains="epidemiology"
+         data-keywords="skyline,coalescent,birth-death,population dynamics"
+         data-status="current"
          data-title="Skyline plots"
          data-date="20240611"
-         data-search="skyline plots inference of past population dynamics using bayesian coalescent skyline and birth-death skyline plots. nicola f. müller,louis du plessis  ">
+         data-search="skyline plots inference of past population dynamics using bayesian coalescent skyline and birth-death skyline plots. nicola f. müller,louis du plessis bdsky skyline coalescent birth-death population dynamics">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1185,12 +1572,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">BDSKY</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">epidemiology</span>
           
           
         </div>
@@ -1198,14 +1591,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Basic workflow"
+         data-packages="StarBEAST2"
+         data-domains="macroevolution,population genetics"
+         data-keywords="multispecies coalescent,species tree,molecular clock,relaxed clock"
+         data-status="current"
          data-title="StarBEAST2 v1.0.0 tutorial"
          data-date="20230815"
-         data-search="starbeast2 v1.0.0 tutorial estimating species trees using starbeast2 huw a. ogilvie  ">
+         data-search="starbeast2 v1.0.0 tutorial estimating species trees using starbeast2 huw a. ogilvie starbeast2 multispecies coalescent species tree molecular clock relaxed clock">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1234,12 +1627,20 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">StarBEAST2</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">population genetics</span>
           
           
         </div>
@@ -1247,14 +1648,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
+         data-workflow="Basic workflow"
+         data-packages="bModelTest"
          data-domains=""
-         data-keywords=""
-         data-status=""
+         data-keywords="substitution models,site models,model averaging,model selection"
+         data-status="current"
          data-title="Substitution-model-averaging"
          data-date="20230724"
-         data-search="substitution-model-averaging a tutorial using bmodeltest david a. rasmussen,carsten magnus,remco bouckaert  ">
+         data-search="substitution-model-averaging a tutorial using bmodeltest david a. rasmussen,carsten magnus,remco bouckaert bmodeltest substitution models site models model averaging model selection">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1283,8 +1684,12 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
+          
 
           
+          
+          <span class="badge rounded-pill badge-package">bModelTest</span>
           
           
 
@@ -1296,14 +1701,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="BDSKY,feast"
+         data-domains="macroevolution,palaeontology"
+         data-keywords="skyline,fossilized birth-death,coalescent,diversification"
+         data-status="current"
          data-title="Skyline analyses for macroevolution"
          data-date="20230315"
-         data-search="skyline analyses for macroevolution estimating evolutionary parameters from species phylogenies bethany j. allen  ">
+         data-search="skyline analyses for macroevolution estimating evolutionary parameters from species phylogenies bethany j. allen bdsky feast skyline fossilized birth-death coalescent diversification">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1332,12 +1737,22 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">BDSKY</span>
+          
+          <span class="badge rounded-pill badge-package">feast</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">palaeontology</span>
           
           
         </div>
@@ -1345,14 +1760,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="CoalRe"
+         data-domains="virology"
+         data-keywords="coalescent,reassortment,recombination,tip dating"
+         data-status="current"
          data-title="Estimating Reassortment Networks with CoalRe"
          data-date="20220401"
-         data-search="estimating reassortment networks with coalre estimating reassortment networks with coalre nicola f. müller  ">
+         data-search="estimating reassortment networks with coalre estimating reassortment networks with coalre nicola f. müller coalre coalescent reassortment recombination tip dating">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1381,12 +1796,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">CoalRe</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">virology</span>
           
           
         </div>
@@ -1394,14 +1815,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="PIQMEE"
+         data-domains="epidemiology"
+         data-keywords="birth-death,skyline,tip dating,duplicate sequences"
+         data-status="current"
          data-title="PIQMEE-Tutorial"
          data-date="20220228"
-         data-search="piqmee-tutorial how to efficiently analyze large data sets containing duplicates veronika bošková  ">
+         data-search="piqmee-tutorial how to efficiently analyze large data sets containing duplicates veronika bošková piqmee birth-death skyline tip dating duplicate sequences">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1430,12 +1851,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">PIQMEE</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">epidemiology</span>
           
           
         </div>
@@ -1443,14 +1870,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="StarBEAST2,CoupledMCMC"
+         data-domains="population genetics,macroevolution"
+         data-keywords="multispecies coalescent,migration,population structure,gene flow"
+         data-status="current"
          data-title="AIM in StarBeast2 v0.15.2 Tutorial"
          data-date="20200914"
-         data-search="aim in starbeast2 v0.15.2 tutorial inferring species trees and gene flow from multiple loci nicola f. müller  ">
+         data-search="aim in starbeast2 v0.15.2 tutorial inferring species trees and gene flow from multiple loci nicola f. müller starbeast2 coupledmcmc multispecies coalescent migration population structure gene flow">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1479,12 +1906,22 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">StarBEAST2</span>
+          
+          <span class="badge rounded-pill badge-package">CoupledMCMC</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">population genetics</span>
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
           
           
         </div>
@@ -1492,14 +1929,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Troubleshooting"
+         data-packages="CoupledMCMC"
+         data-domains="epidemiology"
+         data-keywords="parallel tempering,MCMC,skyline,coalescent,molecular clock"
+         data-status="current"
          data-title="Bayesian Skyline with adaptive parallel Tempering with CoupledMCMC Tutorial"
          data-date="20191206"
-         data-search="bayesian skyline with adaptive parallel tempering with coupledmcmc tutorial adaptive parallel tempering nicola f. müller  ">
+         data-search="bayesian skyline with adaptive parallel tempering with coupledmcmc tutorial adaptive parallel tempering nicola f. müller coupledmcmc parallel tempering mcmc skyline coalescent molecular clock">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1528,12 +1965,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Troubleshooting</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">CoupledMCMC</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">epidemiology</span>
           
           
         </div>
@@ -1541,14 +1984,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Basic workflow"
+         data-packages="Babel,BDSKY,SA"
+         data-domains="language evolution"
+         data-keywords="strict clock,substitution models,calibration,cognate data"
+         data-status="current"
          data-title="Language Phylogenies"
          data-date="20190729"
-         data-search="language phylogenies using babel to analyse linguistic data simon j. greenhill, konstantin hoffmann  ">
+         data-search="language phylogenies using babel to analyse linguistic data simon j. greenhill, konstantin hoffmann babel bdsky sa strict clock substitution models calibration cognate data">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1577,12 +2020,22 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">Babel</span>
+          
+          <span class="badge rounded-pill badge-package">BDSKY</span>
+          
+          <span class="badge rounded-pill badge-package">SA</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">language evolution</span>
           
           
         </div>
@@ -1590,14 +2043,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Basic workflow"
+         data-packages="CA"
+         data-domains="macroevolution,palaeontology"
+         data-keywords="birth-death,calibration,molecular clock,relaxed clock,divergence time"
+         data-status="current"
          data-title="CladeAge Tutorial"
          data-date="20190221"
-         data-search="cladeage tutorial fossil-based divergence-time estimation with cladeage michael matschiner  ">
+         data-search="cladeage tutorial fossil-based divergence-time estimation with cladeage michael matschiner ca birth-death calibration molecular clock relaxed clock divergence time">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1626,12 +2079,20 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">CA</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">palaeontology</span>
           
           
         </div>
@@ -1639,14 +2100,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Basic workflow"
+         data-packages="bModelTest"
+         data-domains="virology,epidemiology"
+         data-keywords="relaxed clock,molecular clock,tip dating,substitution models,model averaging"
+         data-status="current"
          data-title="Molecular dating using heterochronous data and substitution model averaging"
          data-date="20181105"
-         data-search="molecular dating using heterochronous data and substitution model averaging estimating the time of origin of the 2009 h1n1 pandemic in north america sebastian duchene, tim vaughan, veronika boskova  ">
+         data-search="molecular dating using heterochronous data and substitution model averaging estimating the time of origin of the 2009 h1n1 pandemic in north america sebastian duchene, tim vaughan, veronika boskova bmodeltest relaxed clock molecular clock tip dating substitution models model averaging">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1675,12 +2136,20 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">bModelTest</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">virology</span>
+          
+          <span class="badge rounded-pill badge-domain">epidemiology</span>
           
           
         </div>
@@ -1688,14 +2157,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="bacter"
+         data-domains="population genetics"
+         data-keywords="coalescent,recombination,nucleotide"
+         data-status="current"
          data-title="Bacter Tutorial"
          data-date="20180621"
-         data-search="bacter tutorial inferring args from bacterial sequence data. tim vaughan  ">
+         data-search="bacter tutorial inferring args from bacterial sequence data. tim vaughan bacter coalescent recombination nucleotide">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1724,12 +2193,18 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">bacter</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">population genetics</span>
           
           
         </div>
@@ -1737,14 +2212,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Advanced analysis"
+         data-packages="SCOTTI"
+         data-domains="epidemiology,virology"
+         data-keywords="structured coalescent,transmission tree,migration,population structure"
+         data-status="current"
          data-title="SCOTTI Tutorial"
          data-date="20170724"
-         data-search="scotti tutorial transmission tree reconstruction with the structured coalescent louis du plessis,nicola de maio  ">
+         data-search="scotti tutorial transmission tree reconstruction with the structured coalescent louis du plessis,nicola de maio scotti structured coalescent transmission tree migration population structure">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1773,12 +2248,20 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">SCOTTI</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          
+          <span class="badge rounded-pill badge-domain">virology</span>
           
           
         </div>
@@ -1786,14 +2269,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
+         data-workflow="Validation"
          data-packages=""
          data-domains=""
-         data-keywords=""
-         data-status=""
+         data-keywords="model adequacy,substitution models,molecular clock,posterior prediction"
+         data-status="current"
          data-title="Model adequacy using BEAST2"
          data-date="20170209"
-         data-search="model adequacy using beast2 assessing clock and substitution models david duchêne  ">
+         data-search="model adequacy using beast2 assessing clock and substitution models david duchêne  model adequacy substitution models molecular clock posterior prediction">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1822,6 +2305,8 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
+          <span class="badge rounded-pill badge-workflow">Validation</span>
+          
 
           
           
@@ -1835,14 +2320,14 @@
     </div>
     
     <div class="card tutorial-card "
-         data-workflow=""
-         data-packages=""
-         data-domains=""
-         data-keywords=""
-         data-status=""
+         data-workflow="Basic workflow"
+         data-packages="StarBEAST2"
+         data-domains="macroevolution,population genetics"
+         data-keywords="multispecies coalescent,calibration,molecular clock,relaxed clock"
+         data-status="current"
          data-title="Calibrated Species Trees"
          data-date="20170202"
-         data-search="calibrated species trees estimating species divergence times using starbeast2 huw a. ogilvie  ">
+         data-search="calibrated species trees estimating species divergence times using starbeast2 huw a. ogilvie starbeast2 multispecies coalescent calibration molecular clock relaxed clock">
 
       <div class="card-body">
         <!-- Status and version badges -->
@@ -1871,12 +2356,20 @@
         <!-- Tags: workflow, packages, domains -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-
-          
-          
+          <span class="badge rounded-pill badge-workflow">Basic workflow</span>
           
 
           
+          
+          <span class="badge rounded-pill badge-package">StarBEAST2</span>
+          
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">population genetics</span>
           
           
         </div>

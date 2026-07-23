@@ -91,14 +91,22 @@
 		</div>
 		<p>
 		<!-- Tutorial metadata badges -->
+		<!-- Read from `tutorial.*` (enriched _data/tutorials.yml, incl. the
+		     tutorials_metadata.yml fallback) rather than `page.*` (raw README
+		     frontmatter), so badges show even before a tutorial migrates its
+		     own frontmatter upstream. -->
 		<div class="tutorial-badges" style="margin-bottom: 15px;">
 			
-			<span class="badge badge-level badge-intermediate" style="padding: 5px 10px; margin-right: 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">
-				Intermediate
-			</span>
+			
+			<span class="tag badge-workflow">Basic workflow</span>
 			
 			
+			<span class="tag badge-package">StarBEAST2</span>
 			
+			
+			<span class="tag badge-domain">macroevolution</span>
+			
+			<span class="tag badge-domain">population genetics</span>
 			
 		</div>
 
@@ -128,22 +136,6 @@
 		
 	</div>
 </div>
-
-<!-- Add CSS for badges -->
-<style>
-	.badge-beginner {
-		background: #28a745;
-		color: white;
-	}
-	.badge-intermediate {
-		background: #ffc107;
-		color: #333;
-	}
-	.badge-professional {
-		background: #dc3545;
-		color: white;
-	}
-</style>
 
 <div class="bigspacer"></div>
 
@@ -535,7 +527,31 @@ Update to BEAST 2.7</span>
 	<div class="col-md-8">
 		<div class="post" data-pagefind-body>
 			<!-- Pagefind meta and filter tags -->
-			<h1 data-pagefind-meta="title" style="display:none;">StarBEAST2 v1.0.0 tutorial</h1>
+			<!-- Weighted so a title/keyword/subtitle hit outranks a body-text hit.
+			     Pagefind default weight is 1; headings inside <h1 id="background">Background</h1>
+
+<p>StarBEAST2 is a Bayesian implementation of the multispecies coalescent (MSC)
+that jointly infers gene and species trees directly from multiple sequence alignments.
+Trees inferred using this method contain not only topological relationships, but
+also estimates of species divergences times and gene coalescence times. Such trees
+are therefore often described as <em>time trees</em>.</p>
+
+<p>This tutorial walks through through how to set up three kinds of species
+tree analyses using StarBEAST2. The first is basic species tree reconstruction using
+a strict nuclear clock rate.  The second is a relaxed clock analysis where a separate
+molecular clock rate is estimated for each species branch. The third is a
+<em>total evidence</em> analysis where the times and rates and jointly estimated by integrating
+fossil data into the model.</p>
+
+<p>This tutorial is identical to the tutorial hosted <a href="https://github.com/genomescale/starbeast2/releases/tag/v1.0.0">here</a>.</p>
+ are
+			     auto-weighted by level (h1 highest), so only these need boosting. -->
+			<h1 data-pagefind-meta="title" data-pagefind-weight="10" style="display:none;">StarBEAST2 v1.0.0 tutorial</h1>
+			
+			
+			
+			<div data-pagefind-weight="5" style="display:none;">Estimating species trees using StarBEAST2</div>
+			
 			
 			
 			

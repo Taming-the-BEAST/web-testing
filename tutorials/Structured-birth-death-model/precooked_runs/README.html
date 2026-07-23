@@ -91,6 +91,10 @@
 		</div>
 		<p>
 		<!-- Tutorial metadata badges -->
+		<!-- Read from `tutorial.*` (enriched _data/tutorials.yml, incl. the
+		     tutorials_metadata.yml fallback) rather than `page.*` (raw README
+		     frontmatter), so badges show even before a tutorial migrates its
+		     own frontmatter upstream. -->
 		<div class="tutorial-badges" style="margin-bottom: 15px;">
 			
 			
@@ -112,22 +116,6 @@
 		
 	</div>
 </div>
-
-<!-- Add CSS for badges -->
-<style>
-	.badge-beginner {
-		background: #28a745;
-		color: white;
-	}
-	.badge-intermediate {
-		background: #ffc107;
-		color: #333;
-	}
-	.badge-professional {
-		background: #dc3545;
-		color: white;
-	}
-</style>
 
 <div class="bigspacer"></div>
 
@@ -188,7 +176,15 @@
 	<div class="col-md-8">
 		<div class="post" data-pagefind-body>
 			<!-- Pagefind meta and filter tags -->
-			<h1 data-pagefind-meta="title" style="display:none;">Structured-birth-death-model/precooked_runs/</h1>
+			<!-- Weighted so a title/keyword/subtitle hit outranks a body-text hit.
+			     Pagefind default weight is 1; headings inside <h1 id="precooked-runs">Precooked runs</h1>
+<p>Add the output files of running the XML files in <code class="language-plaintext highlighter-rouge">../xml/</code> in BEAST2 here. At the least this should include <code class="language-plaintext highlighter-rouge">.log</code> files that can be analysed in Tracer. Please also add the <code class="language-plaintext highlighter-rouge">.trees</code> files if the trees are analysed in the tutorial.</p>
+ are
+			     auto-weighted by level (h1 highest), so only these need boosting. -->
+			<h1 data-pagefind-meta="title" data-pagefind-weight="10" style="display:none;">Structured-birth-death-model/precooked_runs/</h1>
+			
+			
+			
 			
 			
 			

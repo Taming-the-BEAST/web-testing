@@ -36,19 +36,21 @@
   color: #5a5a5a;
 }
 
-/* Workflow badge - dusty mauve */
-.bg-purple {
-  background-color: #9a8297;
-}
+/* Shared metadata-badge colours used by tutorial cards (tutorials/index.html)
+   and the tutorial pages (_layouts/tutorial.html). */
+.badge-workflow   { background-color: #9a8297; color: #fff; }  /* dusty mauve  */
+.badge-package    { background-color: #6b8a9a; color: #fff; }  /* slate blue   */
+.badge-domain     { background-color: #5f9ea0; color: #fff; }  /* cadet blue   */
+.badge-deprecated { background-color: #8b8b8b; color: #fff; }  /* muted grey   */
 
-/* Package badge - muted slate blue */
-.tutorial-card .badge.bg-primary {
-  background-color: #6b8a9a !important; /* slate blue */
-}
-
-/* Domain badge - muted teal */
-.bg-teal {
-  background-color: #5f9ea0; /* cadet blue / muted teal */
+/* Metadata badge shape on tutorial pages. */
+.tutorial-badges .tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 /* BEAST version badge */

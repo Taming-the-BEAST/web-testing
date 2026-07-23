@@ -91,14 +91,22 @@
 		</div>
 		<p>
 		<!-- Tutorial metadata badges -->
+		<!-- Read from `tutorial.*` (enriched _data/tutorials.yml, incl. the
+		     tutorials_metadata.yml fallback) rather than `page.*` (raw README
+		     frontmatter), so badges show even before a tutorial migrates its
+		     own frontmatter upstream. -->
 		<div class="tutorial-badges" style="margin-bottom: 15px;">
 			
-			<span class="badge badge-level badge-intermediate" style="padding: 5px 10px; margin-right: 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">
-				Intermediate
-			</span>
+			
+			<span class="tag badge-workflow">Basic workflow</span>
 			
 			
+			<span class="tag badge-package">StarBEAST2</span>
 			
+			
+			<span class="tag badge-domain">macroevolution</span>
+			
+			<span class="tag badge-domain">population genetics</span>
 			
 		</div>
 
@@ -128,22 +136,6 @@
 		
 	</div>
 </div>
-
-<!-- Add CSS for badges -->
-<style>
-	.badge-beginner {
-		background: #28a745;
-		color: white;
-	}
-	.badge-intermediate {
-		background: #ffc107;
-		color: #333;
-	}
-	.badge-professional {
-		background: #dc3545;
-		color: white;
-	}
-</style>
 
 <div class="bigspacer"></div>
 
@@ -395,7 +387,22 @@ Add input data</span>
 	<div class="col-md-8">
 		<div class="post" data-pagefind-body>
 			<!-- Pagefind meta and filter tags -->
-			<h1 data-pagefind-meta="title" style="display:none;">Calibrated Species Trees</h1>
+			<!-- Weighted so a title/keyword/subtitle hit outranks a body-text hit.
+			     Pagefind default weight is 1; headings inside <h1 id="background">Background</h1>
+
+<p>This tutorial walks through through how to set up a calibrated species tree
+analysis in StarBEAST2. It follows on from <strong>Species Trees with Relaxed
+Molecular Clocks</strong>, which should be attempted first. Calibrated species trees
+enable researchers to estimate divergence times for pairs of species, crown
+and stem groups, <em>et cetera</em>.</p>
+ are
+			     auto-weighted by level (h1 highest), so only these need boosting. -->
+			<h1 data-pagefind-meta="title" data-pagefind-weight="10" style="display:none;">Calibrated Species Trees</h1>
+			
+			
+			
+			<div data-pagefind-weight="5" style="display:none;">Estimating species divergence times using StarBEAST2</div>
+			
 			
 			
 			
