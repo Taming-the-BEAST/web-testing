@@ -23,7 +23,7 @@ Repositoeries from which tutorials will be included in the build can be found at
   - Alternativelly, directly edit this repository and it will generate new file. But no changes will be saved to [blotter_test](https://github.com/Taming-the-BEAST/blotter_test), so you may loose them the next time you use `Publish TTB website` action to build and publish the site. 
   - On [web_testing](https://github.com/Taming-the-BEAST/web-testing) you can edit _config.yaml to have `baseurl: /web-testing` at the top, right after `url` line. This will make so you can avoid always adding `/web-testing/` to the url while testing your changes locally. **NEVER** commit and push this change to [blotter](https://github.com/Taming-the-BEAST/blotter)!!!s
   
-  Hopefully, you can see your changes now on the [taming-the-beast.org/web-testing/](taming-the-beast.org/web-testing/)  
+  Hopefully, you can see your changes now on the [taming-the-beast.org/web-testing/](https://taming-the-beast.org/web-testing/)  
 
 #### Build and publish PRODUCTION version of the site within GitHub   
 
