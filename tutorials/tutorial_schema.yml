@@ -131,7 +131,6 @@ packages:
 
 # Application domains
 domains:
-  - virology
   - epidemiology
   - phylogeography
   - palaeontology

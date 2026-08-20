@@ -1,4 +1,4 @@
-FROM ruby:3.0
+FROM ruby:3.3
 LABEL authors="jugne"
 
 # Install Node.js 18.x (LTS) - Required for Pagefind
@@ -30,7 +30,7 @@ WORKDIR $PAGE_HOME
 
 # Install Ruby dependencies
 COPY ./Gemfile* $PAGE_HOME/
-RUN gem install bundler -v "2.3.13"
+RUN gem install bundler -v "4.0.18"
 RUN bundle install
 
 # Install Node.js dependencies

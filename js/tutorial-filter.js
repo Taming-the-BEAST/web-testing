@@ -25,6 +25,7 @@
     setupSearch();
     setupSearchModeToggle();
     setupKeywordChips();
+    setupPackageShowAll();
     setupLegacyToggle();
     initPagefind();
     applyFilters();
@@ -135,7 +136,8 @@
     const searchInput = document.getElementById('tutorial-search');
     if (searchInput) {
       searchInput.addEventListener('input', function() {
-        filters.search = this.value.toLowerCase();
+        filters.search = this.value.trim().toLowerCase();
+        syncKeywordChips();
         applyFilters();
       });
     }
@@ -191,6 +193,7 @@
           filters.search = '';
           const keywordInput = document.getElementById('tutorial-search');
           if (keywordInput) keywordInput.value = '';
+          syncKeywordChips();
 
           if (!pagefind) {
             initPagefind().then((success) => {
@@ -268,18 +271,54 @@
     }
   }
 
+  // Highlight the chip matching the current search term, and show the clear
+  // button only when there is something to clear.
+  function syncKeywordChips() {
+    const current = (filters.search || '').trim().toLowerCase();
+    document.querySelectorAll('.keyword-chip').forEach(chip => {
+      chip.classList.toggle('active', chip.dataset.keyword.toLowerCase() === current);
+    });
+    const clearBtn = document.getElementById('keyword-clear');
+    if (clearBtn) clearBtn.classList.toggle('d-none', current === '');
+  }
+
+  // Single entry point for changing the keyword search, so the input, the
+  // filter state and the chip highlighting never drift apart.
+  function setKeywordSearch(value) {
+    const searchInput = document.getElementById('tutorial-search');
+    if (searchInput) searchInput.value = value;
+    filters.search = value.trim().toLowerCase();
+    syncKeywordChips();
+    applyFilters();
+  }
+
   function setupKeywordChips() {
     document.querySelectorAll('.keyword-chip').forEach(chip => {
       chip.addEventListener('click', function() {
-        const keyword = this.dataset.keyword;
-        const searchInput = document.getElementById('tutorial-search');
-
-        if (searchInput) {
-          searchInput.value = keyword;
-          filters.search = keyword.toLowerCase();
-          applyFilters();
-        }
+        // Clicking the active chip clears the search, like the other filters.
+        setKeywordSearch(this.classList.contains('active') ? '' : this.dataset.keyword);
       });
+    });
+
+    const clearBtn = document.getElementById('keyword-clear');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => setKeywordSearch(''));
+    }
+
+    syncKeywordChips();
+  }
+
+  // Toggle the hidden overflow package buttons.
+  function setupPackageShowAll() {
+    const btn = document.getElementById('package-show-all');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+      const expanded = this.dataset.expanded === 'true';
+      document.querySelectorAll('.package-extra').forEach(el => el.classList.toggle('d-none', expanded));
+      this.dataset.expanded = expanded ? 'false' : 'true';
+      this.textContent = expanded
+        ? `Show all (${document.querySelectorAll('[data-filter="package"]:not([data-value="all"])').length})`
+        : 'Show fewer';
     });
   }
 
