@@ -85,190 +85,196 @@
     <div class="filter-row mb-2">
       <label for="tutorial-search" class="form-label fw-semibold filter-label">Search:</label>
       <div class="filter-controls">
-        <div class="d-flex gap-2 mb-1">
-          <div class="btn-group btn-group-sm" role="group" aria-label="Search mode">
+        <div class="d-flex gap-2 align-items-stretch">
+          <div class="btn-group btn-group-sm flex-shrink-0 search-mode-toggle" role="group" aria-label="Search mode">
             <input type="radio" class="btn-check" name="search-mode" id="search-mode-keyword" value="keyword" checked>
             <label class="btn btn-outline-secondary" for="search-mode-keyword">Keyword</label>
             <input type="radio" class="btn-check" name="search-mode" id="search-mode-fulltext" value="fulltext">
             <label class="btn btn-outline-secondary" for="search-mode-fulltext">Full-Text</label>
           </div>
+          <div id="keyword-search-container" class="flex-grow-1 min-w-0">
+            <input type="text" id="tutorial-search" class="form-control form-control-sm" placeholder="Search by title, author, keywords, packages..." list="keyword-suggestions" autocomplete="off">
+            <datalist id="keyword-suggestions">
+              
+              
+              
+              <option value="Bayesian inference">
+              
+              <option value="MCMC">
+              
+              <option value="R">
+              
+              <option value="SNP data">
+              
+              <option value="birth-death">
+              
+              <option value="calibration">
+              
+              <option value="coalescent">
+              
+              <option value="cognate data">
+              
+              <option value="convergence">
+              
+              <option value="divergence time">
+              
+              <option value="diversification">
+              
+              <option value="duplicate sequences">
+              
+              <option value="fossilized birth-death">
+              
+              <option value="gene flow">
+              
+              <option value="initialization">
+              
+              <option value="lineage tracing">
+              
+              <option value="marginal likelihood">
+              
+              <option value="migration">
+              
+              <option value="model adequacy">
+              
+              <option value="model averaging">
+              
+              <option value="model selection">
+              
+              <option value="molecular clock">
+              
+              <option value="morphological">
+              
+              <option value="multispecies coalescent">
+              
+              <option value="nested sampling">
+              
+              <option value="nucleotide">
+              
+              <option value="parallel tempering">
+              
+              <option value="parameter estimation">
+              
+              <option value="phylodynamics">
+              
+              <option value="phylogeography">
+              
+              <option value="population dynamics">
+              
+              <option value="population structure">
+              
+              <option value="posterior prediction">
+              
+              <option value="priors">
+              
+              <option value="reassortment">
+              
+              <option value="recombination">
+              
+              <option value="relaxed clock">
+              
+              <option value="single-cell">
+              
+              <option value="site models">
+              
+              <option value="skyline">
+              
+              <option value="species delimitation">
+              
+              <option value="species tree">
+              
+              <option value="strict clock">
+              
+              <option value="structured coalescent">
+              
+              <option value="substitution models">
+              
+              <option value="tip dating">
+              
+              <option value="total evidence">
+              
+              <option value="transmission tree">
+              
+              <option value="tree visualization">
+              
+              <option value="visualization">
+              
+              
+              <option value="BDMM-Prime">
+              
+              <option value="BDSKY">
+              
+              <option value="BEAST_CLASSIC">
+              
+              <option value="Babel">
+              
+              <option value="CA">
+              
+              <option value="CCD">
+              
+              <option value="ClaDS">
+              
+              <option value="CoalRe">
+              
+              <option value="CoupledMCMC">
+              
+              <option value="MM">
+              
+              <option value="MSBD">
+              
+              <option value="Mascot">
+              
+              <option value="MultiTypeTree">
+              
+              <option value="NS">
+              
+              <option value="ORC">
+              
+              <option value="PIQMEE">
+              
+              <option value="SA">
+              
+              <option value="SCOTTI">
+              
+              <option value="StarBEAST2">
+              
+              <option value="TiDeTree">
+              
+              <option value="bModelTest">
+              
+              <option value="bacter">
+              
+              <option value="bdmm">
+              
+              <option value="feast">
+              
+              <option value="snapper">
+              
+              <option value="starbeast3">
+              
+              
+              <option value="epidemiology">
+              
+              <option value="language evolution">
+              
+              <option value="macroevolution">
+              
+              <option value="palaeontology">
+              
+              <option value="phylogeography">
+              
+              <option value="population genetics">
+              
+              <option value="single-cell">
+              
+            </datalist>
+          </div>
+          <div id="fulltext-search-container" class="flex-grow-1 min-w-0" style="display: none;">
+            <input type="text" id="fulltext-search" class="form-control form-control-sm" placeholder="Search tutorial content..." autocomplete="off">
+          </div>
         </div>
-        <div id="keyword-search-container">
-        <input type="text" id="tutorial-search" class="form-control form-control-sm" placeholder="Search by title, author, keywords, packages..." list="keyword-suggestions" autocomplete="off">
-        <datalist id="keyword-suggestions">
-          
-          
-          
-          <option value="Bayesian inference">
-          
-          <option value="MCMC">
-          
-          <option value="R">
-          
-          <option value="SNP data">
-          
-          <option value="birth-death">
-          
-          <option value="calibration">
-          
-          <option value="coalescent">
-          
-          <option value="cognate data">
-          
-          <option value="convergence">
-          
-          <option value="divergence time">
-          
-          <option value="diversification">
-          
-          <option value="duplicate sequences">
-          
-          <option value="fossilized birth-death">
-          
-          <option value="gene flow">
-          
-          <option value="initialization">
-          
-          <option value="lineage tracing">
-          
-          <option value="marginal likelihood">
-          
-          <option value="migration">
-          
-          <option value="model adequacy">
-          
-          <option value="model averaging">
-          
-          <option value="model selection">
-          
-          <option value="molecular clock">
-          
-          <option value="morphological">
-          
-          <option value="multispecies coalescent">
-          
-          <option value="nested sampling">
-          
-          <option value="nucleotide">
-          
-          <option value="parallel tempering">
-          
-          <option value="parameter estimation">
-          
-          <option value="phylodynamics">
-          
-          <option value="phylogeography">
-          
-          <option value="population dynamics">
-          
-          <option value="population structure">
-          
-          <option value="posterior prediction">
-          
-          <option value="priors">
-          
-          <option value="reassortment">
-          
-          <option value="recombination">
-          
-          <option value="relaxed clock">
-          
-          <option value="single-cell">
-          
-          <option value="site models">
-          
-          <option value="skyline">
-          
-          <option value="species delimitation">
-          
-          <option value="species tree">
-          
-          <option value="strict clock">
-          
-          <option value="structured coalescent">
-          
-          <option value="substitution models">
-          
-          <option value="tip dating">
-          
-          <option value="total evidence">
-          
-          <option value="transmission tree">
-          
-          <option value="tree visualization">
-          
-          <option value="visualization">
-          
-          
-          <option value="BDMM-Prime">
-          
-          <option value="BDSKY">
-          
-          <option value="BEAST_CLASSIC">
-          
-          <option value="Babel">
-          
-          <option value="CA">
-          
-          <option value="CCD">
-          
-          <option value="ClaDS">
-          
-          <option value="CoalRe">
-          
-          <option value="CoupledMCMC">
-          
-          <option value="MM">
-          
-          <option value="MSBD">
-          
-          <option value="Mascot">
-          
-          <option value="MultiTypeTree">
-          
-          <option value="NS">
-          
-          <option value="ORC">
-          
-          <option value="PIQMEE">
-          
-          <option value="SA">
-          
-          <option value="SCOTTI">
-          
-          <option value="StarBEAST2">
-          
-          <option value="TiDeTree">
-          
-          <option value="bModelTest">
-          
-          <option value="bacter">
-          
-          <option value="bdmm">
-          
-          <option value="feast">
-          
-          <option value="snapper">
-          
-          <option value="starbeast3">
-          
-          
-          <option value="epidemiology">
-          
-          <option value="language evolution">
-          
-          <option value="macroevolution">
-          
-          <option value="palaeontology">
-          
-          <option value="phylogeography">
-          
-          <option value="population genetics">
-          
-          <option value="single-cell">
-          
-        </datalist>
-        <div class="mt-1">
+
+        <!-- Suggestions / status: full control width, no indent under the toggle -->
+        <div id="keyword-chips-row" class="mt-1">
           <span id="keyword-chips" class="d-inline-flex flex-wrap gap-1">
             
             
@@ -318,11 +324,7 @@
             <button type="button" class="btn btn-sm rounded-pill border-0 text-secondary d-none" id="keyword-clear">Clear</button>
           </span>
         </div>
-      </div>
-        <div id="fulltext-search-container" style="display: none;">
-          <input type="text" id="fulltext-search" class="form-control form-control-sm" placeholder="Search tutorial content..." autocomplete="off">
-          <div id="fulltext-status" class="text-muted small mt-1" aria-live="polite"></div>
-        </div>
+        <div id="fulltext-status" class="text-muted small mt-1" style="display: none;" aria-live="polite"></div>
       </div>
     </div>
 
@@ -493,7 +495,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Troubleshooting</span>
@@ -501,13 +503,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">SA</span>
-          
-          <span class="badge rounded-pill badge-package">ORC</span>
-          
           
 
           
+          
+          <span class="badge rounded-pill badge-package">SA</span>
+          
+          <span class="badge rounded-pill badge-package">ORC</span>
           
           
         </div>
@@ -551,7 +553,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Troubleshooting</span>
@@ -605,7 +607,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -613,13 +615,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">BDSKY</span>
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">BDSKY</span>
           
           
         </div>
@@ -663,7 +665,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -671,15 +673,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">BDMM-Prime</span>
+          <span class="badge rounded-pill badge-domain">Phylogeography</span>
+          
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">phylogeography</span>
-          
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">BDMM-Prime</span>
           
           
         </div>
@@ -723,7 +725,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -731,15 +733,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">snapper</span>
+          <span class="badge rounded-pill badge-domain">Population genetics</span>
+          
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">population genetics</span>
-          
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">snapper</span>
           
           
         </div>
@@ -783,7 +785,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -791,17 +793,17 @@
 
           
           
-          <span class="badge rounded-pill badge-package">MM</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
-          <span class="badge rounded-pill badge-package">SA</span>
+          <span class="badge rounded-pill badge-domain">Palaeontology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">MM</span>
           
-          <span class="badge rounded-pill badge-domain">palaeontology</span>
+          <span class="badge rounded-pill badge-package">SA</span>
           
           
         </div>
@@ -845,7 +847,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -853,15 +855,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">MultiTypeTree</span>
+          <span class="badge rounded-pill badge-domain">Phylogeography</span>
+          
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">phylogeography</span>
-          
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">MultiTypeTree</span>
           
           
         </div>
@@ -905,10 +907,20 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">Palaeontology</span>
+          
+          <span class="badge rounded-pill badge-domain">Phylogeography</span>
+          
           
 
           
@@ -918,16 +930,6 @@
           <span class="badge rounded-pill badge-package">MM</span>
           
           <span class="badge rounded-pill badge-package">BEAST_CLASSIC</span>
-          
-          
-
-          
-          
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
-          
-          <span class="badge rounded-pill badge-domain">palaeontology</span>
-          
-          <span class="badge rounded-pill badge-domain">phylogeography</span>
           
           
         </div>
@@ -971,7 +973,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -979,17 +981,17 @@
 
           
           
-          <span class="badge rounded-pill badge-package">starbeast3</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
-          <span class="badge rounded-pill badge-package">CCD</span>
+          <span class="badge rounded-pill badge-domain">Population genetics</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">starbeast3</span>
           
-          <span class="badge rounded-pill badge-domain">population genetics</span>
+          <span class="badge rounded-pill badge-package">CCD</span>
           
           
         </div>
@@ -1033,7 +1035,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -1041,15 +1043,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">TiDeTree</span>
-          
-          <span class="badge rounded-pill badge-package">CCD</span>
+          <span class="badge rounded-pill badge-domain">Single-cell</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">single-cell</span>
+          <span class="badge rounded-pill badge-package">TiDeTree</span>
+          
+          <span class="badge rounded-pill badge-package">CCD</span>
           
           
         </div>
@@ -1093,7 +1095,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -1101,17 +1103,17 @@
 
           
           
-          <span class="badge rounded-pill badge-package">SA</span>
+          <span class="badge rounded-pill badge-domain">Palaeontology</span>
           
-          <span class="badge rounded-pill badge-package">ORC</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">palaeontology</span>
+          <span class="badge rounded-pill badge-package">SA</span>
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">ORC</span>
           
           
         </div>
@@ -1155,7 +1157,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -1163,15 +1165,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">bModelTest</span>
-          
-          <span class="badge rounded-pill badge-package">CCD</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">bModelTest</span>
+          
+          <span class="badge rounded-pill badge-package">CCD</span>
           
           
         </div>
@@ -1215,7 +1217,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Validation</span>
@@ -1223,11 +1225,11 @@
 
           
           
-          <span class="badge rounded-pill badge-package">NS</span>
-          
           
 
           
+          
+          <span class="badge rounded-pill badge-package">NS</span>
           
           
         </div>
@@ -1271,7 +1273,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Getting started</span>
@@ -1279,13 +1281,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">CCD</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">CCD</span>
           
           
         </div>
@@ -1329,7 +1331,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -1337,13 +1339,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">CCD</span>
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">CCD</span>
           
           
         </div>
@@ -1387,7 +1389,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -1395,13 +1397,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">ClaDS</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">ClaDS</span>
           
           
         </div>
@@ -1445,7 +1447,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -1453,13 +1455,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">MSBD</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">MSBD</span>
           
           
         </div>
@@ -1503,7 +1505,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -1511,15 +1513,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">bdmm</span>
+          <span class="badge rounded-pill badge-domain">Phylogeography</span>
+          
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">phylogeography</span>
-          
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">bdmm</span>
           
           
         </div>
@@ -1563,7 +1565,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -1571,17 +1573,17 @@
 
           
           
-          <span class="badge rounded-pill badge-package">Mascot</span>
+          <span class="badge rounded-pill badge-domain">Phylogeography</span>
           
-          <span class="badge rounded-pill badge-package">CCD</span>
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">phylogeography</span>
+          <span class="badge rounded-pill badge-package">Mascot</span>
           
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">CCD</span>
           
           
         </div>
@@ -1625,7 +1627,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -1679,7 +1681,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -1687,13 +1689,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">BDSKY</span>
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">BDSKY</span>
           
           
         </div>
@@ -1737,7 +1739,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -1745,15 +1747,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">StarBEAST2</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">Population genetics</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
-          
-          <span class="badge rounded-pill badge-domain">population genetics</span>
+          <span class="badge rounded-pill badge-package">StarBEAST2</span>
           
           
         </div>
@@ -1797,7 +1799,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -1805,11 +1807,11 @@
 
           
           
-          <span class="badge rounded-pill badge-package">bModelTest</span>
-          
           
 
           
+          
+          <span class="badge rounded-pill badge-package">bModelTest</span>
           
           
         </div>
@@ -1853,7 +1855,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -1861,17 +1863,17 @@
 
           
           
-          <span class="badge rounded-pill badge-package">BDSKY</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
-          <span class="badge rounded-pill badge-package">feast</span>
+          <span class="badge rounded-pill badge-domain">Palaeontology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">BDSKY</span>
           
-          <span class="badge rounded-pill badge-domain">palaeontology</span>
+          <span class="badge rounded-pill badge-package">feast</span>
           
           
         </div>
@@ -1915,7 +1917,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -1923,13 +1925,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">CoalRe</span>
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">CoalRe</span>
           
           
         </div>
@@ -1973,7 +1975,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -1981,13 +1983,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">PIQMEE</span>
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">PIQMEE</span>
           
           
         </div>
@@ -2031,7 +2033,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -2039,17 +2041,17 @@
 
           
           
-          <span class="badge rounded-pill badge-package">StarBEAST2</span>
+          <span class="badge rounded-pill badge-domain">Population genetics</span>
           
-          <span class="badge rounded-pill badge-package">CoupledMCMC</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">population genetics</span>
+          <span class="badge rounded-pill badge-package">StarBEAST2</span>
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
+          <span class="badge rounded-pill badge-package">CoupledMCMC</span>
           
           
         </div>
@@ -2093,7 +2095,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Troubleshooting</span>
@@ -2101,13 +2103,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">CoupledMCMC</span>
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">CoupledMCMC</span>
           
           
         </div>
@@ -2151,10 +2153,16 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
+          
+
+          
+          
+          <span class="badge rounded-pill badge-domain">Language evolution</span>
+          
           
 
           
@@ -2164,12 +2172,6 @@
           <span class="badge rounded-pill badge-package">BDSKY</span>
           
           <span class="badge rounded-pill badge-package">SA</span>
-          
-          
-
-          
-          
-          <span class="badge rounded-pill badge-domain">language evolution</span>
           
           
         </div>
@@ -2213,7 +2215,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -2221,15 +2223,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">CA</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">Palaeontology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
-          
-          <span class="badge rounded-pill badge-domain">palaeontology</span>
+          <span class="badge rounded-pill badge-package">CA</span>
           
           
         </div>
@@ -2273,7 +2275,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -2281,13 +2283,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">bModelTest</span>
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">bModelTest</span>
           
           
         </div>
@@ -2331,7 +2333,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -2339,15 +2341,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">bacter</span>
+          <span class="badge rounded-pill badge-domain">Population genetics</span>
+          
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">population genetics</span>
-          
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">bacter</span>
           
           
         </div>
@@ -2391,7 +2393,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
@@ -2399,13 +2401,13 @@
 
           
           
-          <span class="badge rounded-pill badge-package">SCOTTI</span>
+          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">epidemiology</span>
+          <span class="badge rounded-pill badge-package">SCOTTI</span>
           
           
         </div>
@@ -2449,7 +2451,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Validation</span>
@@ -2503,7 +2505,7 @@
         <!-- Prerequisites -->
         
 
-        <!-- Tags: workflow, packages, domains -->
+        <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
           <span class="badge rounded-pill badge-workflow">Basic workflow</span>
@@ -2511,15 +2513,15 @@
 
           
           
-          <span class="badge rounded-pill badge-package">StarBEAST2</span>
+          <span class="badge rounded-pill badge-domain">Macroevolution</span>
+          
+          <span class="badge rounded-pill badge-domain">Population genetics</span>
           
           
 
           
           
-          <span class="badge rounded-pill badge-domain">macroevolution</span>
-          
-          <span class="badge rounded-pill badge-domain">population genetics</span>
+          <span class="badge rounded-pill badge-package">StarBEAST2</span>
           
           
         </div>

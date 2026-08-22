@@ -157,6 +157,8 @@
     const modeRadios = document.querySelectorAll('input[name="search-mode"]');
     const keywordContainer = document.getElementById('keyword-search-container');
     const fulltextContainer = document.getElementById('fulltext-search-container');
+    // Chips live outside the input container, so they need toggling separately.
+    const keywordChipsRow = document.getElementById('keyword-chips-row');
     const fulltextInput = document.getElementById('fulltext-search');
     const fulltextStatus = document.getElementById('fulltext-status');
 
@@ -183,12 +185,18 @@
           // Clear fulltext search when switching back
           filters.fulltextSearch = '';
           filters.fulltextResults = null;
+          if (keywordChipsRow) keywordChipsRow.style.display = '';
           if (fulltextInput) fulltextInput.value = '';
-          if (fulltextStatus) fulltextStatus.textContent = '';
+          if (fulltextStatus) {
+            fulltextStatus.textContent = '';
+            fulltextStatus.style.display = 'none';
+          }
           applyFilters();
         } else {
           keywordContainer.style.display = 'none';
           fulltextContainer.style.display = 'block';
+          if (keywordChipsRow) keywordChipsRow.style.display = 'none';
+          if (fulltextStatus) fulltextStatus.style.display = '';
           // Clear keyword search when switching
           filters.search = '';
           const keywordInput = document.getElementById('tutorial-search');

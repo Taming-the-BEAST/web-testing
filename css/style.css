@@ -11891,6 +11891,12 @@ textarea.form-control-lg {
   margin-bottom: 0;
   text-align: right;
 }
+.tutorial-index {
+  /* Lets the search input shrink inside its flex row instead of forcing overflow. */
+}
+.tutorial-index .min-w-0 {
+  min-width: 0;
+}
 .tutorial-index .filter-controls {
   flex: 1 1 auto;
   min-width: 0;

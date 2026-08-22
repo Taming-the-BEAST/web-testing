@@ -139,6 +139,16 @@
   padding: 0.2rem 0.55rem;
 }
 
+/* Search-mode toggle: chip font size, bold, tighter than the chips. */
+.bg-light .search-mode-toggle .btn {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.45rem;
+  /* Stretched to the search input's height by the flex row, so centre the label. */
+  display: flex;
+  align-items: center;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .tutorial-grid {
