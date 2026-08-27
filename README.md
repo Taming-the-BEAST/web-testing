@@ -28,7 +28,7 @@ Repositoeries from which tutorials will be included in the build can be found at
 #### Build and publish PRODUCTION version of the site within GitHub   
 
   If you are ready to publish the public version of the website, repeat the same steps as above but from the https://github.com/Taming-the-BEAST/Taming-the-BEAST.github.io repository:
-  - go to the [https://github.com/Taming-the-BEAST/web-testing](https://github.com/Taming-the-BEAST/Taming-the-BEAST.github.io) repository
+  - go to the [https://github.com/Taming-the-BEAST/web-testing](https://github.com/Taming-the-BEAST/web-testing) repository
   - select `Actions` tab
   - select `Publish TTB website` action
   - click `Run workflow` and wait for it to finish. 

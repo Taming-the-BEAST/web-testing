@@ -106,6 +106,13 @@
     });
   }
 
+  // '2.7' -> 2007, so 2.10 sorts above 2.7. Missing or unparseable -> -1 (sorts last).
+  function versionKey(version) {
+    const parts = /^(\d+)(?:\.(\d+))?/.exec(version || '');
+    if (!parts) return -1;
+    return Number(parts[1]) * 1000 + Number(parts[2] || 0);
+  }
+
   function sortCards() {
     const grid = document.getElementById('tutorial-grid');
     if (!grid) return;
@@ -123,6 +130,12 @@
           const titleA = a.dataset.title || '';
           const titleB = b.dataset.title || '';
           return titleA.localeCompare(titleB);
+
+        case 'beastversion':
+          // Newest first; tutorials with no version last, ties broken by title.
+          const verDiff = versionKey(b.dataset.beastversion) - versionKey(a.dataset.beastversion);
+          if (verDiff !== 0) return verDiff;
+          return (a.dataset.title || '').localeCompare(b.dataset.title || '');
 
         default:
           return 0;
@@ -161,17 +174,35 @@
     const keywordChipsRow = document.getElementById('keyword-chips-row');
     const fulltextInput = document.getElementById('fulltext-search');
     const fulltextStatus = document.getElementById('fulltext-status');
+    const fulltextClear = document.getElementById('fulltext-clear');
+
+    // Show the clear button only when there is something to clear.
+    function syncFulltextClear() {
+      if (fulltextClear) {
+        fulltextClear.classList.toggle('d-none', !fulltextInput || fulltextInput.value === '');
+      }
+    }
 
     // Setup fulltext search input
     if (fulltextInput) {
       fulltextInput.addEventListener('input', function() {
         const query = this.value.trim();
+        syncFulltextClear();
 
         // Debounce search
         clearTimeout(searchDebounceTimer);
         searchDebounceTimer = setTimeout(() => {
           performFulltextSearch(query);
         }, 300);
+      });
+    }
+
+    if (fulltextClear) {
+      fulltextClear.addEventListener('click', () => {
+        fulltextInput.value = '';
+        syncFulltextClear();
+        clearTimeout(searchDebounceTimer);
+        performFulltextSearch('');
       });
     }
 
@@ -187,6 +218,7 @@
           filters.fulltextResults = null;
           if (keywordChipsRow) keywordChipsRow.style.display = '';
           if (fulltextInput) fulltextInput.value = '';
+          syncFulltextClear();
           if (fulltextStatus) {
             fulltextStatus.textContent = '';
             fulltextStatus.style.display = 'none';
@@ -387,6 +419,72 @@
     excerptEl.style.display = 'block';
   }
 
+  // Does a card pass the given filter state? `state` has the same shape as `filters`,
+  // so the same predicate can be run against hypothetical states.
+  function cardMatches(card, state) {
+    // Workflow filter (OR logic - match any selected)
+    if (state.workflow.length > 0 && !state.workflow.includes(card.dataset.workflow)) {
+      return false;
+    }
+
+    // Package filter (OR logic - card matches if it has ANY of the selected packages)
+    if (state.package.length > 0) {
+      const cardPackages = (card.dataset.packages || '').split(',').filter(p => p);
+      if (!state.package.some(pkg => cardPackages.includes(pkg))) return false;
+    }
+
+    // Domain filter (OR logic)
+    if (state.domain.length > 0) {
+      const cardDomains = (card.dataset.domains || '').split(',').filter(d => d);
+      if (!state.domain.some(dom => cardDomains.includes(dom))) return false;
+    }
+
+    // Keyword search filter (simple text match)
+    if (searchMode === 'keyword' && state.search) {
+      const searchText = (card.dataset.search || '').toLowerCase();
+      if (!searchText.includes(state.search)) return false;
+    }
+
+    // Fulltext search filter (Pagefind results)
+    if (searchMode === 'fulltext' && state.fulltextResults !== null) {
+      const link = card.querySelector('.card-title a');
+      const slug = link ? slugFromUrl(link.getAttribute('href')) : '';
+      if (!state.fulltextResults.has(slug)) return false;
+    }
+
+    // Deprecated filter
+    if (!state.showLegacy && card.dataset.status === 'deprecated') return false;
+
+    return true;
+  }
+
+  // Dim filter buttons that match no tutorial under the other groups' filters. Each
+  // button is judged as the sole selection in its own group, so the OR within a group
+  // does not mask a value that has no results on its own.
+  function updateFilterAvailability() {
+    const cards = document.querySelectorAll('.tutorial-card');
+
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      const type = btn.dataset.filter;
+      const value = btn.dataset.value;
+      if (value === 'all') return;
+
+      // Deselecting always widens, so an active button is never a dead end.
+      if (btn.classList.contains('active')) {
+        btn.classList.remove('filter-dead');
+        return;
+      }
+
+      const hypothetical = Object.assign({}, filters);
+      hypothetical[type] = [value];
+
+      let count = 0;
+      cards.forEach(card => { if (cardMatches(card, hypothetical)) count++; });
+
+      btn.classList.toggle('filter-dead', count === 0);
+    });
+  }
+
   function applyFilters() {
     const cards = document.querySelectorAll('.tutorial-card');
     let visibleCount = 0;
@@ -397,56 +495,14 @@
     }
 
     cards.forEach(card => {
-      let show = true;
+      const show = cardMatches(card, filters);
 
-      // Workflow filter (OR logic - match any selected)
-      if (filters.workflow.length > 0) {
-        if (!filters.workflow.includes(card.dataset.workflow)) {
-          show = false;
-        }
-      }
-
-      // Package filter (OR logic - card matches if it has ANY of the selected packages)
-      if (filters.package.length > 0) {
-        const cardPackages = (card.dataset.packages || '').split(',').filter(p => p);
-        const hasMatch = filters.package.some(pkg => cardPackages.includes(pkg));
-        if (!hasMatch) {
-          show = false;
-        }
-      }
-
-      // Domain filter (OR logic)
-      if (filters.domain.length > 0) {
-        const cardDomains = (card.dataset.domains || '').split(',').filter(d => d);
-        const hasMatch = filters.domain.some(dom => cardDomains.includes(dom));
-        if (!hasMatch) {
-          show = false;
-        }
-      }
-
-      // Keyword search filter (simple text match)
-      if (searchMode === 'keyword' && filters.search) {
-        const searchText = (card.dataset.search || '').toLowerCase();
-        if (!searchText.includes(filters.search)) {
-          show = false;
-        }
-      }
-
-      // Fulltext search filter (Pagefind results)
+      // Fulltext excerpt for the matched card
       let fulltextExcerpt = null;
-      if (searchMode === 'fulltext' && filters.fulltextResults !== null) {
+      if (show && searchMode === 'fulltext' && filters.fulltextResults !== null) {
         const link = card.querySelector('.card-title a');
         const slug = link ? slugFromUrl(link.getAttribute('href')) : '';
-        if (filters.fulltextResults.has(slug)) {
-          fulltextExcerpt = filters.fulltextResults.get(slug);
-        } else {
-          show = false;
-        }
-      }
-
-      // Deprecated filter
-      if (!filters.showLegacy && card.dataset.status === 'deprecated') {
-        show = false;
+        fulltextExcerpt = filters.fulltextResults.get(slug) || null;
       }
 
       card.style.display = show ? 'block' : 'none';
@@ -461,6 +517,8 @@
     if (countEl) {
       countEl.textContent = visibleCount;
     }
+
+    updateFilterAvailability();
 
     // Order cards: by Pagefind relevance in full-text mode, else by the active sort.
     if (searchMode === 'fulltext' && filters.fulltextResults) {

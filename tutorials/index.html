@@ -92,7 +92,7 @@
             <input type="radio" class="btn-check" name="search-mode" id="search-mode-fulltext" value="fulltext">
             <label class="btn btn-outline-secondary" for="search-mode-fulltext">Full-Text</label>
           </div>
-          <div id="keyword-search-container" class="flex-grow-1 min-w-0">
+          <div id="keyword-search-container" class="flex-grow-1 min-w-0 position-relative">
             <input type="text" id="tutorial-search" class="form-control form-control-sm" placeholder="Search by title, author, keywords, packages..." list="keyword-suggestions" autocomplete="off">
             <datalist id="keyword-suggestions">
               
@@ -267,9 +267,11 @@
               <option value="single-cell">
               
             </datalist>
+            <button type="button" class="btn-clear-search d-none" id="keyword-clear" aria-label="Clear search">&times;</button>
           </div>
-          <div id="fulltext-search-container" class="flex-grow-1 min-w-0" style="display: none;">
+          <div id="fulltext-search-container" class="flex-grow-1 min-w-0 position-relative" style="display: none;">
             <input type="text" id="fulltext-search" class="form-control form-control-sm" placeholder="Search tutorial content..." autocomplete="off">
+            <button type="button" class="btn-clear-search d-none" id="fulltext-clear" aria-label="Clear search">&times;</button>
           </div>
         </div>
 
@@ -316,12 +318,11 @@
             
               
               
-            <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill keyword-chip" data-keyword="population structure">population structure</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill keyword-chip" data-keyword="substitution models">substitution models</button>
                 
               
             
               
-            <button type="button" class="btn btn-sm rounded-pill border-0 text-secondary d-none" id="keyword-clear">Clear</button>
           </span>
         </div>
         <div id="fulltext-status" class="text-muted small mt-1" style="display: none;" aria-live="polite"></div>
@@ -334,6 +335,7 @@
       <div class="filter-controls d-flex flex-wrap gap-1">
         <button class="btn btn-sm btn-outline-secondary rounded-pill active" data-sort="date">Recently updated</button>
         <button class="btn btn-sm btn-outline-secondary rounded-pill" data-sort="title">Title (A-Z)</button>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill" data-sort="beastversion">BEAST version</button>
       </div>
     </div>
 
@@ -394,13 +396,13 @@
         
         <button class="btn btn-sm btn-outline-secondary rounded-pill" data-filter="package" data-value="bModelTest">bModelTest</button>
         
-        <button class="btn btn-sm btn-outline-secondary rounded-pill package-extra d-none" data-filter="package" data-value="BDMM-Prime">BDMM-Prime</button>
-        
         <button class="btn btn-sm btn-outline-secondary rounded-pill package-extra d-none" data-filter="package" data-value="CoupledMCMC">CoupledMCMC</button>
         
         <button class="btn btn-sm btn-outline-secondary rounded-pill package-extra d-none" data-filter="package" data-value="MM">MM</button>
         
         <button class="btn btn-sm btn-outline-secondary rounded-pill package-extra d-none" data-filter="package" data-value="ORC">ORC</button>
+        
+        <button class="btn btn-sm btn-outline-secondary rounded-pill package-extra d-none" data-filter="package" data-value="BDMM-Prime">BDMM-Prime</button>
         
         <button class="btn btn-sm btn-outline-secondary rounded-pill package-extra d-none" data-filter="package" data-value="BEAST_CLASSIC">BEAST_CLASSIC</button>
         
@@ -458,6 +460,9 @@
   <div class="tutorial-grid" id="tutorial-grid">
     
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Troubleshooting"
          data-packages="SA,ORC"
@@ -466,6 +471,7 @@
          data-status="current"
          data-title="Troubleshooting initialization issues"
          data-date="20260603"
+         data-beastversion="2.7"
          data-search="troubleshooting initialization issues getting beast2 to start joëlle barido-sottani,louis du plessis sa orc initialization morphological relaxed clock calibration">
 
       <div class="card-body">
@@ -473,9 +479,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -516,6 +519,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Troubleshooting"
          data-packages=""
@@ -524,6 +530,7 @@
          data-status="current"
          data-title="Troubleshooting-convergence-issues"
          data-date="20260601"
+         data-beastversion="2.7"
          data-search="troubleshooting-convergence-issues post-processing and improving performance david a. rasmussen  convergence mcmc molecular clock parameter estimation">
 
       <div class="card-body">
@@ -531,9 +538,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -570,6 +574,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="BDSKY"
@@ -578,6 +585,7 @@
          data-status="current"
          data-title="Prior-selection"
          data-date="20260601"
+         data-beastversion="2.7"
          data-search="prior-selection prior selection and clock calibration using influenza a data. veronika bošková,venelin mitov,louis du plessis bdsky priors molecular clock calibration tip dating">
 
       <div class="card-body">
@@ -585,9 +593,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -628,24 +633,25 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
-         data-workflow="Advanced analysis"
-         data-packages="BDMM-Prime"
-         data-domains="phylogeography,epidemiology"
-         data-keywords="birth-death,population structure,migration,phylogeography"
-         data-status="current"
+         data-workflow=""
+         data-packages=""
+         data-domains=""
+         data-keywords=""
+         data-status=""
          data-title="Structured birth-death model with BDMM-Prime"
          data-date="20260518"
-         data-search="structured birth-death model with bdmm-prime population structure using the multi-type birth-death model denise kühnert, jūlija pečerska, ugnė stolz, tim vaughan bdmm-prime birth-death population structure migration phylogeography">
+         data-beastversion="2.7"
+         data-search="structured birth-death model with bdmm-prime population structure using the multi-type birth-death model denise kühnert, jūlija pečerska, ugnė stolz, tim vaughan  ">
 
       <div class="card-body">
         <!-- Status and version badges -->
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -668,25 +674,20 @@
         <!-- Tags: workflow, domains, packages -->
         <div class="d-flex flex-wrap gap-1 mt-2">
           
-          <span class="badge rounded-pill badge-workflow">Advanced analysis</span>
-          
 
           
-          
-          <span class="badge rounded-pill badge-domain">Phylogeography</span>
-          
-          <span class="badge rounded-pill badge-domain">Epidemiology</span>
           
           
 
           
-          
-          <span class="badge rounded-pill badge-package">BDMM-Prime</span>
           
           
         </div>
       </div>
     </div>
+    
+    
+    
     
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
@@ -696,6 +697,7 @@
          data-status="current"
          data-title="Species Trees and Species Delimitation with SNAPPER"
          data-date="20251106"
+         data-beastversion="2.7"
          data-search="species trees and species delimitation with snapper analyzing snp or aflp data adam leaché, remco bouckaert snapper multispecies coalescent species delimitation marginal likelihood snp data">
 
       <div class="card-body">
@@ -703,9 +705,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -748,6 +747,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="MM,SA"
@@ -756,6 +758,7 @@
          data-status="current"
          data-title="Total Evidence Tutorial"
          data-date="20250827"
+         data-beastversion="2.7"
          data-search="total evidence tutorial inferring phylogenies using genetic sequences and morphological characters bethany j. allen,joëlle barido-sottani mm sa fossilized birth-death morphological tip dating calibration">
 
       <div class="card-body">
@@ -763,9 +766,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -810,6 +810,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="MultiTypeTree"
@@ -818,6 +821,7 @@
          data-status="current"
          data-title="Structured coalescent"
          data-date="20250811"
+         data-beastversion="2.7"
          data-search="structured coalescent population structure using multitypetree nicola f. müller,tim vaughan multitypetree structured coalescent migration population structure phylogeography">
 
       <div class="card-body">
@@ -825,9 +829,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -870,6 +871,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="BDMM-Prime,MM,BEAST_CLASSIC"
@@ -878,6 +882,7 @@
          data-status="current"
          data-title="BDMM-Prime for Macroevolution"
          data-date="20250717"
+         data-beastversion="2.7"
          data-search="bdmm-prime for macroevolution the fossilized birth-death process and extensions rachel c. m. warnock,timothy g. vaughan,louis du plessis bdmm-prime mm beast_classic fossilized birth-death birth-death population structure tip dating">
 
       <div class="card-body">
@@ -885,9 +890,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -936,6 +938,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="starbeast3,CCD"
@@ -944,6 +949,7 @@
          data-status="current"
          data-title="StarBeast3 Tutorial"
          data-date="20250716"
+         data-beastversion="2.7"
          data-search="starbeast3 tutorial estimating species trees using starbeast3 ugne stolz, jordan douglas starbeast3 ccd multispecies coalescent species tree morphological total evidence relaxed clock">
 
       <div class="card-body">
@@ -951,9 +957,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -998,6 +1001,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="TiDeTree,CCD"
@@ -1006,6 +1012,7 @@
          data-status="current"
          data-title="TiDeTree Tutorial"
          data-date="20250715"
+         data-beastversion="2.7"
          data-search="tidetree tutorial reconstructing time-scaled single-cell phylogenies from genetic lineage tracing data sophie seidel tidetree ccd birth-death molecular clock tip dating lineage tracing single-cell">
 
       <div class="card-body">
@@ -1013,9 +1020,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1058,6 +1062,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="SA,ORC"
@@ -1066,6 +1073,7 @@
          data-status="current"
          data-title="Divergence Time Estimation"
          data-date="20250713"
+         data-beastversion="2.7"
          data-search="divergence time estimation dating species divergences with the fossilized birth-death process tracy a. heath,rachel warnock,bethany j. allen sa orc fossilized birth-death birth-death calibration relaxed clock tip dating morphological">
 
       <div class="card-body">
@@ -1073,9 +1081,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1120,6 +1125,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="bModelTest,CCD"
@@ -1128,6 +1136,7 @@
          data-status="current"
          data-title="Molecular clock dating and modelling rate variation"
          data-date="20250711"
+         data-beastversion="2.7"
          data-search="molecular clock dating and modelling rate variation accounting for evolutionary rate variation in passerine birds simon ho,jacqueline nguyen bmodeltest ccd relaxed clock molecular clock substitution models site models calibration">
 
       <div class="card-body">
@@ -1135,9 +1144,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1180,6 +1186,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Validation"
          data-packages="NS"
@@ -1188,6 +1197,7 @@
          data-status="current"
          data-title="Model selection"
          data-date="20250710"
+         data-beastversion="2.7"
          data-search="model selection model selection with nested sampling remco bouckaert ns model selection marginal likelihood nested sampling molecular clock">
 
       <div class="card-body">
@@ -1195,9 +1205,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1236,6 +1243,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Getting started"
          data-packages="CCD"
@@ -1244,6 +1254,7 @@
          data-status="current"
          data-title="Introduction to BEAST2"
          data-date="20250708"
+         data-beastversion="2.7"
          data-search="introduction to beast2 this is a simple introductory tutorial to help you get started with using beast2 and its accomplices. jūlija pečerska,veronika bošková,louis du plessis ccd molecular clock substitution models site models nucleotide bayesian inference">
 
       <div class="card-body">
@@ -1251,9 +1262,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1294,6 +1302,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="CCD"
@@ -1302,6 +1313,7 @@
          data-status="current"
          data-title="Time-stamped data"
          data-date="20250703"
+         data-beastversion="2.7"
          data-search="time-stamped data time-stamped data remco bouckaert, walter xie, fábio k. mendes, eva li and alexei drummond ccd molecular clock tip dating coalescent substitution models">
 
       <div class="card-body">
@@ -1309,9 +1321,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1352,6 +1361,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="ClaDS"
@@ -1360,6 +1372,7 @@
          data-status="current"
          data-title="The ClaDS package"
          data-date="20250619"
+         data-beastversion="2.7"
          data-search="the clads package inferring progressive changes in birth and death rates joëlle barido-sottani clads birth-death diversification relaxed clock">
 
       <div class="card-body">
@@ -1367,9 +1380,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1410,6 +1420,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="MSBD"
@@ -1418,6 +1431,7 @@
          data-status="current"
          data-title="The MSBD package"
          data-date="20250619"
+         data-beastversion="2.7"
          data-search="the msbd package inferring lineage-dependent birth and death rates joëlle barido-sottani msbd birth-death diversification">
 
       <div class="card-body">
@@ -1425,9 +1439,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1468,6 +1479,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="bdmm"
@@ -1476,6 +1490,7 @@
          data-status="current"
          data-title="Structured birth-death model"
          data-date="20250604"
+         data-beastversion="2.7"
          data-search="structured birth-death model population structure using the multi-type birth-death model denise kühnert, jūlija pečerska bdmm birth-death population structure migration">
 
       <div class="card-body">
@@ -1483,9 +1498,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1528,6 +1540,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="Mascot,CCD"
@@ -1536,6 +1551,7 @@
          data-status="current"
          data-title="MASCOT v3.0.0 Tutorial"
          data-date="20250602"
+         data-beastversion="2.7"
          data-search="mascot v3.0.0 tutorial parameter and state inference using the approximate structured coalescent nicola f. müller mascot ccd structured coalescent migration population structure phylogeography">
 
       <div class="card-body">
@@ -1543,9 +1559,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1590,6 +1603,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages=""
@@ -1598,6 +1614,7 @@
          data-status="current"
          data-title="Visualizing BEAST2 results in R"
          data-date="20250523"
+         data-beastversion="2.7"
          data-search="visualizing beast2 results in r tutorial on visualising results from beast2 analyses. cecilia valenzuela agüí, ugnė stolz  visualization r tree visualization phylodynamics">
 
       <div class="card-body">
@@ -1605,9 +1622,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1644,6 +1658,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="BDSKY"
@@ -1652,6 +1669,7 @@
          data-status="current"
          data-title="Skyline plots"
          data-date="20240611"
+         data-beastversion="2.7"
          data-search="skyline plots inference of past population dynamics using bayesian coalescent skyline and birth-death skyline plots. nicola f. müller,louis du plessis bdsky skyline coalescent birth-death population dynamics">
 
       <div class="card-body">
@@ -1659,9 +1677,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1702,6 +1717,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="StarBEAST2"
@@ -1710,6 +1728,7 @@
          data-status="current"
          data-title="StarBEAST2 v1.0.0 tutorial"
          data-date="20230815"
+         data-beastversion="2.7"
          data-search="starbeast2 v1.0.0 tutorial estimating species trees using starbeast2 huw a. ogilvie starbeast2 multispecies coalescent species tree molecular clock relaxed clock">
 
       <div class="card-body">
@@ -1717,9 +1736,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1762,6 +1778,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="bModelTest"
@@ -1770,6 +1789,7 @@
          data-status="current"
          data-title="Substitution-model-averaging"
          data-date="20230724"
+         data-beastversion="2.7"
          data-search="substitution-model-averaging a tutorial using bmodeltest david a. rasmussen,carsten magnus,remco bouckaert bmodeltest substitution models site models model averaging model selection">
 
       <div class="card-body">
@@ -1777,9 +1797,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.7</span>
           
@@ -1818,6 +1835,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="BDSKY,feast"
@@ -1826,6 +1846,7 @@
          data-status="current"
          data-title="Skyline analyses for macroevolution"
          data-date="20230315"
+         data-beastversion="2.6"
          data-search="skyline analyses for macroevolution estimating evolutionary parameters from species phylogenies bethany j. allen bdsky feast skyline fossilized birth-death coalescent diversification">
 
       <div class="card-body">
@@ -1833,9 +1854,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.6</span>
           
@@ -1880,6 +1898,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="CoalRe"
@@ -1888,6 +1909,7 @@
          data-status="current"
          data-title="Estimating Reassortment Networks with CoalRe"
          data-date="20220401"
+         data-beastversion="2.6"
          data-search="estimating reassortment networks with coalre estimating reassortment networks with coalre nicola f. müller coalre coalescent reassortment recombination tip dating">
 
       <div class="card-body">
@@ -1895,9 +1917,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.6</span>
           
@@ -1938,6 +1957,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="PIQMEE"
@@ -1946,6 +1968,7 @@
          data-status="current"
          data-title="PIQMEE-Tutorial"
          data-date="20220228"
+         data-beastversion="2.6"
          data-search="piqmee-tutorial how to efficiently analyze large data sets containing duplicates veronika bošková piqmee birth-death skyline tip dating duplicate sequences">
 
       <div class="card-body">
@@ -1953,9 +1976,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.6</span>
           
@@ -1996,6 +2016,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="StarBEAST2,CoupledMCMC"
@@ -2004,6 +2027,7 @@
          data-status="current"
          data-title="AIM in StarBeast2 v0.15.2 Tutorial"
          data-date="20200914"
+         data-beastversion="2.5"
          data-search="aim in starbeast2 v0.15.2 tutorial inferring species trees and gene flow from multiple loci nicola f. müller starbeast2 coupledmcmc multispecies coalescent migration population structure gene flow">
 
       <div class="card-body">
@@ -2011,9 +2035,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.5</span>
           
@@ -2058,6 +2079,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Troubleshooting"
          data-packages="CoupledMCMC"
@@ -2066,6 +2090,7 @@
          data-status="current"
          data-title="Bayesian Skyline with adaptive parallel Tempering with CoupledMCMC Tutorial"
          data-date="20191206"
+         data-beastversion="2.6"
          data-search="bayesian skyline with adaptive parallel tempering with coupledmcmc tutorial adaptive parallel tempering nicola f. müller coupledmcmc parallel tempering mcmc skyline coalescent molecular clock">
 
       <div class="card-body">
@@ -2073,9 +2098,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.6</span>
           
@@ -2116,6 +2138,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="Babel,BDSKY,SA"
@@ -2124,6 +2149,7 @@
          data-status="current"
          data-title="Language Phylogenies"
          data-date="20190729"
+         data-beastversion="2.5"
          data-search="language phylogenies using babel to analyse linguistic data simon j. greenhill, konstantin hoffmann babel bdsky sa strict clock substitution models calibration cognate data">
 
       <div class="card-body">
@@ -2131,9 +2157,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.5</span>
           
@@ -2178,6 +2201,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="CA"
@@ -2186,6 +2212,7 @@
          data-status="current"
          data-title="CladeAge Tutorial"
          data-date="20190221"
+         data-beastversion="2.5"
          data-search="cladeage tutorial fossil-based divergence-time estimation with cladeage michael matschiner ca birth-death calibration molecular clock relaxed clock divergence time">
 
       <div class="card-body">
@@ -2193,9 +2220,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.5</span>
           
@@ -2238,6 +2262,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="bModelTest"
@@ -2246,6 +2273,7 @@
          data-status="current"
          data-title="Molecular dating using heterochronous data and substitution model averaging"
          data-date="20181105"
+         data-beastversion="2.5"
          data-search="molecular dating using heterochronous data and substitution model averaging estimating the time of origin of the 2009 h1n1 pandemic in north america sebastian duchene, tim vaughan, veronika boskova bmodeltest relaxed clock molecular clock tip dating substitution models model averaging">
 
       <div class="card-body">
@@ -2253,9 +2281,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.5</span>
           
@@ -2296,6 +2321,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="bacter"
@@ -2304,6 +2332,7 @@
          data-status="current"
          data-title="Bacter Tutorial"
          data-date="20180621"
+         data-beastversion="2.5"
          data-search="bacter tutorial inferring args from bacterial sequence data. tim vaughan bacter coalescent recombination nucleotide">
 
       <div class="card-body">
@@ -2311,9 +2340,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.5</span>
           
@@ -2356,6 +2382,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Advanced analysis"
          data-packages="SCOTTI"
@@ -2364,6 +2393,7 @@
          data-status="current"
          data-title="SCOTTI Tutorial"
          data-date="20170724"
+         data-beastversion="2.4"
          data-search="scotti tutorial transmission tree reconstruction with the structured coalescent louis du plessis,nicola de maio scotti structured coalescent transmission tree migration population structure">
 
       <div class="card-body">
@@ -2371,9 +2401,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.4</span>
           
@@ -2414,6 +2441,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Validation"
          data-packages=""
@@ -2422,6 +2452,7 @@
          data-status="current"
          data-title="Model adequacy using BEAST2"
          data-date="20170209"
+         data-beastversion="2.4"
          data-search="model adequacy using beast2 assessing clock and substitution models david duchêne  model adequacy substitution models molecular clock posterior prediction">
 
       <div class="card-body">
@@ -2429,9 +2460,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.4</span>
           
@@ -2468,6 +2496,9 @@
       </div>
     </div>
     
+    
+    
+    
     <div class="card tutorial-card "
          data-workflow="Basic workflow"
          data-packages="StarBEAST2"
@@ -2476,6 +2507,7 @@
          data-status="current"
          data-title="Calibrated Species Trees"
          data-date="20170202"
+         data-beastversion="2.4"
          data-search="calibrated species trees estimating species divergence times using starbeast2 huw a. ogilvie starbeast2 multispecies coalescent calibration molecular clock relaxed clock">
 
       <div class="card-body">
@@ -2483,9 +2515,6 @@
         <div class="mb-2">
           
 
-          
-          
-          
           
           <span class="badge bg-secondary me-1">BEAST 2.4</span>
           
