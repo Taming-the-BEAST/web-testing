@@ -437,7 +437,7 @@ taming-the-beast/Substitution-model-averaging:
   packages:
   - bModelTest
 laduplessis/TiDeTree-Tutorial:
-  beastversion_tutorial: '>= 2.7'
+  beastversion_tutorial: '2.7'
   workflow: Advanced analysis
   status: current
   keywords:
@@ -489,7 +489,7 @@ taming-the-beast/Visualizing-BEAST2-results:
   - R
   - tree visualization
   - phylodynamics
-tgvaughan/Structured-birth-death-BDMM-Prime:
+taming-the-beast/Structured-birth-death-BDMM-Prime:
   beastversion_tutorial: '2.7.7'
   workflow: Advanced analysis
   status: current

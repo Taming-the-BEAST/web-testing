@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- RSS feed -->
-	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.news.xml">
-	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.tutorials.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/web-testing/feed.news.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/web-testing/feed.tutorials.xml">
 
 	
     <!-- Favicon -->
@@ -29,6 +29,22 @@
     <link rel="stylesheet" href="/web-testing/css/katex.css">
     <script src="/web-testing/js/katex.min.js"></script>
 
+	<!-- Matomo -->
+	<script>
+  		var _paq = window._paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="https://matomo.sib.swiss/";
+    		_paq.push(['setTrackerUrl', u+'matomo.php']);
+    		_paq.push(['setSiteId', '244']);
+    		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  		})();
+	</script>
+	<!-- End Matomo Code -->
+	
 </head>
 
 
@@ -760,9 +776,10 @@
     <div class="row">
       <div class="col-md-4 d-flex align-items-center">
         <ul class="list-group list-group-horizontal">
-        <li class="footernav list-group-item"><a class="foot" href="/about/">about</a></li>
-        <li class="footernav list-group-item"><a class="foot" href="/contact/">contact</a></li>
-        <li class="footernav list-group-item"><a class="foot" href="/license/">license</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/about/">about</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/contact/">contact</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/license/">license</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/privacy/">privacy</a></li>
         </ul>
       </div>
       <div class="col-md-3">

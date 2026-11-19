@@ -11880,40 +11880,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* Tutorial filter panel: label in a fixed left column, controls wrap beside it */
-.tutorial-index .filter-row {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-}
-.tutorial-index .filter-label {
-  flex: 0 0 6.5rem;
-  margin-bottom: 0;
-  text-align: right;
-}
-.tutorial-index {
-  /* Lets the search input shrink inside its flex row instead of forcing overflow. */
-}
-.tutorial-index .min-w-0 {
-  min-width: 0;
-}
-.tutorial-index .filter-controls {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-.tutorial-index {
-  /* Stack labels above controls on narrow screens */
-}
-@media (max-width: 575.98px) {
-  .tutorial-index .filter-row {
-    display: block;
-  }
-  .tutorial-index .filter-label {
-    text-align: left;
-    margin-bottom: 0.25rem;
-  }
-}
-
 /* Container and layout spacing */
 .container {
   padding-left: 30px;
@@ -11986,10 +11952,20 @@ a:hover {
 }
 
 .navbar-brand {
-  font-size: 50px;
+  /* 50px on wide screens, scaled down on phones so the title and logo
+     fit without horizontal scrolling. */
+  font-size: clamp(1.6rem, 9vw, 50px);
   font-weight: 100;
 }
 
+/* Below the expanded navbar breakpoint the brand may wrap instead of
+   overflowing; on desktop it stays on one line as before. */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    white-space: normal;
+    min-width: 0;
+  }
+}
 .navbar-nav {
   font-size: 30px;
   font-weight: 100;
@@ -12233,7 +12209,7 @@ figcaption {
 }
 
 .titlebox {
-  min-width: 300px;
+  min-width: min(300px, 100%);
 }
 
 .handlebox {
@@ -12259,6 +12235,7 @@ figcaption {
   position: fixed;
   bottom: 0%;
   width: 100%;
+  z-index: 10;
   padding-top: 5px;
   padding-bottom: 5px;
   border: 1px solid transparent;
@@ -12279,6 +12256,51 @@ figcaption {
   text-align: center;
 }
 
+/* Long words and URLs in tutorial text must not widen the page on phones. */
+.post {
+  overflow-wrap: break-word;
+}
+
+/* Footer links wrap instead of overflowing on narrow screens. */
+.footer .list-group-horizontal {
+  flex-wrap: wrap;
+}
+
+/* On small screens the stacked footer is too tall to keep fixed: it would
+   cover a large part of the page. Let it scroll with the content instead. */
+@media (max-width: 767.98px) {
+  .footer {
+    position: static;
+  }
+  .footerspacer {
+    height: 2rem;
+  }
+  /* Short pages: fill the screen so the footer still sits at the bottom. */
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+  body > .container {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+  /* Member and post pages: photo above the text instead of beside it. */
+  .media {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+  .media .titlebox {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+  /* Large page titles scale down so long words fit */
+  .bigtitle {
+    font-size: clamp(2rem, 11vw, 60px);
+    line-height: 1.1;
+  }
+}
 .footer-acknowledgement {
   font-size: 0.65em;
   line-height: 1.35;

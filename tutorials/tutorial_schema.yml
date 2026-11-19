@@ -152,7 +152,7 @@ recommended_fields:
   - subtitle
   - keywords
   - packages
-  - beastversion_package     # Most recent BEAST2 version supporting the package (auto-populated from CBAN)
+  - beastversion_package     # Set by hand: newest BEAST2 version the tutorial's packages are available for (quoted, e.g. '2.7'). Drives the BEAST version filter on the tutorial listing.
   - tracerversion
   - figtreeversion
   

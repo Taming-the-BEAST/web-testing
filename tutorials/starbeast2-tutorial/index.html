@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- RSS feed -->
-	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.news.xml">
-	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.tutorials.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/web-testing/feed.news.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/web-testing/feed.tutorials.xml">
 
 	
     <!-- Favicon -->
@@ -29,6 +29,22 @@
     <link rel="stylesheet" href="/web-testing/css/katex.css">
     <script src="/web-testing/js/katex.min.js"></script>
 
+	<!-- Matomo -->
+	<script>
+  		var _paq = window._paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="https://matomo.sib.swiss/";
+    		_paq.push(['setTrackerUrl', u+'matomo.php']);
+    		_paq.push(['setSiteId', '244']);
+    		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  		})();
+	</script>
+	<!-- End Matomo Code -->
+	
 </head>
 
 
@@ -75,18 +91,25 @@
 		
 	
 
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
 <div class="row">
 	<div class="hidden-xs hidden-sm col-md-12">
 		<div class="bigtitle titlebox">
 			<ol class="breadcrumb">
 			
 			
-				
-				
-				
-				<li><a class="off" href="/tutorials/starbeast2-tutorial/">StarBEAST2 v1.0.0 tutorial</a></li>
-				
-			
+			<li><a class="off" href="/web-testing/tutorials/starbeast2-tutorial/">StarBEAST2 v1.0.0 tutorial</a></li>
 			</ol>
 		</div>
 		<p>
@@ -122,17 +145,32 @@
 		<div class="smallhead">
 			by
 			
-			
-				
-						Huw A. Ogilvie
-					
-						
-					
-			
+			Huw A. Ogilvie
 		</div>
 		
 
 		<!-- Keywords -->
+		
+		<div class="smallnote" style="margin-top: 10px;">
+			<strong>Keywords:</strong>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				multispecies coalescent
+			</span>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				species tree
+			</span>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				molecular clock
+			</span>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				relaxed clock
+			</span>
+			
+		</div>
 		
 	</div>
 </div>
@@ -155,12 +193,17 @@
 				<a class="off" href="https://github.com/genomescale/starbeast2-tutorial" target="_blank">Github repository</a>
 			</li>
 			<div class="smallspacer"></div>
+			
+			
+			
+			
 			<li>
 				<i class="bi bi-star"></i>
-				<a class="off" href="LICENSE.html">
+				<a class="off" href="/web-testing/tutorials/starbeast2-tutorial/LICENSE.html">
 				License</a>
 			</li>
 			<div class="smallspacer"></div>
+			
 			<li>			
 				<i class="bi bi-bar-chart"></i>
 				<a class="off" href="https://github.com/genomescale/starbeast2-tutorial/graphs/traffic" target="_blank">
@@ -180,7 +223,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/APOBS1.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/APOBS1.fasta" target="_blank" rel="nofollow">
 						APOBS1.fasta
 					</a>
@@ -190,7 +232,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/APOBS2.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/APOBS2.fasta" target="_blank" rel="nofollow">
 						APOBS2.fasta
 					</a>
@@ -200,7 +241,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/BDNF.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/BDNF.fasta" target="_blank" rel="nofollow">
 						BDNF.fasta
 					</a>
@@ -210,7 +250,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/BRCA1S1.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/BRCA1S1.fasta" target="_blank" rel="nofollow">
 						BRCA1S1.fasta
 					</a>
@@ -220,7 +259,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/BRCA1S2.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/BRCA1S2.fasta" target="_blank" rel="nofollow">
 						BRCA1S2.fasta
 					</a>
@@ -230,7 +268,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/CHST12.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/CHST12.fasta" target="_blank" rel="nofollow">
 						CHST12.fasta
 					</a>
@@ -240,7 +277,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/CMKOR1.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/CMKOR1.fasta" target="_blank" rel="nofollow">
 						CMKOR1.fasta
 					</a>
@@ -250,7 +286,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/Ch14.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/Ch14.fasta" target="_blank" rel="nofollow">
 						Ch14.fasta
 					</a>
@@ -260,7 +295,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/Ch21.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/Ch21.fasta" target="_blank" rel="nofollow">
 						Ch21.fasta
 					</a>
@@ -270,7 +304,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/Ch24.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/Ch24.fasta" target="_blank" rel="nofollow">
 						Ch24.fasta
 					</a>
@@ -280,7 +313,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/FGFR3.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/FGFR3.fasta" target="_blank" rel="nofollow">
 						FGFR3.fasta
 					</a>
@@ -290,7 +322,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/GHRex09.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/GHRex09.fasta" target="_blank" rel="nofollow">
 						GHRex09.fasta
 					</a>
@@ -300,7 +331,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/RAG1.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/RAG1.fasta" target="_blank" rel="nofollow">
 						RAG1.fasta
 					</a>
@@ -310,7 +340,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/TMEM20.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/TMEM20.fasta" target="_blank" rel="nofollow">
 						TMEM20.fasta
 					</a>
@@ -320,7 +349,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/VANGL2.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/VANGL2.fasta" target="_blank" rel="nofollow">
 						VANGL2.fasta
 					</a>
@@ -330,7 +358,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/VWF.fasta" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/VWF.fasta" target="_blank" rel="nofollow">
 						VWF.fasta
 					</a>
@@ -340,7 +367,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/morphology_canis.nex" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/morphology_canis.nex" target="_blank" rel="nofollow">
 						morphology_canis.nex
 					</a>
@@ -350,7 +376,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/tip_dates_canis.dat" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/tip_dates_canis.dat" target="_blank" rel="nofollow">
 						tip_dates_canis.dat
 					</a>
@@ -360,7 +385,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-justify"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/data/tip_dates_canis.txt" target="_blank" rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/data/tip_dates_canis.txt" target="_blank" rel="nofollow">
 						tip_dates_canis.txt
 					</a>
@@ -381,7 +405,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-code-slash"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/xml/Canis-FBD.xml" target="_blank" download rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/xml/Canis-FBD.xml" target="_blank" rel="nofollow">
 						Canis-FBD.xml
 					</a>
@@ -391,7 +414,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-code-slash"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/xml/Canis-Phylogeny.xml" target="_blank" download rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/xml/Canis-Phylogeny.xml" target="_blank" rel="nofollow">
 						Canis-Phylogeny.xml
 					</a>
@@ -401,7 +423,6 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-code-slash"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/xml/Canis-UCLN.xml" target="_blank" download rel="nofollow"-->
 					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/xml/Canis-UCLN.xml" target="_blank" rel="nofollow">
 						Canis-UCLN.xml
 					</a>
@@ -412,45 +433,6 @@
 		<div class="spacer"></div>
 		
 		
-		 
-		<div class="smallhead">
-			Output
-		</div>		
-		<div class="pad-left smallnote">
-			<ul class="list-unstyled">
-			
-				
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-file-text"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/precooked_runs/CanisFBD" target="_blank" download rel="nofollow"-->
-					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/precooked_runs/CanisFBD" target="_blank" rel="nofollow">
-						CanisFBD
-					</a>
-				</li>
-			
-				
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-file-text"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/precooked_runs/CanisPhylogeny" target="_blank" download rel="nofollow"-->
-					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/precooked_runs/CanisPhylogeny" target="_blank" rel="nofollow">
-						CanisPhylogeny
-					</a>
-				</li>
-			
-				
-				<div class="smallspacer"></div>
-				<li> 
-					<i class="bi bi-file-text"></i>
-					<!--a class="off" href="https://github.com/genomescale/starbeast2-tutorial/raw/master/precooked_runs/CanisUCLN" target="_blank" download rel="nofollow"-->
-					<a class="off" href="https://raw.githubusercontent.com/genomescale/starbeast2-tutorial/master/precooked_runs/CanisUCLN" target="_blank" rel="nofollow">
-						CanisUCLN
-					</a>
-				</li>
-			
-			</ul>
-		</div>		
 		
 		<div class="spacer"></div>
 		<div class="smallhead">
@@ -460,8 +442,9 @@
 				
 			<div class="smallspacer"></div>				
 			<div>
+				
 				<a class="off" href="https://github.com/laduplessis">
-    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/8872277?v=4&s=50">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/8872277?v=4&amp;s=50" alt="">
     			<div class="handlebox" style="padding-left:5px;">
     				laduplessis
     			</div>
@@ -479,6 +462,7 @@
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-check-square"></i>
+					
 					<a class="off" href="https://github.com/genomescale/starbeast2-tutorial/commit/21af15493a5cf564d064686526b03c54712bbd50">
 					15 Aug 2023 - <span class="text-gray">Merge pull request #1 from laduplessis/master
 
@@ -489,6 +473,7 @@ Update to BEAST 2.7</span>
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-check-square"></i>
+					
 					<a class="off" href="https://github.com/genomescale/starbeast2-tutorial/commit/1997d18612038ce97a255f39021b0f48b8577c9f">
 					15 Aug 2023 - <span class="text-gray">Update markdown file</span>
 					</a> 
@@ -497,6 +482,7 @@ Update to BEAST 2.7</span>
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-check-square"></i>
+					
 					<a class="off" href="https://github.com/genomescale/starbeast2-tutorial/commit/e86db066c0e38ba6a0578a304b589d69a87550ca">
 					15 Aug 2023 - <span class="text-gray">Add precooked runs</span>
 					</a> 
@@ -505,6 +491,7 @@ Update to BEAST 2.7</span>
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-check-square"></i>
+					
 					<a class="off" href="https://github.com/genomescale/starbeast2-tutorial/commit/13f950b2fba1dcb2d1315ed5f051ba067a1948c6">
 					15 Aug 2023 - <span class="text-gray">Update tutorial text</span>
 					</a> 
@@ -513,6 +500,7 @@ Update to BEAST 2.7</span>
 				<div class="smallspacer"></div>
 				<li> 
 					<i class="bi bi-check-square"></i>
+					
 					<a class="off" href="https://github.com/genomescale/starbeast2-tutorial/commit/990a27548597696f746cb9253ae2544379a05651">
 					15 Aug 2023 - <span class="text-gray">Update figures</span>
 					</a> 
@@ -525,34 +513,16 @@ Update to BEAST 2.7</span>
 	</div>
 
 	<div class="col-md-8">
+		
 		<div class="post" data-pagefind-body>
-			<!-- Pagefind meta and filter tags -->
-			<!-- Weighted so a title/keyword/subtitle hit outranks a body-text hit.
-			     Pagefind default weight is 1; headings inside <h1 id="background">Background</h1>
-
-<p>StarBEAST2 is a Bayesian implementation of the multispecies coalescent (MSC)
-that jointly infers gene and species trees directly from multiple sequence alignments.
-Trees inferred using this method contain not only topological relationships, but
-also estimates of species divergences times and gene coalescence times. Such trees
-are therefore often described as <em>time trees</em>.</p>
-
-<p>This tutorial walks through through how to set up three kinds of species
-tree analyses using StarBEAST2. The first is basic species tree reconstruction using
-a strict nuclear clock rate.  The second is a relaxed clock analysis where a separate
-molecular clock rate is estimated for each species branch. The third is a
-<em>total evidence</em> analysis where the times and rates and jointly estimated by integrating
-fossil data into the model.</p>
-
-<p>This tutorial is identical to the tutorial hosted <a href="https://github.com/genomescale/starbeast2/releases/tag/v1.0.0">here</a>.</p>
- are
-			     auto-weighted by level (h1 highest), so only these need boosting. -->
+			
 			<h1 data-pagefind-meta="title" data-pagefind-weight="10" style="display:none;">StarBEAST2 v1.0.0 tutorial</h1>
+			
+			<div data-pagefind-weight="7" style="display:none;">multispecies coalescent species tree molecular clock relaxed clock</div>
 			
 			
 			
 			<div data-pagefind-weight="5" style="display:none;">Estimating species trees using StarBEAST2</div>
-			
-			
 			
 			
 
@@ -575,6 +545,7 @@ fossil data into the model.</p>
 <p>This tutorial is identical to the tutorial hosted <a href="https://github.com/genomescale/starbeast2/releases/tag/v1.0.0">here</a>.</p>
 
 
+			<div data-pagefind-ignore>
 			<hr>
 			<h1>Citation</h1>
 
@@ -583,7 +554,8 @@ fossil data into the model.</p>
 
 <p style="margin-left: 40px">
 Joëlle Barido-Sottani, Veronika Bošková, Louis du Plessis, Denise Kühnert, Carsten Magnus, Venelin Mitov, Nicola F. Müller, Jūlija Pečerska, David A. Rasmussen, Chi Zhang, Alexei J. Drummond, Tracy A. Heath, Oliver G. Pybus, Timothy G. Vaughan, Tanja Stadler (2018). Taming the BEAST – A community teaching material resource for BEAST 2. <em>Systematic Biology</em>, <em>67(1)</em>, 170–-174. doi: <a target="_blank" href="https://doi.org/10.1093/sysbio/syx060">10.1093/sysbio/syx060</a>
-</p> 
+</p>
+			</div>
 		</div>
 	</div>			
 	<div class="col-md-1"></div>
@@ -600,9 +572,10 @@ Joëlle Barido-Sottani, Veronika Bošková, Louis du Plessis, Denise Kühnert, C
     <div class="row">
       <div class="col-md-4 d-flex align-items-center">
         <ul class="list-group list-group-horizontal">
-        <li class="footernav list-group-item"><a class="foot" href="/about/">about</a></li>
-        <li class="footernav list-group-item"><a class="foot" href="/contact/">contact</a></li>
-        <li class="footernav list-group-item"><a class="foot" href="/license/">license</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/about/">about</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/contact/">contact</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/license/">license</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/privacy/">privacy</a></li>
         </ul>
       </div>
       <div class="col-md-3">

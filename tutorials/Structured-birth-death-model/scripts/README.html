@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- RSS feed -->
-	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.news.xml">
-	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org//feed.tutorials.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/web-testing/feed.news.xml">
+	<link rel="alternate" type="application/rss+xml" title="Taming the BEAST" href="https://taming-the-beast.org/web-testing/feed.tutorials.xml">
 
 	
     <!-- Favicon -->
@@ -29,6 +29,22 @@
     <link rel="stylesheet" href="/web-testing/css/katex.css">
     <script src="/web-testing/js/katex.min.js"></script>
 
+	<!-- Matomo -->
+	<script>
+  		var _paq = window._paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="https://matomo.sib.swiss/";
+    		_paq.push(['setTrackerUrl', u+'matomo.php']);
+    		_paq.push(['setSiteId', '244']);
+    		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  		})();
+	</script>
+	<!-- End Matomo Code -->
+	
 </head>
 
 
@@ -75,18 +91,25 @@
 		
 	
 
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
+
 <div class="row">
 	<div class="hidden-xs hidden-sm col-md-12">
 		<div class="bigtitle titlebox">
 			<ol class="breadcrumb">
 			
 			
-				
-				
-				
-				<li><a class="off" href="/tutorials/Structured-birth-death-model/scripts/README.html">scripts</a></li>
-				
-			
+			<li><a class="off" href="/web-testing/tutorials/Structured-birth-death-model/scripts/README.html">scripts</a></li>
 			</ol>
 		</div>
 		<p>
@@ -98,7 +121,15 @@
 		<div class="tutorial-badges" style="margin-bottom: 15px;">
 			
 			
+			<span class="tag badge-workflow">Advanced analysis</span>
 			
+			
+			<span class="tag badge-domain">Phylogeography</span>
+			
+			<span class="tag badge-domain">Epidemiology</span>
+			
+			
+			<span class="tag badge-package">bdmm</span>
 			
 		</div>
 
@@ -107,12 +138,29 @@
 
 		<div class="head">
 			
-				
+				Population structure using the multi-type birth-death model
 			
 		</div>
 		
 
 		<!-- Keywords -->
+		
+		<div class="smallnote" style="margin-top: 10px;">
+			<strong>Keywords:</strong>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				birth-death
+			</span>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				population structure
+			</span>
+			
+			<span class="tag tag-keyword" style="background: #e9ecef; padding: 3px 6px; margin-right: 4px; border-radius: 3px; font-size: 10px;">
+				migration
+			</span>
+			
+		</div>
 		
 	</div>
 </div>
@@ -132,33 +180,196 @@
 			<div class="smallspacer"></div>
 			<li>
 				<i class="bi bi-github"></i>
-				<a class="off" href="https://github.com/" target="_blank">Github repository</a>
+				<a class="off" href="https://github.com/taming-the-beast/Structured-birth-death-model" target="_blank">Github repository</a>
 			</li>
 			<div class="smallspacer"></div>
-			<li>
-				<i class="bi bi-star"></i>
-				<a class="off" href="LICENSE.html">
-				License</a>
-			</li>
-			<div class="smallspacer"></div>
+			
+			
+			
+			
 			<li>			
 				<i class="bi bi-bar-chart"></i>
-				<a class="off" href="https://github.com//graphs/traffic" target="_blank">
+				<a class="off" href="https://github.com/taming-the-beast/Structured-birth-death-model/graphs/traffic" target="_blank">
 				Statistics</a>
 			</li>
 			</ul>
 		</div>		
 		<div class="spacer"></div>
+		 	
+		<div class="smallhead">
+			Data
+		</div>		
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-justify"></i>
+					<a class="off" href="https://raw.githubusercontent.com/taming-the-beast/Structured-birth-death-model/master/data/h3n2_2deme.fa" target="_blank" rel="nofollow">
+						h3n2_2deme.fa
+					</a>
+				</li>
+			
+			</ul>
+		</div>		
+		<div class="spacer"></div>
+		
+		 	
+		<div class="smallhead">
+			XML
+		</div>		
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-code-slash"></i>
+					<a class="off" href="https://raw.githubusercontent.com/taming-the-beast/Structured-birth-death-model/master/xml/h3n2-bdmm.xml" target="_blank" rel="nofollow">
+						h3n2-bdmm.xml
+					</a>
+				</li>
+			
+			</ul>
+		</div>	
+		<div class="spacer"></div>
 		
 		
-		
+		 
+		<div class="smallhead">
+			Output
+		</div>		
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-file-text"></i>
+					<a class="off" href="https://raw.githubusercontent.com/taming-the-beast/Structured-birth-death-model/master/precooked_runs/h3n2-bdmm.h3n2_2deme.ccd0_summary.trees" target="_blank" rel="nofollow">
+						h3n2-bdmm.h3n2_2deme.ccd0_s...
+					</a>
+				</li>
+			
+				
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-file-text"></i>
+					<a class="off" href="https://raw.githubusercontent.com/taming-the-beast/Structured-birth-death-model/master/precooked_runs/h3n2-bdmm.h3n2_2deme.map.trees" target="_blank" rel="nofollow">
+						h3n2-bdmm.h3n2_2deme.map.trees
+					</a>
+				</li>
+			
+				
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-file-text"></i>
+					<a class="off" href="https://raw.githubusercontent.com/taming-the-beast/Structured-birth-death-model/master/precooked_runs/h3n2-bdmm.h3n2_2deme.mcc_summary.trees" target="_blank" rel="nofollow">
+						h3n2-bdmm.h3n2_2deme.mcc_su...
+					</a>
+				</li>
+			
+				
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-file-text"></i>
+					<a class="off" href="https://raw.githubusercontent.com/taming-the-beast/Structured-birth-death-model/master/precooked_runs/h3n2-bdmm.h3n2_2deme.trees" target="_blank" rel="nofollow">
+						h3n2-bdmm.h3n2_2deme.trees
+					</a>
+				</li>
+			
+				
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-file-text"></i>
+					<a class="off" href="https://raw.githubusercontent.com/taming-the-beast/Structured-birth-death-model/master/precooked_runs/h3n2-bdmm.h3n2_2deme.typedNode.trees" target="_blank" rel="nofollow">
+						h3n2-bdmm.h3n2_2deme.typedN...
+					</a>
+				</li>
+			
+				
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-file-text"></i>
+					<a class="off" href="https://raw.githubusercontent.com/taming-the-beast/Structured-birth-death-model/master/precooked_runs/h3n2-bdmm.log" target="_blank" rel="nofollow">
+						h3n2-bdmm.log
+					</a>
+				</li>
+			
+				
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-file-text"></i>
+					<a class="off" href="https://raw.githubusercontent.com/taming-the-beast/Structured-birth-death-model/master/precooked_runs/h3n2-bdmm.xml.state" target="_blank" rel="nofollow">
+						h3n2-bdmm.xml.state
+					</a>
+				</li>
+			
+			</ul>
+		</div>		
 		
 		<div class="spacer"></div>
 		<div class="smallhead">
 			Contributors
 		</div>	
 		<div class="pad-left note">
-			
+				
+			<div class="smallspacer"></div>				
+			<div>
+				
+				<a class="off" href="https://github.com/laduplessis">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/8872277?v=4&amp;s=50" alt="">
+    			<div class="handlebox" style="padding-left:5px;">
+    				laduplessis
+    			</div>
+ 				</a>
+ 			</div>			
+ 				
+			<div class="smallspacer"></div>				
+			<div>
+				
+				<a class="off" href="https://github.com/tgvaughan">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/512538?v=4&amp;s=50" alt="">
+    			<div class="handlebox" style="padding-left:5px;">
+    				tgvaughan
+    			</div>
+ 				</a>
+ 			</div>			
+ 				
+			<div class="smallspacer"></div>				
+			<div>
+				
+				<a class="off" href="https://github.com/jugne">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/26361891?v=4&amp;s=50" alt="">
+    			<div class="handlebox" style="padding-left:5px;">
+    				jugne
+    			</div>
+ 				</a>
+ 			</div>			
+ 				
+			<div class="smallspacer"></div>				
+			<div>
+				
+				<a class="off" href="https://github.com/denisekuehnert">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/3991573?v=4&amp;s=50" alt="">
+    			<div class="handlebox" style="padding-left:5px;">
+    				denisekuehnert
+    			</div>
+ 				</a>
+ 			</div>			
+ 				
+			<div class="smallspacer"></div>				
+			<div>
+				
+				<a class="off" href="https://github.com/NicoNeureiter">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/2188796?v=4&amp;s=50" alt="">
+    			<div class="handlebox" style="padding-left:5px;">
+    				NicoNeureiter
+    			</div>
+ 				</a>
+ 			</div>			
+ 			
 		</div>
 		<div class="bigspacer"></div>
 		<div class="smallhead">
@@ -167,6 +378,53 @@
 		<div class="pad-left smallnote">
 			<ul class="list-unstyled">
 			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
+					
+					<a class="off" href="https://github.com/Taming-the-BEAST/Structured-birth-death-model/commit/f0a97780c4828592cc8bb8d0aeee613d3b881333">
+					11 Nov 2026 - <span class="text-gray">Merge pull request #7 from Taming-the-BEAST/tutorial-metadata-migration
+
+Migrate README frontmatter to the new tutorial metadata schema</span>
+					</a> 
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
+					
+					<a class="off" href="https://github.com/Taming-the-BEAST/Structured-birth-death-model/commit/74c7727ca8fc1aa49fcd12eaa133126d1a25d7f3">
+					27 Aug 2026 - <span class="text-gray">Migrate README frontmatter to the new tutorial metadata schema</span>
+					</a> 
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
+					
+					<a class="off" href="https://github.com/Taming-the-BEAST/Structured-birth-death-model/commit/2b1076bd8f0a118453c06e2df64f4e91efd5d86f">
+					04 Jun 2025 - <span class="text-gray">Fixed typo.</span>
+					</a> 
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
+					
+					<a class="off" href="https://github.com/Taming-the-BEAST/Structured-birth-death-model/commit/b5283ce7a416820c2edde1ca19e4182b47a20e05">
+					04 Jun 2025 - <span class="text-gray">Update README.md</span>
+					</a> 
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="bi bi-check-square"></i>
+					
+					<a class="off" href="https://github.com/Taming-the-BEAST/Structured-birth-death-model/commit/beb0bf8648bc83ed7d4fa97c22f486315ad107a1">
+					23 May 2025 - <span class="text-gray">Fix figure links</span>
+					</a> 
+				</li>
+			
 			</ul>
 		</div>		
 		<div class="spacer"></div>	
@@ -174,18 +432,16 @@
 	</div>
 
 	<div class="col-md-8">
-		<div class="post" data-pagefind-body>
-			<!-- Pagefind meta and filter tags -->
-			<!-- Weighted so a title/keyword/subtitle hit outranks a body-text hit.
-			     Pagefind default weight is 1; headings inside <h1 id="scripts">Scripts</h1>
-<p>Add any scripts used for pre- and post-processing here. This could also include scripts used to produce output figures. Scripts can be in any language. Please only add the source files here and not any compiled code!</p>
- are
-			     auto-weighted by level (h1 highest), so only these need boosting. -->
+		
+		<div class="post" data-pagefind-ignore="all">
+			
 			<h1 data-pagefind-meta="title" data-pagefind-weight="10" style="display:none;">Structured-birth-death-model/scripts/</h1>
 			
+			<div data-pagefind-weight="7" style="display:none;">birth-death population structure migration</div>
 			
 			
 			
+			<div data-pagefind-weight="5" style="display:none;">Population structure using the multi-type birth-death model</div>
 			
 			
 
@@ -194,6 +450,7 @@
 <p>Add any scripts used for pre- and post-processing here. This could also include scripts used to produce output figures. Scripts can be in any language. Please only add the source files here and not any compiled code!</p>
 
 
+			<div data-pagefind-ignore>
 			<hr>
 			<h1>Citation</h1>
 
@@ -202,7 +459,8 @@
 
 <p style="margin-left: 40px">
 Joëlle Barido-Sottani, Veronika Bošková, Louis du Plessis, Denise Kühnert, Carsten Magnus, Venelin Mitov, Nicola F. Müller, Jūlija Pečerska, David A. Rasmussen, Chi Zhang, Alexei J. Drummond, Tracy A. Heath, Oliver G. Pybus, Timothy G. Vaughan, Tanja Stadler (2018). Taming the BEAST – A community teaching material resource for BEAST 2. <em>Systematic Biology</em>, <em>67(1)</em>, 170–-174. doi: <a target="_blank" href="https://doi.org/10.1093/sysbio/syx060">10.1093/sysbio/syx060</a>
-</p> 
+</p>
+			</div>
 		</div>
 	</div>			
 	<div class="col-md-1"></div>
@@ -219,9 +477,10 @@ Joëlle Barido-Sottani, Veronika Bošková, Louis du Plessis, Denise Kühnert, C
     <div class="row">
       <div class="col-md-4 d-flex align-items-center">
         <ul class="list-group list-group-horizontal">
-        <li class="footernav list-group-item"><a class="foot" href="/about/">about</a></li>
-        <li class="footernav list-group-item"><a class="foot" href="/contact/">contact</a></li>
-        <li class="footernav list-group-item"><a class="foot" href="/license/">license</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/about/">about</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/contact/">contact</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/license/">license</a></li>
+        <li class="footernav list-group-item"><a class="foot" href="/web-testing/privacy/">privacy</a></li>
         </ul>
       </div>
       <div class="col-md-3">
